@@ -273,7 +273,7 @@ const Navbar = () => {
                   DIVISIONS
                   <FiChevronDown className="ml-1" />
                 </button>
-                <div className="fixed inset-x-0 mt-4 max-w-7xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
+                <div className="fixed inset-x-0 mt-4 max-w-5xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
                   <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-6">
                     {items.map((item, index) => (
                       <div
@@ -281,7 +281,7 @@ const Navbar = () => {
                         className="flex items-center p-3 border rounded-md hover:bg-gray-100 "
                       >
                         <div className="mr-4">{item.icon}</div>
-                        <div className="3xl:text-lg 2xl:text-base text-sm transition-all duration-300">
+                        <div className="3xl:text-sm xl:text-xs text-xs transition-all duration-500">
                           <h3 className="font-semibold  text-black">
                             {item.title}
                           </h3>

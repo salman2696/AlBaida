@@ -6,3 +6,12 @@ body {
   font-family: "Rethink Sans", sans-serif;
 }
 
+.center-title::after {
+  content: '';
+  height: 1px;
+  width: 70px;
+  background-color: #ab1218;
+  display: block;
+  margin: 15px auto 0 auto;
+}
+

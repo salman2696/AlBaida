@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useTransition, animated } from "@react-spring/web";
+import { LuConstruction } from "react-icons/lu";
 import {
   FaTools,
   FaBuilding,
@@ -11,7 +12,6 @@ import {
   FaTruck,
   FaUsers,
   FaWrench,
-  FaHandshake,
   FaBusinessTime,
   FaIndustry,
   FaCogs,
@@ -41,15 +41,15 @@ const heroData = [
 
 const categories = [
   { title: "Facility Management", icon: <FaBuilding /> },
+  { title: "Construction", icon: <LuConstruction />},
+  { title: "Agriculture Projects & Training", icon: <FaSeedling /> },
   { title: "Contracting & Trading", icon: <FaTools /> },
   { title: "Infrastructure Roads & Project Development", icon: <FaRoad /> },
   { title: "Cleaning Services", icon: <FaBroom /> },
-  { title: "Agriculture Projects & Training", icon: <FaSeedling /> },
   { title: "Heavy Equipment Rental", icon: <FaTruck /> },
-  { title: "Human Resource Management & Outsourcing", icon: <FaUsers /> },
+  { title: "HR Management & Outsourcing", icon: <FaUsers /> },
   { title: "Cargo Logistics & Custom Clearance", icon: <FaWrench /> },
   { title: "Engineering Consultancy", icon: <FaCogs /> },
-  { title: "Agency", icon: <FaHandshake /> },
   { title: "Business Management & Consultancy", icon: <FaBusinessTime /> },
   { title: "Agency Representation", icon: <FaIndustry /> },
 ];
