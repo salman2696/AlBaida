@@ -160,7 +160,7 @@ export default function HeroSection() {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="min-w-[200px] h-32 flex flex-col items-center justify-center border-2 shadow-md rounded-lg p-4"
+            className="min-w-[250px] backdrop-blur-sm h-32 flex flex-col items-center justify-center border-2 shadow-md rounded-lg p-4"
           >
             <div className="text-4xl text-red-600">{category.icon}</div>
             <h3 className="text-lg font-bold mt-2 text-center text-white">{category.title}</h3>

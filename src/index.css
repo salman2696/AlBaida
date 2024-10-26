@@ -15,3 +15,32 @@ body {
   margin: 15px auto 0 auto;
 }
 
+@keyframes expandLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.def-title::before {
+  content: '';
+  height: 2px;
+  width: 0; /* Initially set width to 0 */
+  position: absolute;
+  top: 20px;
+  left: calc(-100% - 25px);
+  background-color: #ab1218;
+  transition: width 0.6s ease-in-out; /* Smooth transition */
+}
+
+.def-title.animate-line::before {
+  animation: expandLine 0.6s ease-in-out forwards;
+}
+
+
+.fade-container {
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}

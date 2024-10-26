@@ -9,7 +9,7 @@ const AboutUs = ({
   buttonText,
   imageSrc,
   reverseLayout = false,
-  bgColor = "bg-gray-100",
+  
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: false, // Animation will trigger only once when it comes into view
@@ -17,20 +17,20 @@ const AboutUs = ({
   });
 
   return (
-    <section className={`w-full ${bgColor} py-12`} ref={ref}>
-      <div className="container mx-auto max-w-7xl px-4">
+    <section className={`w-full py-12 min-h-[700px] flex items-center`} ref={ref}>
+      <div className="container mx-auto max-w-7xl px-4 ">
         <div
           className={`flex flex-col md:flex-row items-center justify-between gap-8 ${
             reverseLayout ? "md:flex-row-reverse" : ""
           }`}
         >
           {/* Left Section: Title, Subtitle, Description, Button */}
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className={`relative md:w-1/2 text-center md:text-left def-title  ${inView ? 'animate-line' : ''}`}>
             <motion.h2
               className="text-4xl font-bold mb-2"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1 }}
             >
               {title}
             </motion.h2>
@@ -39,7 +39,7 @@ const AboutUs = ({
                 className="text-2xl font-semibold mb-4 text-gray-700"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 1, delay: 0.4 }}
               >
                 {subtitle}
               </motion.h3>
@@ -48,7 +48,7 @@ const AboutUs = ({
               className="text-lg mb-6"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               {description}
             </motion.p>

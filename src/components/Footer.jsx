@@ -12,7 +12,7 @@ import { FiMail, FiMapPin } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <section className="bg-[#2B3440] text-white">
+    <section className="bg-black text-white">
       <footer className="footer max-w-7xl mx-auto w-full text-base-100 text-sm lg:text-lg py-10 px-4">
         <aside className="md:min-w-[20vw]">
           <img src={Logo} alt="" className="lg:w-52 md:w-36 sm:w-32 w-28" />
@@ -134,7 +134,7 @@ const Footer = () => {
         </nav>
       </footer>
 
-      <footer className="footer footer-center max-w-7xl mx-auto w-full text-base-100 lg:text-lg bg-[#2B3440] rounded p-4">
+      <footer className="footer footer-center max-w-7xl mx-auto w-full text-base-100 lg:text-lg bg-black rounded p-4">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All rights reserved by Al

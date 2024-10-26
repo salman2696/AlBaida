@@ -4,13 +4,12 @@ import CompanyNum from "../components/HomePage/CompanyNum";
 import OurServices from "../components/HomePage/OurServices";
 import ImageWithDesc from "../components/HomePage/ImageWithDesc";
 import AboutUsImage from "../assets/images/AboutUsImage.jpg";
-
+import ContactUs from "../components/ContactUs";
 
 const HomePage = () => {
   return (
     <div>
       <Herosection />
-      <CompanyNum />
       <ImageWithDesc
         title="About Our Company"
         subtitle="Business is in our breath. That's how we always make it the best."
@@ -20,7 +19,9 @@ const HomePage = () => {
         reverseLayout={false} // Change to true to reverse the layout
         bgColor="bg-[#e9eae5]" // Optional: Set the background color
       />
-       <OurServices />
+      <CompanyNum />
+      <OurServices />
+      <ContactUs />
     </div>
   );
 };

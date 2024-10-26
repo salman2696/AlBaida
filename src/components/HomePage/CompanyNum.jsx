@@ -60,6 +60,7 @@ const CompanyNum = () => {
   });
 
   return (
+    <section className="bg-[#e9eae5]">
     <div
       ref={ref}
       className={`max-w-7xl mx-auto py-8 px-4 transition-transform duration-1000 ${
@@ -108,6 +109,7 @@ const CompanyNum = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

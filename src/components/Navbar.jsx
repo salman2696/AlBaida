@@ -268,7 +268,7 @@ const Navbar = () => {
                   className="flex items-center hover:text-custom-red focus:outline-none"
                   onClick={toggleDivisionsMenu}
                   aria-expanded={isDivisionsOpen}
-                  aria-haspopup="true"
+                  aria-haspopup={true}
                 >
                   DIVISIONS
                   <FiChevronDown className="ml-1" />
@@ -299,7 +299,7 @@ const Navbar = () => {
                   className="flex items-center hover:text-custom-red focus:outline-none"
                   onClick={toggleDivisionsMenu}
                   aria-expanded={isDivisionsOpen}
-                  aria-haspopup="true"
+                  aria-haspopup={true}
                 >
                   PROJECTS
                   <FiChevronDown className="ml-1" />
@@ -387,7 +387,7 @@ const Navbar = () => {
                   className="flex items-center justify-between w-full hover:bg-gray-200 px-2 py-1 rounded focus:outline-none"
                   onClick={toggleDivisionsMenu}
                   aria-expanded={isDivisionsOpen}
-                  aria-haspopup="true"
+                  aria-haspopup={true}
                 >
                   DIVISIONS
                   <FiChevronDown
@@ -425,7 +425,7 @@ const Navbar = () => {
                   className="flex items-center justify-between w-full hover:bg-gray-200 px-2 py-1 rounded focus:outline-none"
                   onClick={toggleProjectsMenu}
                   aria-expanded={isProjectsOpen}
-                  aria-haspopup="true"
+                  aria-haspopup={true}
                 >
                   PROJECTS
                   <FiChevronDown
