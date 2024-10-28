@@ -11,17 +11,17 @@ const ContactUs = () => {
         }}
       >
         <div className="flex flex-col bg-black/60">
-          <div className="container flex flex-col flex-1 px-6 py-12 mx-auto max-w-7xl">
-            <div className="flex-1 relative lg:flex lg:items-center lg:-mx-6">
+          <div className="container flex flex-col flex-1 px-4 py-12 mx-auto max-w-7xl">
+            <div className="flex-1 relative lg:flex lg:items-center">
               <div className="relative text-white lg:w-1/2 lg:mx-6 def-title">
                 <h1 className="text-2xl font-semibold capitalize lg:text-5xl">
                   Do you have any questions?
                 </h1>
 
                 <p className="max-w-xl mt-6 lg:text-lg text-sm">
-                  We’d love to hear from you! Whether you have questions or need
+                  We'd love to hear from you! Whether you have questions or need
                   assistance, our team is ready to help. Contact us via our
-                  form, phone, or email, and let’s build a successful future
+                  form, phone, or email, and let's build a successful future
                   together.
                 </p>
 

@@ -348,9 +348,9 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="#" className="hover:text-custom-red">
+                <Link to="about-us" className="hover:text-custom-red">
                   ABOUT US
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-custom-red">
@@ -364,7 +364,7 @@ const Navbar = () => {
       <AnimatePresence>
         {isMobile && isOpen && (
           <motion.div
-            className="md:hidden max-h-96 overflow-y-auto"
+            className="md:hidden"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -372,13 +372,13 @@ const Navbar = () => {
           >
             <ul className="px-4 pt-2 pb-4 space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   onClick={toggleMenu}
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                 >
                   HOME
-                </a>
+                </Link>
               </li>
               <li>
                 <button
@@ -401,7 +401,7 @@ const Navbar = () => {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="mt-2 space-y-2 pl-4"
+                      className="mt-2 space-y-2 pl-4 max-h-52 overflow-y-auto border-b-2"
                     >
                       {divisions.map((division, index) => (
                         <div key={index}>
@@ -439,7 +439,7 @@ const Navbar = () => {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="mt-2 space-y-2 pl-4"
+                      className="mt-2 space-y-2 pl-4 border-b-2"
                     >
                       {projects.map((project, index) => (
                         <div key={index}>
@@ -458,13 +458,13 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/about-us"
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                   onClick={toggleMenu}
                 >
                   ABOUT US
-                </a>
+                </Link>
               </li>
               <li>
                 <a
