@@ -12,8 +12,8 @@ const ContactUs = () => {
       >
         <div className="flex flex-col bg-black/60">
           <div className="container flex flex-col flex-1 px-6 py-12 mx-auto max-w-7xl">
-            <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
-              <div className="text-white lg:w-1/2 lg:mx-6">
+            <div className="flex-1 relative lg:flex lg:items-center lg:-mx-6">
+              <div className="relative text-white lg:w-1/2 lg:mx-6 def-title">
                 <h1 className="text-2xl font-semibold capitalize lg:text-5xl">
                   Do you have any questions?
                 </h1>

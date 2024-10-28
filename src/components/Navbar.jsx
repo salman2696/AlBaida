@@ -26,7 +26,7 @@ const Navbar = () => {
   const [transparentNavbar, setTransparentNavbar] = useState(true);
 
   const controlNavbar = () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 100) {
       setTransparentNavbar(false);
     } else {
       setTransparentNavbar(true);
@@ -229,7 +229,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 ${
+      className={`fixed w-full z-50 transition-all duration-300 ${
         transparentNavbar
           ? "md:bg-transparent bg-white shadow-lg md:shadow-none"
           : "bg-white shadow-lg"
@@ -253,11 +253,11 @@ const Navbar = () => {
               </div>
             </button>
           ) : (
-            <ul className={`hidden md:flex space-x-6 ${
-              transparentNavbar
-                ? "text-white"
-                : "text-black"
-            }`}>
+            <ul
+              className={`hidden md:flex space-x-6 ${
+                transparentNavbar ? "text-white" : "text-black"
+              }`}
+            >
               <li>
                 <a href="#" className="hover:text-custom-red">
                   HOME
@@ -285,9 +285,7 @@ const Navbar = () => {
                           <h3 className="font-semibold  text-black">
                             {item.title}
                           </h3>
-                          <p className="t text-gray-500">
-                            {item.description}
-                          </p>
+                          <p className="t text-gray-500">{item.description}</p>
                         </div>
                       </div>
                     ))}

@@ -5,6 +5,7 @@ import OurServices from "../components/HomePage/OurServices";
 import ImageWithDesc from "../components/HomePage/ImageWithDesc";
 import AboutUsImage from "../assets/images/AboutUsImage.jpg";
 import ContactUs from "../components/ContactUs";
+import Blogs from "../components/Blogs";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <CompanyNum />
       <OurServices />
       <ContactUs />
+      <Blogs/>
     </div>
   );
 };

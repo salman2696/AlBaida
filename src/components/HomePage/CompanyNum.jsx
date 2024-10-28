@@ -79,7 +79,7 @@ const CompanyNum = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center p-6 md:p-8 border rounded-lg shadow-sm transition-transform duration-1000 ${
+            className={`flex flex-col items-center p-6 md:p-8 border rounded-lg shadow-lg transition-transform duration-1000 ${
               inView
                 ? "translate-x-0 opacity-100"
                 : index % 2 === 0

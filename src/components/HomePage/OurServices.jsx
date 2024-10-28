@@ -1,6 +1,7 @@
 // OurServices.jsx
 import React from "react";
 import Slider from "react-slick";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import ServiceCard from "../ServiceCard";
 import imageService1 from "../../assets/images/services/service-1.jpg";
 import imageService2 from "../../assets/images/services/service-2.jpg";
@@ -103,14 +104,61 @@ const OurServices = () => {
     },
   ];
 
+  const CustomPrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          position: "absolute",
+          left: "-15px",
+          zIndex: 1,
+          color: "#C20001", // Customize color
+          fontSize: "30px", // Customize size
+          cursor: "pointer",
+        }}
+        onClick={onClick}
+      >
+        <FaChevronLeft />
+      </div>
+    );
+  };
+  
+  const CustomNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          position: "absolute",
+          right: "-5px",
+          zIndex: 1,
+          color: "#C20001", // Customize color
+          fontSize: "30px", // Customize size
+          cursor: "pointer",
+        }}
+        onClick={onClick}
+      >
+        <FaChevronRight />
+      </div>
+    );
+  };
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 3000,
+    arrows: true,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -132,7 +180,7 @@ const OurServices = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="text-4xl font-bold text-center mb-8 center-title">OUR SERVICES</h2>
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">OUR SERVICES</h2>
         <Slider {...settings}>
           {services.map((service, index) => (
             <div key={index}>

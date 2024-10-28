@@ -44,3 +44,8 @@ body {
   position: relative;
   mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
 }
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
