@@ -180,7 +180,7 @@ const OurServices = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">OUR SERVICES</h2>
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">Our Services</h2>
         <Slider {...settings}>
           {services.map((service, index) => (
             <div key={index}>

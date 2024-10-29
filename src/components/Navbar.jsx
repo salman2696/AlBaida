@@ -68,51 +68,51 @@ const Navbar = () => {
   const divisions = [
     {
       name: "Facility Management",
-      link: "/",
+      link: "/divisions/facility-management",
     },
     {
       name: "Contracting & Trading",
-      link: "/",
+      link: "/divisions/contracting",
     },
     {
       name: "Infrastructure Roads & Development",
-      link: "/",
+      link: "/divisions/infrastructure",
     },
     {
       name: "Cleaning Services",
-      link: "/",
+      link: "/divisions/cleaning-services",
     },
     {
       name: "Agriculture Projects & Training",
-      link: "/",
+      link: "/divisions/agriculture-projects",
     },
     {
       name: "Heavy Equipment Rental",
-      link: "/",
+      link: "/divisions/heavy-equipment-rental",
     },
     {
       name: "HR Management & Outsourcing",
-      link: "/",
+      link: "/divisions/human-resource-managament",
     },
     {
       name: "Cargo Logistics & Custom Clearance",
-      link: "/",
+      link: "/divisions/cargo-logistics",
     },
     {
       name: "Engineering Consultancy",
-      link: "/",
+      link: "/divisions/engineering-consultancy",
     },
     {
       name: "Business Management Consultancy",
-      link: "/",
+      link: "/divisions/business-management-consulancy",
     },
     {
       name: "Agency & Representation",
-      link: "/",
+      link: "/divisions/agency-and-representation",
     },
     {
       name: "Construction",
-      link: "/",
+      link: "/divisions/construction",
     },
   ];
 
@@ -127,67 +127,67 @@ const Navbar = () => {
       icon: <FaHandshake className="text-3xl text-custom-red" />,
       title: "Contracting & Trading",
       description: "Business deals and trade partnerships",
-      path: "/",
+      path: "/divisions/contracting",
     },
     {
       icon: <FaRoad className="text-3xl text-custom-red" />,
       title: "Infrastructure Roads & Project Development",
       description: "Building roads and large-scale projects",
-      path: "/",
+      path: "/divisions/infrastructure",
     },
     {
       icon: <FaBroom className="text-3xl text-custom-red" />,
       title: "Cleaning Services",
       description: "Professional cleaning and sanitation",
-      path: "/",
+      path: "/divisions/cleaning-services",
     },
     {
       icon: <FaSeedling className="text-3xl text-custom-red" />,
       title: "Agriculture Projects & Training",
       description: "Farming projects and skill development",
-      path: "/",
+      path: "/divisions/agriculture-projects",
     },
     {
       icon: <FaTractor className="text-3xl text-custom-red" />,
       title: "Heavy Equipment Rental",
       description: "Machinery and equipment leasing services",
-      path: "/",
+      path: "/divisions/heavy-equipment-rental",
     },
     {
       icon: <FaUserTie className="text-3xl text-custom-red" />,
       title: "Human Resource Management & Outsourcing",
       description: "Employee management and staffing solutions",
-      path: "/",
+      path: "/divisions/human-resource-managament",
     },
     {
       icon: <FaTruckMoving className="text-3xl text-custom-red" />,
       title: "Cargo Logistics & Custom Clearance",
       description: "Transporting goods and handling customs",
-      path: "/",
+      path: "/divisions/cargo-logistics",
     },
     {
       icon: <FaBuilding className="text-3xl text-custom-red" />,
       title: "Engineering Consultancy",
       description: "Expert guidance on engineering projects",
-      path: "/",
+      path: "/divisions/engineering-consultancy",
     },
     {
       icon: <FaChartLine className="text-3xl text-custom-red" />,
       title: "Business Management Consultancy",
       description: "Consulting for business growth and efficiency",
-      path: "/",
+      path: "/divisions/business-management-consulancy",
     },
     {
       icon: <FaRegClipboard className="text-3xl text-custom-red" />,
       title: "Agency & Representation",
       description: "Acting as agents for various businesses",
-      path: "/",
+      path: "/divisions/agency-and-representation",
     },
     {
       icon: <FaTools className="text-3xl text-custom-red" />,
       title: "Construction",
       description: "Building and construction services",
-      path: "/",
+      path: "/divisions/construction",
     },
   ];
 
@@ -250,7 +250,9 @@ const Navbar = () => {
       <div className="container mx-auto max-w-7xl 2xl:px-0 px-4">
         <div className="flex items-center justify-between py-2 3xl:text-lg 2xl:text-base text-sm transition-all duration-300">
           <div className="flex items-center">
-            <img src={Logo} alt="Logo" className="h-14 w-auto" />
+            <Link to="/">
+              <img src={Logo} alt="Logo" className="h-14 w-auto" />
+            </Link>
           </div>
           {isMobile ? (
             <button
@@ -271,9 +273,9 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <a href="#" className="hover:text-custom-red">
+                <Link to="/" className="hover:text-custom-red">
                   HOME
-                </a>
+                </Link>
               </li>
               <li className="relative group">
                 <button
@@ -377,6 +379,8 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobile && isOpen && (
           <motion.div

@@ -60,7 +60,7 @@ const CompanyNum = () => {
   });
 
   return (
-    <section className="bg-[#e9eae5]">
+    <section className="bg-gray-100">
     <div
       ref={ref}
       className={`max-w-7xl mx-auto py-8 px-4 transition-transform duration-1000 ${
@@ -69,7 +69,7 @@ const CompanyNum = () => {
     >
       {/* Heading Section */}
       <div className="flex items-center mb-8 justify-center">
-        <h2 className="text-xl md:text-3xl xl:text-4xl font-bold text-black">
+        <h2 className="text-xl md:text-3xl xl:text-4xl font-bold text-black center-title">
           Our company in numbers
         </h2>
       </div>
@@ -79,7 +79,7 @@ const CompanyNum = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center p-6 md:p-8 border rounded-lg shadow-lg transition-transform duration-1000 ${
+            className={`flex flex-col items-center p-6 md:p-8 border rounded-lg shadow-lg transition-transform duration-1000 bg-white ${
               inView
                 ? "translate-x-0 opacity-100"
                 : index % 2 === 0

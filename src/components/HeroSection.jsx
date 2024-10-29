@@ -1,10 +1,15 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 
-
 const HeroSection = ({ heroImage, title, subtitle, descripton }) => {
   return (
-    <Parallax bgImage={heroImage} bgImageAlt="Hero background" strength={100}>
+    <Parallax
+    blur={1}
+      bgImage={heroImage}
+      bgImageAlt="Hero background"
+      strength={100}
+      bgClassName="object-cover"
+    >
       <div className="relative flex items-center justify-center h-[80vh]">
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
         {/* Overlay for better text visibility */}
@@ -17,7 +22,7 @@ const HeroSection = ({ heroImage, title, subtitle, descripton }) => {
               {subtitle}
             </span>
           </h1>
-          <p className="text-base md:text-2xl">{descripton}</p>
+          <p className="text-base md:text-2xl ">{descripton}</p>
         </div>
       </div>
     </Parallax>

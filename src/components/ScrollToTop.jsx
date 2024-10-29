@@ -9,6 +9,7 @@ const ScrollToTop = () => {
       top: 0,
       behavior: "smooth", // Smooth scroll animation
     });
+    
   }, [pathname]);
 
   return null;
