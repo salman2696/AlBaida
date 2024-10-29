@@ -1,14 +1,13 @@
 import React from "react";
+import { Parallax } from "react-parallax";
 
 const ContactUs = () => {
   return (
     <div>
-      <section
-        className="bg-cover"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')",
-        }}
+      <Parallax
+        bgImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        bgImageAlt="Contact Background"
+        strength={100} // Adjust strength for desired parallax intensity
       >
         <div className="flex flex-col bg-black/60">
           <div className="container flex flex-col flex-1 px-4 py-12 mx-auto max-w-7xl">
@@ -161,7 +160,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Parallax>
     </div>
   );
 };

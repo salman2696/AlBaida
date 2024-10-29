@@ -67,7 +67,7 @@ const Navbar = () => {
 
   const divisions = [
     {
-      name: "Faculty Management",
+      name: "Facility Management",
       link: "/",
     },
     {
@@ -119,63 +119,75 @@ const Navbar = () => {
   const items = [
     {
       icon: <FaChalkboardTeacher className="text-3xl text-custom-red" />,
-      title: "Faculty Management",
+      title: "Facility Management",
       description: "Managing educational staff and resources",
+      path: "/divisions/facility-management",
     },
     {
       icon: <FaHandshake className="text-3xl text-custom-red" />,
       title: "Contracting & Trading",
       description: "Business deals and trade partnerships",
+      path: "/",
     },
     {
       icon: <FaRoad className="text-3xl text-custom-red" />,
       title: "Infrastructure Roads & Project Development",
       description: "Building roads and large-scale projects",
+      path: "/",
     },
     {
       icon: <FaBroom className="text-3xl text-custom-red" />,
       title: "Cleaning Services",
       description: "Professional cleaning and sanitation",
+      path: "/",
     },
     {
       icon: <FaSeedling className="text-3xl text-custom-red" />,
       title: "Agriculture Projects & Training",
       description: "Farming projects and skill development",
+      path: "/",
     },
     {
       icon: <FaTractor className="text-3xl text-custom-red" />,
       title: "Heavy Equipment Rental",
       description: "Machinery and equipment leasing services",
+      path: "/",
     },
     {
       icon: <FaUserTie className="text-3xl text-custom-red" />,
       title: "Human Resource Management & Outsourcing",
       description: "Employee management and staffing solutions",
+      path: "/",
     },
     {
       icon: <FaTruckMoving className="text-3xl text-custom-red" />,
       title: "Cargo Logistics & Custom Clearance",
       description: "Transporting goods and handling customs",
+      path: "/",
     },
     {
       icon: <FaBuilding className="text-3xl text-custom-red" />,
       title: "Engineering Consultancy",
       description: "Expert guidance on engineering projects",
+      path: "/",
     },
     {
       icon: <FaChartLine className="text-3xl text-custom-red" />,
       title: "Business Management Consultancy",
       description: "Consulting for business growth and efficiency",
+      path: "/",
     },
     {
       icon: <FaRegClipboard className="text-3xl text-custom-red" />,
       title: "Agency & Representation",
       description: "Acting as agents for various businesses",
+      path: "/",
     },
     {
       icon: <FaTools className="text-3xl text-custom-red" />,
       title: "Construction",
       description: "Building and construction services",
+      path: "/",
     },
   ];
 
@@ -276,18 +288,22 @@ const Navbar = () => {
                 <div className="fixed inset-x-0 mt-4 max-w-5xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
                   <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-6">
                     {items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center p-3 border rounded-md hover:bg-gray-100 "
-                      >
-                        <div className="mr-4">{item.icon}</div>
-                        <div className="3xl:text-sm xl:text-xs text-xs transition-all duration-500">
-                          <h3 className="font-semibold  text-black">
-                            {item.title}
-                          </h3>
-                          <p className="t text-gray-500">{item.description}</p>
+                      <Link to={item.path}>
+                        <div
+                          key={index}
+                          className="flex items-center p-3 border rounded-md hover:bg-gray-100 "
+                        >
+                          <div className="mr-4">{item.icon}</div>
+                          <div className="3xl:text-sm xl:text-xs text-xs transition-all duration-500">
+                            <h3 className="font-semibold  text-black">
+                              {item.title}
+                            </h3>
+                            <p className="t text-gray-500">
+                              {item.description}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>

@@ -1,20 +1,24 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import MissionVisionValues from "../components/MissionVisionValues";
-import Partners from"../components/Partners"
+import Partners from "../components/Partners";
 import ChairmanMsg from "../components/ChairmanMsg";
+import heroImage from "../assets/images/AboutUs/heroImage.jpg";
 
 const AboutUs = () => {
   return (
     <div>
       <HeroSection
+      heroImage={heroImage}
         title="Your Trusted Partner in"
         subtitle=" Comprehensive Project Solutions"
         descripton="At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
       />
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our History</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4 center-title">
+            Our History
+          </h2>
           <p className="text-lg text-gray-600">
             Discover the journey that has shaped us into a trusted leader in
             comprehensive project solutions.
@@ -72,9 +76,9 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <Partners/>
-      <MissionVisionValues/>
-      <ChairmanMsg/>
+      <Partners />
+      <MissionVisionValues />
+      <ChairmanMsg />
     </div>
   );
 };

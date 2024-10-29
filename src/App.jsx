@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Layout from "./layouts/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import AboutUs from "./pages/AboutUs";
+import FacilityManagement from "./pages/divisions/FacilityManagement";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/divisions/facility-management" element={<FacilityManagement />} />
         </Route>
       </Routes>
     </HashRouter>
