@@ -49,3 +49,12 @@ body {
 .slick-next:before {
   display: none;
 }
+
+/* Example CSS for RTL and LTR */
+body:dir(rtl) {
+  text-align: right;
+}
+
+body:dir(ltr) {
+  text-align: left;
+}

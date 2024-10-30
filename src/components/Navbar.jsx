@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../assets/images/logo.png";
+import { useTranslation } from "react-i18next";
 import {
   FaChalkboardTeacher,
   FaHandshake,
@@ -17,8 +18,8 @@ import {
   FaTools,
   FaSeedling,
 } from "react-icons/fa";
-import FlagUS from "../assets/images/englishFlag.jpg";  // Example flag import
-import FlagAr from "../assets/images/arabicFlag.jpg";  // Example flag import
+import FlagUS from "../assets/images/englishFlag.jpg"; // Example flag import
+import FlagAr from "../assets/images/arabicFlag.jpg"; // Example flag import
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,15 +28,18 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [transparentNavbar, setTransparentNavbar] = useState(true);
 
+  const { t, i18n } = useTranslation();
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState({
     name: "English",
-    flag: FlagUS
+    flag: FlagUS,
+    code: "en",
+    direction: "ltr",
   });
 
   const languages = [
-    { name: "English", flag: FlagUS },
-    { name: "Arabic", flag: FlagAr }
+    { name: "English", flag: FlagUS, code: "en", direction: "ltr" },
+    { name: "Arabic", flag: FlagAr, code: "ar", direction: "rtl" },
   ];
 
   const toggleLanguageDropdown = () => {
@@ -44,6 +48,8 @@ const Navbar = () => {
 
   const selectLanguage = (language) => {
     setSelectedLanguage(language);
+    i18n.changeLanguage(language.code);
+    document.documentElement.setAttribute("dir", language.direction);
     setIsLanguageDropdownOpen(false);
   };
 
@@ -215,49 +221,12 @@ const Navbar = () => {
 
   // Sample project data
   const projects = [
-    {
-      id: 1,
-      title: "Mwani Projects",
-      description:
-        "A massive and astounding project symbolizing our relentless passion and potential.",
-      link: "/projects/project-",
-      image: "/projects/project1.jpg",
-    },
-    {
-      id: 2,
-      title: "Camel Race projects",
-      description: "A dream work at infinite pace against innumerable hurdles",
-      link: "/projects/project-b",
-      image: "/projects/project2.jpg",
-    },
-    {
-      id: 3,
-      title: "Agricuture Projects for UMM GHUWAILINA",
-      description: "Unleashing the power to go beyond impossibilities",
-      link: "/projects/project-c",
-      image: "/projects/project3.jpg",
-    },
-    {
-      id: 4,
-      title: "Qatar University Projects",
-      description: "A pristine gesture for an enlightened tomorrow",
-      link: "/projects/project-c",
-      image: "/projects/project4.jpg",
-    },
-    {
-      id: 5,
-      title: "Ministry of Defence",
-      description: "A pristine gesture for an enlightened tomorrow",
-      link: "/projects/project-c",
-      image: "/projects/project5.jpg",
-    },
-    {
-      id: 6,
-      title: "Other Pretigious projets",
-      description: "Unleashing the power to go beyond impossibilities",
-      link: "/projects/project-c",
-      image: "/projects/project1.jpg",
-    },
+    { id: 1, link: "/projects/project-1", image: "/projects/project1.jpg" },
+    { id: 2, link: "/projects/project-2", image: "/projects/project2.jpg" },
+    { id: 3, link: "/projects/project-3", image: "/projects/project3.jpg" },
+    { id: 4, link: "/projects/project-4", image: "/projects/project4.jpg" },
+    { id: 5, link: "/projects/project-5", image: "/projects/project5.jpg" },
+    { id: 6, link: "/projects/project-6", image: "/projects/project1.jpg" },
   ];
   const [hoveredProject, setHoveredProject] = useState(projects[0]);
 
@@ -296,7 +265,7 @@ const Navbar = () => {
             >
               <li>
                 <Link to="/" className="hover:text-custom-red">
-                  HOME
+                  {t("HOME")}
                 </Link>
               </li>
               <li className="relative group">
@@ -306,7 +275,7 @@ const Navbar = () => {
                   aria-expanded={isDivisionsOpen}
                   aria-haspopup={true}
                 >
-                  DIVISIONS
+                  {t("DIVISIONS")}
                   <FiChevronDown className="ml-1" />
                 </button>
                 <div className="fixed inset-x-0 mt-4 max-w-5xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
@@ -339,7 +308,7 @@ const Navbar = () => {
                   aria-expanded={isDivisionsOpen}
                   aria-haspopup={true}
                 >
-                  PROJECTS
+                  {t("PROJECTS")}
                   <FiChevronDown className="ml-1" />
                 </button>
                 <div className="fixed inset-x-0 mt-4 max-w-4xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
@@ -358,7 +327,7 @@ const Navbar = () => {
                             }`}
                             onMouseEnter={() => setHoveredProject(project)}
                           >
-                            {project.title}
+                            {t(`projects.${project.id}.title`)}
                           </li>
                         ))}
                       </ul>
@@ -368,14 +337,14 @@ const Navbar = () => {
                     <div className="w-2/3 pl-4">
                       <img
                         src={hoveredProject.image}
-                        alt={hoveredProject.title}
+                        alt={t(`projects.${hoveredProject.id}.title`)}
                         className="w-full h-48 object-cover rounded-md mb-4"
                       />
                       <h3 className="text-lg text-black font-semibold">
-                        {hoveredProject.title}
+                        {t(`projects.${hoveredProject.id}.title`)}
                       </h3>
                       <p className="text-sm text-gray-500 mb-4">
-                        {hoveredProject.description}
+                        {t(`projects.${hoveredProject.id}.description`)}
                       </p>
                       <Link
                         to={hoveredProject.link}
@@ -389,12 +358,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="about-us" className="hover:text-custom-red">
-                  ABOUT US
+                  {t("ABOUT US")}
                 </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-custom-red">
-                  CONTACT US
+                  {t("CONTACT US")}
                 </a>
               </li>
               <li className="relative">
@@ -402,7 +371,11 @@ const Navbar = () => {
                   onClick={toggleLanguageDropdown}
                   className="flex items-center space-x-2 focus:outline-none"
                 >
-                  <img src={selectedLanguage.flag} alt={selectedLanguage.name} className="w-5 h-5" />
+                  <img
+                    src={selectedLanguage.flag}
+                    alt={selectedLanguage.name}
+                    className="w-5 h-5"
+                  />
                   <span>{selectedLanguage.name}</span>
                   <FiChevronDown />
                 </button>
@@ -414,7 +387,11 @@ const Navbar = () => {
                         onClick={() => selectLanguage(language)}
                         className="flex items-center p-2 cursor-pointer text-black"
                       >
-                        <img src={language.flag} alt={language.name} className="w-5 h-5 mr-2" />
+                        <img
+                          src={language.flag}
+                          alt={language.name}
+                          className="w-5 h-5 mr-2"
+                        />
                         <span>{language.name}</span>
                       </li>
                     ))}
@@ -425,7 +402,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobile && isOpen && (

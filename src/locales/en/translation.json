@@ -1,0 +1,33 @@
+{
+  "HOME": "HOME",
+  "DIVISIONS": "DIVISIONS",
+  "PROJECTS": "PROJECTS",
+  "ABOUT US": "ABOUT US",
+  "CONTACT US": "CONTACT US",
+  "projects": {
+    "1": {
+      "title": "Mwani Projects",
+      "description": "A massive and astounding project symbolizing our relentless passion and potential."
+    },
+    "2": {
+      "title": "Camel Race Projects",
+      "description": "A dream work at infinite pace against innumerable hurdles."
+    },
+    "3": {
+      "title": "Agriculture Projects for UMM GHUWAILINA",
+      "description": "Unleashing the power to go beyond impossibilities."
+    },
+    "4": {
+      "title": "Qatar University Projects",
+      "description": "A pristine gesture for an enlightened tomorrow."
+    },
+    "5": {
+      "title": "Ministry of Defence",
+      "description": "A pristine gesture for an enlightened tomorrow."
+    },
+    "6": {
+      "title": "Other Prestigious Projects",
+      "description": "Unleashing the power to go beyond impossibilities."
+    }
+  }
+}
