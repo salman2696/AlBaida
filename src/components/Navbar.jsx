@@ -17,6 +17,8 @@ import {
   FaTools,
   FaSeedling,
 } from "react-icons/fa";
+import FlagUS from "../assets/images/englishFlag.jpg";  // Example flag import
+import FlagAr from "../assets/images/arabicFlag.jpg";  // Example flag import
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +26,26 @@ const Navbar = () => {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [transparentNavbar, setTransparentNavbar] = useState(true);
+
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState({
+    name: "English",
+    flag: FlagUS
+  });
+
+  const languages = [
+    { name: "English", flag: FlagUS },
+    { name: "Arabic", flag: FlagAr }
+  ];
+
+  const toggleLanguageDropdown = () => {
+    setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
+  };
+
+  const selectLanguage = (language) => {
+    setSelectedLanguage(language);
+    setIsLanguageDropdownOpen(false);
+  };
 
   const controlNavbar = () => {
     if (window.scrollY > 100) {
@@ -374,6 +396,30 @@ const Navbar = () => {
                 <a href="#" className="hover:text-custom-red">
                   CONTACT US
                 </a>
+              </li>
+              <li className="relative">
+                <button
+                  onClick={toggleLanguageDropdown}
+                  className="flex items-center space-x-2 focus:outline-none"
+                >
+                  <img src={selectedLanguage.flag} alt={selectedLanguage.name} className="w-5 h-5" />
+                  <span>{selectedLanguage.name}</span>
+                  <FiChevronDown />
+                </button>
+                {isLanguageDropdownOpen && (
+                  <ul className="absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-lg">
+                    {languages.map((language, index) => (
+                      <li
+                        key={index}
+                        onClick={() => selectLanguage(language)}
+                        className="flex items-center p-2 cursor-pointer text-black"
+                      >
+                        <img src={language.flag} alt={language.name} className="w-5 h-5 mr-2" />
+                        <span>{language.name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             </ul>
           )}
