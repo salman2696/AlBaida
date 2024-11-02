@@ -25,7 +25,7 @@ const AboutUs = ({
           }`}
         >
           {/* Left Section: Title, Subtitle, Description, Button */}
-          <div className={`relative md:w-1/2 text-center md:text-left def-title  ${inView ? 'animate-line' : ''}`}>
+          <div className={`relative md:w-1/2 def-title  ${inView ? 'animate-line' : ''}`}>
             <motion.h2
               className="text-4xl font-bold mb-2"
               initial={{ opacity: 0, y: -20 }}

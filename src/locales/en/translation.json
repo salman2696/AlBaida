@@ -4,6 +4,69 @@
   "PROJECTS": "PROJECTS",
   "ABOUT US": "ABOUT US",
   "CONTACT US": "CONTACT US",
+  "divisions": {
+    "1": {
+      "title": "Facility Management",
+      "description": "Managing educational staff and resources",
+      "path": "/divisions/facility-management"
+    },
+    "2": {
+      "title": "Contracting & Trading",
+      "description": "Business deals and trade partnerships",
+      "path": "/divisions/contracting"
+    },
+    "3": {
+      "title": "Infrastructure Roads & Project Development",
+      "description": "Building roads and large-scale projects",
+      "path": "/divisions/infrastructure"
+    },
+    "4": {
+      "title": "Cleaning Services",
+      "description": "Professional cleaning and sanitation",
+      "path": "/divisions/cleaning-services"
+    },
+    "5": {
+      "title": "Agriculture Projects & Training",
+      "description": "Farming projects and skill development",
+      "path": "/divisions/agriculture-projects"
+    },
+    "6": {
+      "title": "Heavy Equipment Rental",
+      "description": "Machinery and equipment leasing services",
+      "path": "/divisions/heavy-equipment-rental"
+    },
+    "7": {
+      "title": "Human Resource Management & Outsourcing",
+      "description": "Employee management and staffing solutions",
+      "path": "/divisions/human-resource-management"
+    },
+    "8": {
+      "title": "Cargo Logistics & Custom Clearance",
+      "description": "Transporting goods and handling customs",
+      "path": "/divisions/cargo-logistics"
+    },
+    "9": {
+      "title": "Engineering Consultancy",
+      "description": "Expert guidance on engineering projects",
+      "path": "/divisions/engineering-consultancy"
+    },
+    "10": {
+      "title": "Business Management Consultancy",
+      "description": "Consulting for business growth and efficiency",
+      "path": "/divisions/business-management-consultancy"
+    },
+    "11": {
+      "title": "Agency & Representation",
+      "description": "Acting as agents for various businesses",
+      "path": "/divisions/agency-and-representation"
+    },
+    "12": {
+      "title": "Construction",
+      "description": "Building and construction services",
+      "path": "/divisions/construction"
+    }
+  },
+
   "projects": {
     "1": {
       "title": "Mwani Projects",
@@ -29,5 +92,135 @@
       "title": "Other Prestigious Projects",
       "description": "Unleashing the power to go beyond impossibilities."
     }
+  },
+
+  "home": {
+    "hero": {
+      "heroData": [
+        {
+          "headline": "Comprehensive Solutions for Every Industry",
+          "subHeadline": "From infrastructure to logistics, AL BAIDA GROUP leads the way.",
+          "bgImage": "projects/project1.jpg"
+        },
+        {
+          "headline": "Expertise in Construction and Engineering",
+          "subHeadline": "Building roads, bridges, and more with unmatched precision.",
+          "bgImage": "projects/project2.jpg"
+        },
+        {
+          "headline": "Reliable HR and Outsourcing Services",
+          "subHeadline": "Providing top-tier human resource solutions across industries.",
+          "bgImage": "projects/project3.jpg"
+        }
+      ],
+      "ctaButtons": {
+        "button1": "Explore Our Services",
+        "button2": "Get in Touch"
+      },
+      "categories": [
+        { "title": "Facility Management" },
+        { "title": "Construction" },
+        { "title": "Agriculture Projects & Training" },
+        { "title": "Contracting & Trading" },
+        { "title": "Infrastructure Roads & Project Development" },
+        { "title": "Cleaning Services" },
+        { "title": "Heavy Equipment Rental" },
+        { "title": "HR Management & Outsourcing" },
+        { "title": "Cargo Logistics & Custom Clearance" },
+        { "title": "Engineering Consultancy" },
+        { "title": "Business Management & Consultancy" },
+        { "title": "Agency Representation" }
+      ]
+    },
+    "about": {
+      "companyTitle": "About Our Company",
+      "companySubtitle": "Business is in our breath. That's how we always make it the best.",
+      "companyDescription": "We are a paramount group of business services in various genres such as facility management, transport & logistics, construction & engineering, plant hire & heavy machinery rental, real estate, and agriculture trading. Established in 1970, Al Baida Group has built and maintained a group of companies encompassing various commercial sectors ranging from facility management to infrastructure services and more.",
+      "learnMore": "Learn More"
+    },
+    "companyNum": {
+      "title": "Our company in numbers",
+      "services": [
+        { "count": 100, "suffix": "+", "description": "Our Partners" },
+        { "count": 4000, "suffix": "+", "description": "Employees" },
+        { "count": 25, "suffix": "+", "description": "On-Going Projects" },
+        { "count": 200, "suffix": "+", "description": "Accomplished Projects" },
+        { "count": 50, "suffix": "+", "description": "Years Of Existence" },
+        { "count": 5, "suffix": "+", "description": "Group Of Companies" }
+      ]
+    },
+    "contactUs": {
+      "title": " Do you have any questions?",
+      "subTitle": "We'd love to hear from you! Whether you have questions or need assistance, our team is ready to help. Contact us via our form, phone, or email, and let's build a successful future together.",
+      "button": "get in touch",
+      "follow": "Follow us",
+      "contactForm": "Contact Form",
+      "askUs": "Ask us everything and we would love to hear from you",
+      "fullName": "Full Name",
+      "email": "Email address",
+      "message": "Message"
+    },
+    "services": [
+      {
+        "title": "Facility Management",
+        "description": "We offer complete integrated facility solutions that help leverage a smooth functioning of your business facility.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Agriculture projects & training",
+        "description": "The world is nothing with no pastures and peasants. Agriculture is the sole reason for our very existence.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Contracting & Trading",
+        "description": "Al Baida Group is a company driven by a vision aligned to the National Vision of Qatar. We go beyond mere transactions, instead building mutually beneficial relationships with our clients.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Infrastructure & project development",
+        "description": "Infrastructure is truly the backbone of growth and prosperity of a nation. Our venture in the sector of road construction has delivered and developed world-class projects in Qatar.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Cleaning Services",
+        "description": "Al Baida Group has made its distinct name for the last 20 years in providing exceptional cleaning services for post-construction & commercial cleaning and residential cleaning.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Heavy Equipment Rental",
+        "description": "Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "HR Management & Outsourcing",
+        "description": "With a stringent selection procedure, we can provide a range of workforce to meet our clients' needs, ranging from clerks to IT professionals and Project Managers.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Cargo logistics & Custom Clearance",
+        "description": "Al Baida Cargo & Customs Clearance is considered a unique company in the field of Cargo & Customs Clearance.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Engineering Consultancy",
+        "description": "Al Baida Group Engineering Consultancy team is made up of well-experienced, qualified, and dedicated team of Architects and Engineers and familiarized in obtaining approvals from concerned Government Authorities.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Business Management Consultancy",
+        "description": "We offer a variety of business and management consulting services that support your business needs. We offer solutions to support your growth plan and optimize your organization.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Agency Representation",
+        "description": "Al Baida has been a Business conglomerate since 1970, maintaining strong business ties within Qatar. AL Baida assists agencies in gaining representation in Qatar.",
+        "buttonText": "Read More"
+      },
+      {
+        "title": "Construction",
+        "description": "We specialize in building construction, including ground plus two stories, warehouses, mosques, villa complexes, fencing, and other construction projects.",
+        "buttonText": "Read More"
+      }
+    ]
   }
 }

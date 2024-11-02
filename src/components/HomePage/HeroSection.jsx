@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useTransition, animated } from "@react-spring/web";
+import { useTranslation } from "react-i18next";
 import { LuConstruction } from "react-icons/lu";
 import {
   FaTools,
@@ -18,44 +19,29 @@ import {
 } from "react-icons/fa"; // Example icons
 import { motion as motionMarquee } from "framer-motion"; // Import for marquee animation
 
-const heroData = [
-  {
-    headline: "Comprehensive Solutions for Every Industry",
-    subHeadline:
-      "From infrastructure to logistics, AL BAIDA GROUP leads the way.",
-    bgImage: "projects/project1.jpg",
-  },
-  {
-    headline: "Expertise in Construction and Engineering",
-    subHeadline: "Building roads, bridges, and more with unmatched precision.",
-    bgImage: "projects/project2.jpg",
-  },
-  {
-    headline: "Reliable HR and Outsourcing Services",
-    subHeadline:
-      "Providing top-tier human resource solutions across industries.",
-    bgImage: "projects/project3.jpg",
-  },
-  // Add more slides here
-];
 
-const categories = [
-  { title: "Facility Management", icon: <FaBuilding /> },
-  { title: "Construction", icon: <LuConstruction />},
-  { title: "Agriculture Projects & Training", icon: <FaSeedling /> },
-  { title: "Contracting & Trading", icon: <FaTools /> },
-  { title: "Infrastructure Roads & Project Development", icon: <FaRoad /> },
-  { title: "Cleaning Services", icon: <FaBroom /> },
-  { title: "Heavy Equipment Rental", icon: <FaTruck /> },
-  { title: "HR Management & Outsourcing", icon: <FaUsers /> },
-  { title: "Cargo Logistics & Custom Clearance", icon: <FaWrench /> },
-  { title: "Engineering Consultancy", icon: <FaCogs /> },
-  { title: "Business Management & Consultancy", icon: <FaBusinessTime /> },
-  { title: "Agency Representation", icon: <FaIndustry /> },
+const icons = [
+  <FaBuilding />,
+  <LuConstruction />,
+  <FaSeedling />,
+  <FaTools />,
+  <FaRoad />,
+  <FaBroom />,
+  <FaTruck />,
+  <FaUsers />,
+  <FaWrench />,
+  <FaCogs />,
+  <FaBusinessTime />,
+  <FaIndustry />
 ];
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar"; // Check if language is Arabic
+
+  const heroData = t("home.hero.heroData", { returnObjects: true });
+  const categories = t("home.hero.categories", { returnObjects: true });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -138,10 +124,10 @@ export default function HeroSection() {
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button className="px-6 py-3 bg-custom-red text-white rounded hover:bg-red-700">
-            Explore Our Services
+          {t("home.hero.ctaButtons.button1")}
           </button>
           <button className="px-6 py-3 bg-custom-red text-white rounded hover:bg-red-700">
-            Get in Touch
+          {t("home.hero.ctaButtons.button2")}
           </button>
         </div>
       </div>
@@ -153,16 +139,16 @@ export default function HeroSection() {
 
       {/* Marquee Container */}
       <motion.div
-        className="flex space-x-8 absolute z-10 bottom-10"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
-      >
+      className="flex space-x-8 absolute z-10 bottom-10"
+      animate={{ x: isRTL ? ["0%", "50%"] : ["0%", "-50%"] }} // Reverse for RTL
+      transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+    >
         {categories.map((category, index) => (
           <div
             key={index}
-            className="min-w-[250px] backdrop-blur-sm h-32 flex flex-col items-center justify-center border-2 shadow-md rounded-lg p-4"
+            className="min-w-[250px] backdrop-blur-sm h-32 flex flex-col items-center justify-center border-2 shadow-md rounded-lg p-4 ml-8"
           >
-            <div className="text-4xl text-red-600">{category.icon}</div>
+            <div className="text-4xl text-red-600">{icons[index]}</div>
             <h3 className="text-lg font-bold mt-2 text-center text-white">{category.title}</h3>
           </div>
         ))}

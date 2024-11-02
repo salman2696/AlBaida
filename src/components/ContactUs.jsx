@@ -1,7 +1,11 @@
 import React from "react";
 import { Parallax } from "react-parallax";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
+
+  const { t, i18n } = useTranslation();
+
   return (
     <div>
       <Parallax
@@ -14,22 +18,19 @@ const ContactUs = () => {
             <div className="flex-1 relative lg:flex lg:items-center">
               <div className="relative text-white lg:w-1/2 lg:mx-6 def-title">
                 <h1 className="text-2xl font-semibold capitalize lg:text-5xl">
-                  Do you have any questions?
+                 {t("home.contactUs.title")}
                 </h1>
 
                 <p className="max-w-xl mt-6 lg:text-lg text-sm">
-                  We'd love to hear from you! Whether you have questions or need
-                  assistance, our team is ready to help. Contact us via our
-                  form, phone, or email, and let's build a successful future
-                  together.
+                {t("home.contactUs.subTitle")}
                 </p>
 
                 <button className="px-8 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-custom-red rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:ring-red-400 focus:ring-opacity-50">
-                  get in touch
+                {t("home.contactUs.button")}
                 </button>
 
                 <div className="mt-6 md:mt-8">
-                  <h3 className="text-gray-300 ">Follow us</h3>
+                  <h3 className="text-gray-300 ">{t("home.contactUs.follow")}</h3>
 
                   <div className="flex mt-4 -mx-1.5 ">
                     <a
@@ -111,17 +112,17 @@ const ContactUs = () => {
               <div className="mt-8 lg:w-1/2 lg:mx-6">
                 <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl  lg:max-w-xl">
                   <h1 className="text-xl font-medium text-gray-700">
-                    Contact form
+                  {t("home.contactUs.contactForm")}
                   </h1>
 
                   <p className="mt-2 text-gray-500">
-                    Ask us everything and we would love to hear from you
+                  {t("home.contactUs.askUs")}
                   </p>
 
                   <form className="mt-6">
                     <div className="flex-1">
                       <label className="block mb-2 text-sm text-gray-600 ">
-                        Full Name
+                      {t("home.contactUs.fullName")}
                       </label>
                       <input
                         type="text"
@@ -132,7 +133,7 @@ const ContactUs = () => {
 
                     <div className="flex-1 mt-6">
                       <label className="block mb-2 text-sm text-gray-600 ">
-                        Email address
+                      {t("home.contactUs.email")}
                       </label>
                       <input
                         type="email"
@@ -143,7 +144,7 @@ const ContactUs = () => {
 
                     <div className="w-full mt-6">
                       <label className="block mb-2 text-sm text-gray-600">
-                        Message
+                      {t("home.contactUs.message")}
                       </label>
                       <textarea
                         className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48  focus:border-red-400 focus:ring-red-300 focus:ring-opacity-40  focus:outline-none focus:ring"
@@ -152,7 +153,7 @@ const ContactUs = () => {
                     </div>
 
                     <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-custom-red rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:ring-red-400 focus:ring-opacity-50">
-                      get in touch
+                    {t("home.contactUs.button")}
                     </button>
                   </form>
                 </div>

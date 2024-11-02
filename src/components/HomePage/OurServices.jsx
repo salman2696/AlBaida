@@ -1,6 +1,7 @@
 // OurServices.jsx
 import React from "react";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import ServiceCard from "../ServiceCard";
 import imageService1 from "../../assets/images/services/service-1.jpg";
@@ -17,92 +18,84 @@ import imageService11 from "../../assets/images/services/service-11.jpg";
 import imageService12 from "../../assets/images/services/service-12.jpg";
 
 const OurServices = () => {
+  const { t,  i18n  } = useTranslation();
+  const isRtl = i18n.dir() === "rtl";
+
   const services = [
     {
       imageSrc: imageService1,
-      title: "Facility Management",
-      description:
-        "We offer complete integrated facility solutions that helps leverage a smooth functioning of your business facility.",
-      buttonText: "Read More",
+      title: t("home.services.0.title"),
+      description: t("home.services.0.description"),
+      buttonText: t("home.services.0.buttonText")
     },
     {
       imageSrc: imageService2,
-      title: "Agriculture projects & training",
-      description:
-        "he world is nothing with no pastures and peasants. Agriculture is the sole reason of our very existence.",
-      buttonText: "Read More",
+      title: t("home.services.1.title"),
+      description: t("home.services.1.description"),
+      buttonText: t("home.services.1.buttonText")
     },
     {
       imageSrc: imageService3,
-      title: "Contracting & Trading",
-      description:
-        "Al Baida Group is a company driven by a vision aligned to the National Vision of Qatar. We go beyond mere transactions, instead building mutually beneficial relationships with our clients. ",
-      buttonText: "Read More",
+      title: t("home.services.2.title"),
+      description: t("home.services.2.description"),
+      buttonText: t("home.services.2.buttonText")
     },
     {
       imageSrc: imageService4,
-      title: "Infrastructure & project development",
-      description:
-        "Infrastructure is truly the backbone of growth and prosperity of a nation. Our venture in the sector of road construction has delivered and developed world class projects in Qatar.",
-      buttonText: "Read More",
+      title: t("home.services.3.title"),
+      description: t("home.services.3.description"),
+      buttonText: t("home.services.3.buttonText")
     },
     {
       imageSrc: imageService5,
-      title: "Cleaning Services",
-      description:
-        "Al Baida Group has made its distinct name for the last 20 years in providing exceptional cleaning services for post-construction & commercial cleaning and residential cleaning.",
-      buttonText: "Read More",
+      title: t("home.services.4.title"),
+      description: t("home.services.4.description"),
+      buttonText: t("home.services.4.buttonText")
     },
     {
       imageSrc: imageService6,
-      title: "Heavy Equipment Rental",
-      description:
-        "Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments.",
-      buttonText: "Read More",
+      title: t("home.services.5.title"),
+      description: t("home.services.5.description"),
+      buttonText: t("home.services.5.buttonText")
     },
     {
       imageSrc: imageService7,
-      title: "HR Management & Outsourcing",
-      description:
-        "With a stringent selection procedure, we can provide a range of workforce to meet our clients needs, ranging from clerks and extending to IT professionals and Project Managers.",
-      buttonText: "Read More",
+      title: t("home.services.6.title"),
+      description: t("home.services.6.description"),
+      buttonText: t("home.services.6.buttonText")
     },
     {
       imageSrc: imageService8,
-      title: "Cargo logistics & Custom Clearance",
-      description:
-        "Al Baida Cargo & Customs Clearance is considered as a unique company in the field of Cargo & Customs Clearance.",
-      buttonText: "Read More",
+      title: t("home.services.7.title"),
+      description: t("home.services.7.description"),
+      buttonText: t("home.services.7.buttonText")
     },
     {
       imageSrc: imageService9,
-      title: "Engineering Consultancy",
-      description:
-        "Al Baida Group Engineering Consultancy team is made up of well experienced, qualified and dedicated team of Architects and Engineers and familiarized in obtaining approvals from concerned Government Authorities.",
-      buttonText: "Read More",
+      title: t("home.services.8.title"),
+      description: t("home.services.8.description"),
+      buttonText: t("home.services.8.buttonText")
     },
     {
       imageSrc: imageService10,
-      title: "Business Management Consultancy",
-      description:
-        "We offer a variety of business and management consulting services that support your business needs. We offer a variety of solutions to support your growth plan and the optimization of your organization.",
-      buttonText: "Read More",
+      title: t("home.services.9.title"),
+      description: t("home.services.9.description"),
+      buttonText: t("home.services.9.buttonText")
     },
     {
       imageSrc: imageService11,
-      title: "Agency Representation",
-      description:
-        "Al Baida has been a Business conglomerate since 1970. So, has a good hold over businesses in Qatar. AL Baida has been assisting agencies to represent in Qatar.",
-      buttonText: "Read More",
+      title: t("home.services.10.title"),
+      description: t("home.services.10.description"),
+      buttonText: t("home.services.10.buttonText")
     },
     {
       imageSrc: imageService12,
-      title: "Construction",
-      description:
-        "We expertise in building construction, ground plus two stored, warehouse, mosque, Villa complex fencing, and other construction projects.",
-      buttonText: "Read More",
-    },
+      title: t("home.services.11.title"),
+      description: t("home.services.11.description"),
+      buttonText: t("home.services.11.buttonText")
+    }
   ];
+
 
   const CustomPrevArrow = (props) => {
     const { className, style, onClick } = props;

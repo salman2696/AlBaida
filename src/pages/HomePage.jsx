@@ -6,16 +6,21 @@ import ImageWithDesc from "../components/HomePage/ImageWithDesc";
 import AboutUsImage from "../assets/images/AboutUsImage.jpg";
 import ContactUs from "../components/ContactUs";
 import Blogs from "../components/Blogs";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+
+  const { t, i18n } = useTranslation();
+  
+
   return (
     <div>
       <Herosection />
       <ImageWithDesc
-        title="About Our Company"
-        subtitle="Business is in our breath. That's how we always make it the best."
-        description="We are a paramount group of business services in various genres as facility management, transport & logistics, construction & engineering, plan hire & heavy machinery rental, real estate and agriculture trading. Established in 1970, Al Baida Group has built and maintained a group of companies encompassing various commercial sectors ranging from facility management to infrastructure services and a lot more."
-        buttonText="Learn More"
+        title={t("home.about.companyTitle")}
+        subtitle={t("home.about.companySubtitle")}
+        description={t("home.about.companyDescription")}
+        buttonText={t("home.about.learnMore")}
         imageSrc={AboutUsImage}
         reverseLayout={false} // Change to true to reverse the layout
         bgColor="bg-[#e9eae5]" // Optional: Set the background color

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FiChevronDown, FiChevronRight } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../assets/images/logo.png";
 import { useTranslation } from "react-i18next";
@@ -29,6 +29,7 @@ const Navbar = () => {
   const [transparentNavbar, setTransparentNavbar] = useState(true);
 
   const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState({
     name: "English",
@@ -95,129 +96,68 @@ const Navbar = () => {
 
   const divisions = [
     {
-      name: "Facility Management",
+      id: 1,
       link: "/divisions/facility-management",
+      icon:<FaChalkboardTeacher className="text-3xl text-custom-red" />,
     },
     {
-      name: "Contracting & Trading",
+      id: 2,
       link: "/divisions/contracting",
+      icon:<FaHandshake className="text-3xl text-custom-red" />,
     },
     {
-      name: "Infrastructure Roads & Development",
+      id: 3,
       link: "/divisions/infrastructure",
+      icon:<FaRoad className="text-3xl text-custom-red" />,
     },
     {
-      name: "Cleaning Services",
+      id: 4,
       link: "/divisions/cleaning-services",
+      icon: <FaBroom className="text-3xl text-custom-red" />,
     },
     {
-      name: "Agriculture Projects & Training",
+      id: 5,
       link: "/divisions/agriculture-projects",
+      icon:<FaSeedling className="text-3xl text-custom-red" />,
     },
     {
-      name: "Heavy Equipment Rental",
+      id: 6,
       link: "/divisions/heavy-equipment-rental",
+      icon:<FaTractor className="text-3xl text-custom-red" />,
     },
     {
-      name: "HR Management & Outsourcing",
+      id: 7,
       link: "/divisions/human-resource-managament",
+      icon:<FaUserTie className="text-3xl text-custom-red" />,
     },
     {
-      name: "Cargo Logistics & Custom Clearance",
+      id: 8,
       link: "/divisions/cargo-logistics",
+      icon:<FaTruckMoving className="text-3xl text-custom-red" />,
     },
     {
-      name: "Engineering Consultancy",
+      id: 9,
       link: "/divisions/engineering-consultancy",
+      icon:<FaBuilding className="text-3xl text-custom-red" />,
     },
     {
-      name: "Business Management Consultancy",
+      id: 10,
       link: "/divisions/business-management-consulancy",
+      icon: <FaChartLine className="text-3xl text-custom-red" />,
     },
     {
-      name: "Agency & Representation",
+      id: 11,
       link: "/divisions/agency-and-representation",
+      icon:<FaRegClipboard className="text-3xl text-custom-red" />,
     },
     {
-      name: "Construction",
+      id: 12,
       link: "/divisions/construction",
+      icon:<FaTools className="text-3xl text-custom-red" />
     },
   ];
 
-  const items = [
-    {
-      icon: <FaChalkboardTeacher className="text-3xl text-custom-red" />,
-      title: "Facility Management",
-      description: "Managing educational staff and resources",
-      path: "/divisions/facility-management",
-    },
-    {
-      icon: <FaHandshake className="text-3xl text-custom-red" />,
-      title: "Contracting & Trading",
-      description: "Business deals and trade partnerships",
-      path: "/divisions/contracting",
-    },
-    {
-      icon: <FaRoad className="text-3xl text-custom-red" />,
-      title: "Infrastructure Roads & Project Development",
-      description: "Building roads and large-scale projects",
-      path: "/divisions/infrastructure",
-    },
-    {
-      icon: <FaBroom className="text-3xl text-custom-red" />,
-      title: "Cleaning Services",
-      description: "Professional cleaning and sanitation",
-      path: "/divisions/cleaning-services",
-    },
-    {
-      icon: <FaSeedling className="text-3xl text-custom-red" />,
-      title: "Agriculture Projects & Training",
-      description: "Farming projects and skill development",
-      path: "/divisions/agriculture-projects",
-    },
-    {
-      icon: <FaTractor className="text-3xl text-custom-red" />,
-      title: "Heavy Equipment Rental",
-      description: "Machinery and equipment leasing services",
-      path: "/divisions/heavy-equipment-rental",
-    },
-    {
-      icon: <FaUserTie className="text-3xl text-custom-red" />,
-      title: "Human Resource Management & Outsourcing",
-      description: "Employee management and staffing solutions",
-      path: "/divisions/human-resource-managament",
-    },
-    {
-      icon: <FaTruckMoving className="text-3xl text-custom-red" />,
-      title: "Cargo Logistics & Custom Clearance",
-      description: "Transporting goods and handling customs",
-      path: "/divisions/cargo-logistics",
-    },
-    {
-      icon: <FaBuilding className="text-3xl text-custom-red" />,
-      title: "Engineering Consultancy",
-      description: "Expert guidance on engineering projects",
-      path: "/divisions/engineering-consultancy",
-    },
-    {
-      icon: <FaChartLine className="text-3xl text-custom-red" />,
-      title: "Business Management Consultancy",
-      description: "Consulting for business growth and efficiency",
-      path: "/divisions/business-management-consulancy",
-    },
-    {
-      icon: <FaRegClipboard className="text-3xl text-custom-red" />,
-      title: "Agency & Representation",
-      description: "Acting as agents for various businesses",
-      path: "/divisions/agency-and-representation",
-    },
-    {
-      icon: <FaTools className="text-3xl text-custom-red" />,
-      title: "Construction",
-      description: "Building and construction services",
-      path: "/divisions/construction",
-    },
-  ];
+ 
 
   // Sample project data
   const projects = [
@@ -264,7 +204,7 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <Link to="/" className="hover:text-custom-red">
+                <Link to="/" className="hover:text-custom-red ml-6">
                   {t("HOME")}
                 </Link>
               </li>
@@ -280,19 +220,19 @@ const Navbar = () => {
                 </button>
                 <div className="fixed inset-x-0 mt-4 max-w-5xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
                   <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-6">
-                    {items.map((item, index) => (
-                      <Link to={item.path}>
+                    {divisions.map((division, index) => (
+                      <Link to={division.link}>
                         <div
                           key={index}
                           className="flex items-center p-3 border rounded-md hover:bg-gray-100 "
                         >
-                          <div className="mr-4">{item.icon}</div>
+                          <div className={isRTL ? "ml-4" : "mr-4"}>{division.icon}</div>
                           <div className="3xl:text-sm xl:text-xs text-xs transition-all duration-500">
                             <h3 className="font-semibold  text-black">
-                              {item.title}
+                              {t(`divisions.${division.id}.title`)}
                             </h3>
                             <p className="t text-gray-500">
-                              {item.description}
+                            {t(`divisions.${division.id}.description`)}
                             </p>
                           </div>
                         </div>
@@ -444,7 +384,7 @@ const Navbar = () => {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="mt-2 space-y-2 pl-4 max-h-52 overflow-y-auto border-b-2"
+                      className="mt-2 space-y-2 pl-4 max-h-64 overflow-y-auto border-b-2"
                     >
                       {divisions.map((division, index) => (
                         <div key={index}>
@@ -453,7 +393,7 @@ const Navbar = () => {
                             onClick={toggleMenu}
                             className="flex items-center justify-between w-full hover:bg-gray-200 px-2 py-1 rounded focus:outline-none"
                           >
-                            {division.name}
+                            {t(`divisions.${division.id}.title`)}
                           </Link>
                         </div>
                       ))}
@@ -491,7 +431,7 @@ const Navbar = () => {
                             onClick={toggleMenu}
                             className="flex items-center justify-between w-full hover:bg-gray-200 px-2 py-1 rounded focus:outline-none"
                           >
-                            {project.title}
+                            {t(`projects.${project.id}.title`)}
                           </Link>
                         </div>
                       ))}

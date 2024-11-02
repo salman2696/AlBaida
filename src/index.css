@@ -30,9 +30,16 @@ body {
   width: 0; /* Initially set width to 0 */
   position: absolute;
   top: 20px;
-  left: calc(-100% - 25px);
   background-color: #ab1218;
   transition: width 0.6s ease-in-out; /* Smooth transition */
+}
+
+:dir(ltr) .def-title::before {
+  left: calc(-100% - 25px);
+}
+
+:dir(rtl) .def-title::before {
+  right: calc(-100% - 25px);
 }
 
 .def-title.animate-line::before {
@@ -58,3 +65,5 @@ body:dir(rtl) {
 body:dir(ltr) {
   text-align: left;
 }
+
+
