@@ -4,7 +4,7 @@ import React from 'react';
 const ServiceCard = ({ imageSrc, title, description, buttonText }) => {
   return (
     <div className="bg-white rounded-lg shadow-md m-6 flex flex-col items-center">
-      <img src={imageSrc} alt={title} className="w-full h-40 object-cover rounded-md mb-4" />
+      <img src={imageSrc} alt={title} className="w-full h-52 object-cover rounded-md mb-4" />
       <div className='m-2'>
       <h3 className="md:text-xl text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4 min-h-32 text-sm md:text-base">{description}</p>

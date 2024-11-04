@@ -9,13 +9,16 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiMail, FiMapPin } from "react-icons/fi";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="bg-black text-white">
       <footer className="footer max-w-7xl mx-auto w-full text-base-100 text-sm lg:text-lg py-10 px-4">
         <aside className="md:min-w-[20vw]">
-          <img src={Logo} alt="" className="lg:w-52 md:w-36 sm:w-32 w-28" />
+          <img src={Logo} alt={t('footer.sections.0.logo.alt')} className="lg:w-52 md:w-36 sm:w-32 w-28" />
           <nav>
             <div className="grid grid-flow-col gap-4 mt-4">
               <a
@@ -23,7 +26,7 @@ const Footer = () => {
                 alt="linkedin-logo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit our LinkedIn Page"
+                aria-label={t('footer.sections.0.socialLinks.0.ariaLabel')}
               >
                 <FaLinkedin className="fill-current cursor-pointer" size={24} />
               </a>
@@ -33,7 +36,7 @@ const Footer = () => {
                 alt="twitter-logo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow us on Twitter"
+                aria-label={t('footer.sections.0.socialLinks.1.ariaLabel')}
               >
                 <FaXTwitter className="fill-current cursor-pointer" size={24} />
               </a>
@@ -43,7 +46,7 @@ const Footer = () => {
                 alt="instargram-logo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow us on Instagram"
+                aria-label={t('footer.sections.0.socialLinks.2.ariaLabel')}
               >
                 <FaInstagram
                   className="fill-current cursor-pointer"
@@ -56,7 +59,7 @@ const Footer = () => {
                 alt="facebook-logo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Like us on Facebook"
+                aria-label={t('footer.sections.0.socialLinks.3.ariaLabel')}
               >
                 <FaFacebook className="fill-current cursor-pointer" size={24} />
               </a>
@@ -65,7 +68,7 @@ const Footer = () => {
         </aside>
 
         <nav>
-          <h1 className="footer-title">Services</h1>
+          <h1 className="footer-title">{t('footer.sections.1.title')}</h1>
           <Link to="#" className="link link-hover">
             Facility Management
           </Link>

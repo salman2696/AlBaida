@@ -160,67 +160,165 @@
       "email": "Email address",
       "message": "Message"
     },
-    "services": [
+    "services": {
+      "title": "Our Services",
+      "cards": [
+        {
+          "title": "Facility Management",
+          "description": "We offer complete integrated facility solutions that help leverage a smooth functioning of your business facility.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Agriculture projects & training",
+          "description": "The world is nothing with no pastures and peasants. Agriculture is the sole reason for our very existence.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Contracting & Trading",
+          "description": "Al Baida Group is a company driven by a vision aligned to the National Vision of Qatar. We go beyond mere transactions, instead building mutually beneficial relationships with our clients.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Infrastructure & project development",
+          "description": "Infrastructure is truly the backbone of growth and prosperity of a nation. Our venture in the sector of road construction has delivered and developed world-class projects in Qatar.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Cleaning Services",
+          "description": "Al Baida Group has made its distinct name for the last 20 years in providing exceptional cleaning services for post-construction & commercial cleaning and residential cleaning.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Heavy Equipment Rental",
+          "description": "Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "HR Management & Outsourcing",
+          "description": "With a stringent selection procedure, we can provide a range of workforce to meet our clients' needs, ranging from clerks to IT professionals and Project Managers.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Cargo logistics & Custom Clearance",
+          "description": "Al Baida Cargo & Customs Clearance is considered a unique company in the field of Cargo & Customs Clearance.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Engineering Consultancy",
+          "description": "Al Baida Group Engineering Consultancy team is made up of well-experienced, qualified, and dedicated team of Architects and Engineers and familiarized in obtaining approvals from concerned Government Authorities.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Business Management Consultancy",
+          "description": "We offer a variety of business and management consulting services that support your business needs. We offer solutions to support your growth plan and optimize your organization.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Agency Representation",
+          "description": "Al Baida has been a Business conglomerate since 1970, maintaining strong business ties within Qatar. AL Baida assists agencies in gaining representation in Qatar.",
+          "buttonText": "Read More"
+        },
+        {
+          "title": "Construction",
+          "description": "We specialize in building construction, including ground plus two stories, warehouses, mosques, villa complexes, fencing, and other construction projects.",
+          "buttonText": "Read More"
+        }
+      ]
+    },
+    "blogPosts": {
+      "heading": "FROM THE BLOG",
+      "subHeading": "Dive into Our Curated Collection of Articles",
+      "readMoreLink": "Read more",
+      "cards": [
+        {
+          "authorName": "Tom Hank",
+          "authorTitle": "Creative Director",
+          "title": "What do you want to know about UI",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
+        },
+        {
+          "authorName": "Arthur Melo",
+          "authorTitle": "Creative Director",
+          "title": "All the features you want to know",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
+        },
+        {
+          "authorName": "Amelia Anderson",
+          "authorTitle": "Lead Developer",
+          "title": "Which services you get from Meraki UI",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "sections": [
       {
-        "title": "Facility Management",
-        "description": "We offer complete integrated facility solutions that help leverage a smooth functioning of your business facility.",
-        "buttonText": "Read More"
+        "logo": {
+          "alt": "Al Baida Group Logo"
+        },
+        "socialLinks": [
+          {
+            "platform": "LinkedIn",
+            "ariaLabel": "Visit our LinkedIn Page"
+          },
+          {
+            "platform": "Twitter",
+            "ariaLabel": "Follow us on Twitter"
+          },
+          {
+            "platform": "Instagram",
+            "ariaLabel": "Follow us on Instagram"
+          },
+          {
+            "platform": "Facebook",
+            "ariaLabel": "Like us on Facebook"
+          }
+        ]
       },
       {
-        "title": "Agriculture projects & training",
-        "description": "The world is nothing with no pastures and peasants. Agriculture is the sole reason for our very existence.",
-        "buttonText": "Read More"
+        "title": "Services",
+        "links": [
+          { "name": "Facility Management" },
+          { "name": "Road & Infrastructure" },
+          { "name": "Agriculture Projects & Trading" },
+          { "name": "Heavy Equipment" },
+          { "name": "Camel Race Track" },
+          { "name": "Cleaning Services" },
+          { "name": "Construction" },
+          { "name": "Agency & Representation" }
+        ]
       },
       {
-        "title": "Contracting & Trading",
-        "description": "Al Baida Group is a company driven by a vision aligned to the National Vision of Qatar. We go beyond mere transactions, instead building mutually beneficial relationships with our clients.",
-        "buttonText": "Read More"
+        "title": "Company",
+        "links": [
+          { "name": "About us" },
+          { "name": "Contact" },
+          { "name": "Gallery" },
+          { "name": "Jobs" },
+          { "name": "Projects" }
+        ]
       },
       {
-        "title": "Infrastructure & project development",
-        "description": "Infrastructure is truly the backbone of growth and prosperity of a nation. Our venture in the sector of road construction has delivered and developed world-class projects in Qatar.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Cleaning Services",
-        "description": "Al Baida Group has made its distinct name for the last 20 years in providing exceptional cleaning services for post-construction & commercial cleaning and residential cleaning.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Heavy Equipment Rental",
-        "description": "Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "HR Management & Outsourcing",
-        "description": "With a stringent selection procedure, we can provide a range of workforce to meet our clients' needs, ranging from clerks to IT professionals and Project Managers.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Cargo logistics & Custom Clearance",
-        "description": "Al Baida Cargo & Customs Clearance is considered a unique company in the field of Cargo & Customs Clearance.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Engineering Consultancy",
-        "description": "Al Baida Group Engineering Consultancy team is made up of well-experienced, qualified, and dedicated team of Architects and Engineers and familiarized in obtaining approvals from concerned Government Authorities.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Business Management Consultancy",
-        "description": "We offer a variety of business and management consulting services that support your business needs. We offer solutions to support your growth plan and optimize your organization.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Agency Representation",
-        "description": "Al Baida has been a Business conglomerate since 1970, maintaining strong business ties within Qatar. AL Baida assists agencies in gaining representation in Qatar.",
-        "buttonText": "Read More"
-      },
-      {
-        "title": "Construction",
-        "description": "We specialize in building construction, including ground plus two stories, warehouses, mosques, villa complexes, fencing, and other construction projects.",
-        "buttonText": "Read More"
+        "title": "Contact Us",
+        "contactDetails": [
+          {
+            "type": "phone",
+            "label": "+974 44128899"
+          },
+          {
+            "type": "email",
+            "label": "info@albaidagroup.com"
+          },
+          {
+            "type": "address",
+            "label": "PO Box# 37772, Doha, Qatar"
+          }
+        ]
       }
-    ]
+    ],
+    "footerCenter": {
+      "text": "Copyright © 2023 - All rights reserved by Al Baida Group"
+    }
   }
 }

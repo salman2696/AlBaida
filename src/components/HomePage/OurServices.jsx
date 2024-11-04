@@ -18,84 +18,83 @@ import imageService11 from "../../assets/images/services/service-11.jpg";
 import imageService12 from "../../assets/images/services/service-12.jpg";
 
 const OurServices = () => {
-  const { t,  i18n  } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === "rtl";
 
   const services = [
     {
       imageSrc: imageService1,
-      title: t("home.services.0.title"),
-      description: t("home.services.0.description"),
-      buttonText: t("home.services.0.buttonText")
+      title: t("home.services.cards.0.title"),
+      description: t("home.services.cards.0.description"),
+      buttonText: t("home.services.cards.0.buttonText"),
     },
     {
       imageSrc: imageService2,
-      title: t("home.services.1.title"),
-      description: t("home.services.1.description"),
-      buttonText: t("home.services.1.buttonText")
+      title: t("home.services.cards.1.title"),
+      description: t("home.services.cards.1.description"),
+      buttonText: t("home.services.cards.1.buttonText"),
     },
     {
       imageSrc: imageService3,
-      title: t("home.services.2.title"),
-      description: t("home.services.2.description"),
-      buttonText: t("home.services.2.buttonText")
+      title: t("home.services.cards.2.title"),
+      description: t("home.services.cards.2.description"),
+      buttonText: t("home.services.cards.2.buttonText"),
     },
     {
       imageSrc: imageService4,
-      title: t("home.services.3.title"),
-      description: t("home.services.3.description"),
-      buttonText: t("home.services.3.buttonText")
+      title: t("home.services.cards.3.title"),
+      description: t("home.services.cards.3.description"),
+      buttonText: t("home.services.cards.3.buttonText"),
     },
     {
       imageSrc: imageService5,
-      title: t("home.services.4.title"),
-      description: t("home.services.4.description"),
-      buttonText: t("home.services.4.buttonText")
+      title: t("home.services.cards.4.title"),
+      description: t("home.services.cards.4.description"),
+      buttonText: t("home.services.cards.4.buttonText"),
     },
     {
       imageSrc: imageService6,
-      title: t("home.services.5.title"),
-      description: t("home.services.5.description"),
-      buttonText: t("home.services.5.buttonText")
+      title: t("home.services.cards.5.title"),
+      description: t("home.services.cards.5.description"),
+      buttonText: t("home.services.cards.5.buttonText"),
     },
     {
       imageSrc: imageService7,
-      title: t("home.services.6.title"),
-      description: t("home.services.6.description"),
-      buttonText: t("home.services.6.buttonText")
+      title: t("home.services.cards.6.title"),
+      description: t("home.services.cards.6.description"),
+      buttonText: t("home.services.cards.6.buttonText"),
     },
     {
       imageSrc: imageService8,
-      title: t("home.services.7.title"),
-      description: t("home.services.7.description"),
-      buttonText: t("home.services.7.buttonText")
+      title: t("home.services.cards.7.title"),
+      description: t("home.services.cards.7.description"),
+      buttonText: t("home.services.cards.7.buttonText"),
     },
     {
       imageSrc: imageService9,
-      title: t("home.services.8.title"),
-      description: t("home.services.8.description"),
-      buttonText: t("home.services.8.buttonText")
+      title: t("home.services.cards.8.title"),
+      description: t("home.services.cards.8.description"),
+      buttonText: t("home.services.cards.8.buttonText"),
     },
     {
       imageSrc: imageService10,
-      title: t("home.services.9.title"),
-      description: t("home.services.9.description"),
-      buttonText: t("home.services.9.buttonText")
+      title: t("home.services.cards.9.title"),
+      description: t("home.services.cards.9.description"),
+      buttonText: t("home.services.cards.9.buttonText"),
     },
     {
       imageSrc: imageService11,
-      title: t("home.services.10.title"),
-      description: t("home.services.10.description"),
-      buttonText: t("home.services.10.buttonText")
+      title: t("home.services.cards.10.title"),
+      description: t("home.services.cards.10.description"),
+      buttonText: t("home.services.cards.10.buttonText"),
     },
     {
       imageSrc: imageService12,
-      title: t("home.services.11.title"),
-      description: t("home.services.11.description"),
-      buttonText: t("home.services.11.buttonText")
-    }
+      title: t("home.services.cards.11.title"),
+      description: t("home.services.cards.11.description"),
+      buttonText: t("home.services.cards.11.buttonText"),
+    },
   ];
-
 
   const CustomPrevArrow = (props) => {
     const { className, style, onClick } = props;
@@ -118,7 +117,7 @@ const OurServices = () => {
       </div>
     );
   };
-  
+
   const CustomNextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -173,7 +172,9 @@ const OurServices = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">Our Services</h2>
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">
+          {t("home.services.title")}
+        </h2>
         <Slider {...settings}>
           {services.map((service, index) => (
             <div key={index}>
