@@ -18,8 +18,8 @@ import imageService11 from "../../assets/images/services/service-11.jpg";
 import imageService12 from "../../assets/images/services/service-12.jpg";
 
 const OurServices = () => {
-  const { t, i18n } = useTranslation();
-  const isRtl = i18n.dir() === "rtl";
+  const { t } = useTranslation();
+  
 
   const services = [
     {

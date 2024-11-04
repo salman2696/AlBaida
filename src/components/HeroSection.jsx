@@ -7,7 +7,7 @@ const HeroSection = ({ heroImage, title, subtitle, descripton }) => {
     blur={1}
       bgImage={heroImage}
       bgImageAlt="Hero background"
-      strength={100}
+      strength={200}
       bgClassName="object-cover"
     >
       <div className="relative flex items-center justify-center h-[80vh]">

@@ -98,17 +98,17 @@ const Navbar = () => {
     {
       id: 1,
       link: "/divisions/facility-management",
-      icon:<FaChalkboardTeacher className="text-3xl text-custom-red" />,
+      icon: <FaChalkboardTeacher className="text-3xl text-custom-red" />,
     },
     {
       id: 2,
       link: "/divisions/contracting",
-      icon:<FaHandshake className="text-3xl text-custom-red" />,
+      icon: <FaHandshake className="text-3xl text-custom-red" />,
     },
     {
       id: 3,
       link: "/divisions/infrastructure",
-      icon:<FaRoad className="text-3xl text-custom-red" />,
+      icon: <FaRoad className="text-3xl text-custom-red" />,
     },
     {
       id: 4,
@@ -118,27 +118,27 @@ const Navbar = () => {
     {
       id: 5,
       link: "/divisions/agriculture-projects",
-      icon:<FaSeedling className="text-3xl text-custom-red" />,
+      icon: <FaSeedling className="text-3xl text-custom-red" />,
     },
     {
       id: 6,
       link: "/divisions/heavy-equipment-rental",
-      icon:<FaTractor className="text-3xl text-custom-red" />,
+      icon: <FaTractor className="text-3xl text-custom-red" />,
     },
     {
       id: 7,
       link: "/divisions/human-resource-managament",
-      icon:<FaUserTie className="text-3xl text-custom-red" />,
+      icon: <FaUserTie className="text-3xl text-custom-red" />,
     },
     {
       id: 8,
       link: "/divisions/cargo-logistics",
-      icon:<FaTruckMoving className="text-3xl text-custom-red" />,
+      icon: <FaTruckMoving className="text-3xl text-custom-red" />,
     },
     {
       id: 9,
       link: "/divisions/engineering-consultancy",
-      icon:<FaBuilding className="text-3xl text-custom-red" />,
+      icon: <FaBuilding className="text-3xl text-custom-red" />,
     },
     {
       id: 10,
@@ -148,16 +148,14 @@ const Navbar = () => {
     {
       id: 11,
       link: "/divisions/agency-and-representation",
-      icon:<FaRegClipboard className="text-3xl text-custom-red" />,
+      icon: <FaRegClipboard className="text-3xl text-custom-red" />,
     },
     {
       id: 12,
       link: "/divisions/construction",
-      icon:<FaTools className="text-3xl text-custom-red" />
+      icon: <FaTools className="text-3xl text-custom-red" />,
     },
   ];
-
- 
 
   // Sample project data
   const projects = [
@@ -226,13 +224,15 @@ const Navbar = () => {
                           key={index}
                           className="flex items-center p-3 border rounded-md hover:bg-gray-100 "
                         >
-                          <div className={isRTL ? "ml-4" : "mr-4"}>{division.icon}</div>
+                          <div className={isRTL ? "ml-4" : "mr-4"}>
+                            {division.icon}
+                          </div>
                           <div className="3xl:text-sm xl:text-xs text-xs transition-all duration-500">
                             <h3 className="font-semibold  text-black">
                               {t(`divisions.${division.id}.title`)}
                             </h3>
                             <p className="t text-gray-500">
-                            {t(`divisions.${division.id}.description`)}
+                              {t(`divisions.${division.id}.description`)}
                             </p>
                           </div>
                         </div>
@@ -360,7 +360,7 @@ const Navbar = () => {
                   onClick={toggleMenu}
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                 >
-                  HOME
+                  {t("HOME")}
                 </Link>
               </li>
               <li>
@@ -370,7 +370,7 @@ const Navbar = () => {
                   aria-expanded={isDivisionsOpen}
                   aria-haspopup={true}
                 >
-                  DIVISIONS
+                  {t("DIVISIONS")}
                   <FiChevronDown
                     className={`ml-1 transform ${
                       isDivisionsOpen ? "rotate-180" : ""
@@ -459,6 +459,38 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <div className="px-6 pb-4">
+              <button
+                onClick={toggleLanguageDropdown}
+                className="flex items-center gap-2 text-black"
+              >
+                <img
+                  src={selectedLanguage.flag}
+                  alt={selectedLanguage.name}
+                  className="w-6 h-6"
+                />
+                {selectedLanguage.name}
+                <FiChevronDown />
+              </button>
+              {isLanguageDropdownOpen && (
+                <div className="absolute left-0 mt-2 w-40 bg-white rounded-lg shadow-lg z-50">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => selectLanguage(lang)}
+                      className="flex items-center w-full px-4 py-2 text-black hover:bg-gray-100"
+                    >
+                      <img
+                        src={lang.flag}
+                        alt={lang.name}
+                        className="w-6 h-6 mr-2"
+                      />
+                      {lang.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

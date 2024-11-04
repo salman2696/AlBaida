@@ -12,7 +12,8 @@ import { FiMail, FiMapPin } from "react-icons/fi";
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRtl = i18n.dir() === "rtl";
   
   return (
     <section className="bg-black text-white">
@@ -69,60 +70,30 @@ const Footer = () => {
 
         <nav>
           <h1 className="footer-title">{t('footer.sections.1.title')}</h1>
-          <Link to="#" className="link link-hover">
-            Facility Management
-          </Link>
-          <Link to="#" className="link link-hover">
-            Road & Infrastructure
-          </Link>
-          <Link to="#" className="link link-hover">
-            Agriculture Projects & Trading
-          </Link>
-          <Link to="#" className="link link-hover">
-            Heavy Equipment
-          </Link>
-          <Link to="#" className="link link-hover">
-            Camel Race Track
-          </Link>
-          <Link to="#" className="link link-hover">
-            Cleaning Services
-          </Link>
-          <Link to="#" className="link link-hover">
-            Construction
-          </Link>
-          <Link to="#" className="link link-hover">
-            Agency & Representation
-          </Link>
+          {t('footer.sections.1.links', { returnObjects: true }).map((link, index) => (
+            <Link key={index} to="#" className="link link-hover">
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+        <nav>
+          <h1 className="footer-title">{t('footer.sections.2.title')}</h1>
+          {t('footer.sections.2.links', { returnObjects: true }).map((link, index) => (
+            <Link key={index} to="#" className="link link-hover">
+              {link.name}
+            </Link>
+          ))}
         </nav>
 
         <nav>
-          <h1 className="footer-title">Company</h1>
-          <Link to="/" className="link link-hover">
-            About us
-          </Link>
-          <Link to="/contact-us" className="link link-hover">
-            Contact
-          </Link>
-          <Link to="/gallery" className="link link-hover">
-            Gallery
-          </Link>
-          <Link to="/JoinUs/career" className="link link-hover">
-            Jobs
-          </Link>
-          <Link to="/projects" className="link link-hover">
-            Projects
-          </Link>
-        </nav>
-
-        <nav>
-          <h1 className="footer-title">Contact Us</h1>
-          <Link to="tel:+974 44128899" className="link link-hover mb-4">
+          <h1 className="footer-title">{t('footer.sections.3.title')}</h1>
+          <Link to="tel:+974 44128899" className="link link-hover mb-4" dir={isRtl ? "ltr" : "auto"}>
             <FaPhoneAlt className="inline-block mr-2" />
-            +974 44128899
+            {t('footer.sections.3.contactDetails.0.label')}
           </Link>
-          <Link to="mailto:info@albaidagroup.com" className="link link-hover mb-4">
+          <Link to="mailto:info@albaidagroup.com" className="link link-hover mb-4" dir={isRtl ? "ltr" : "auto"}>
             <FiMail className="inline-block mr-2" />
-            info@albaidagroup.com
+            {t('footer.sections.3.contactDetails.1.label')}
           </Link>
           <Link
             to="https://maps.app.goo.gl/caKQH2CpnGBUQMUS6"
@@ -130,9 +101,7 @@ const Footer = () => {
             target="_blank"
           >
             <FiMapPin className="inline-block mr-2" />
-            PO Box# 37772
-            <br />
-            Doha, Qatar
+            {t('footer.sections.3.contactDetails.2.label')}
           </Link>
         </nav>
       </footer>
