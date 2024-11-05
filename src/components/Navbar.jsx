@@ -222,12 +222,12 @@ const Navbar = () => {
                       <Link to={division.link}>
                         <div
                           key={index}
-                          className="flex items-center p-3 border rounded-md hover:bg-gray-100 "
+                          className="flex items-center p-3 border rounded-md hover:bg-gray-100 2xl:min-h-24"
                         >
                           <div className={isRTL ? "ml-4" : "mr-4"}>
                             {division.icon}
                           </div>
-                          <div className="3xl:text-sm xl:text-xs text-xs transition-all duration-500">
+                          <div className="2xl:text-sm text-xs transition-all duration-500">
                             <h3 className="font-semibold  text-black">
                               {t(`divisions.${division.id}.title`)}
                             </h3>
@@ -302,9 +302,9 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-custom-red">
+                <Link to="contact-us" className="hover:text-custom-red">
                   {t("CONTACT US")}
-                </a>
+                </Link>
               </li>
               <li className="relative">
                 <button
@@ -450,13 +450,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact-us"
                   onClick={toggleMenu}
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                 >
                   CONTACT US
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="px-6 pb-4">

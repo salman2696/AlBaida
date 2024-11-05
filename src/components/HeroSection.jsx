@@ -10,10 +10,10 @@ const HeroSection = ({ heroImage, title, subtitle, descripton }) => {
       strength={200}
       bgClassName="object-cover"
     >
-      <div className="relative flex items-center justify-center h-[80vh]">
+      <div className="relative flex items-center h-[80vh]">
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
         {/* Overlay for better text visibility */}
-        <div className="relative z-10 text-white p-4 max-w-7xl mx-auto">
+        <div className="relative z-10 text-white p-4 max-w-7xl xl:mx-16 2xl:mx-28 3xl:mx-44">
           <h1 className="mb-4">
             <span className="text-5xl md:text-7xl font-extrabold block">
               {title}

@@ -16,6 +16,7 @@ import EngineeringConsultancy from "./pages/divisions/EngineeringConsultancy";
 import BussinesManagement from "./pages/divisions/BussinesManagement";
 import AgencyRepresentation from "./pages/divisions/AgencyRepresentation";
 import Constructon from "./pages/divisions/Constructon";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -24,7 +25,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about-us" element={<AboutUs />} />
           <Route
             path="/divisions/facility-management"
             element={<FacilityManagement />}
@@ -67,6 +67,8 @@ function App() {
             element={<AgencyRepresentation />}
           />
           <Route path="/divisions/construction" element={<Constructon />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs/>} />
         </Route>
       </Routes>
     </HashRouter>

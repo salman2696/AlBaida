@@ -1,6 +1,4 @@
 import React from "react";
-import { FaDraftingCompass, FaRoad, FaTools } from "react-icons/fa";
-import { GiElectricalResistance } from "react-icons/gi";
 import Slider from "react-slick"; // Make sure to install react-slick and slick-carousel
 
 import "slick-carousel/slick/slick.css";
@@ -9,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Services1 = ({ title, description, services, images }) => {
   // Image slider settings
   const settings = {
-    dots: true,
+    dots: false,
     fade: true,
     infinite: true,
     speed: 500,
@@ -19,6 +17,7 @@ const Services1 = ({ title, description, services, images }) => {
     autoplaySpeed: 2000,
     pauseOnHover: true,
     waitForAnimate: false,
+    arrows: false,
   };
 
   return (

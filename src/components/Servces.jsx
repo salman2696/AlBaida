@@ -3,7 +3,7 @@ import React from 'react';
 const Services = ({ services }) => {
   return (
     <div className="max-w-7xl mx-auto my-10 p-6">
-      <h2 className="text-center text-3xl font-bold mb-10">SERVICES</h2>
+      <h2 className="text-center text-3xl font-bold mb-10 center-title">SERVICES</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <div 

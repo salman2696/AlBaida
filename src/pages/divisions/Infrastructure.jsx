@@ -7,10 +7,15 @@ import { FaDraftingCompass } from "react-icons/fa";
 import { FaRoad } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { GiElectricalResistance } from "react-icons/gi";
+import { FaCircleCheck } from "react-icons/fa6";
 import serviceimage1 from "../../assets/images/divisions/infrastructure/services1.png";
 import serviceimage2 from "../../assets/images/divisions/infrastructure/services2.png";
 import serviceimage3 from "../../assets/images/divisions/infrastructure/services3.png";
 import serviceimage4 from "../../assets/images/divisions/infrastructure/services4.png";
+import camelImage1 from "../../assets/images/divisions/infrastructure/camel1.png";
+import camelImage2 from "../../assets/images/divisions/infrastructure/camel2.png";
+import camelImage3 from "../../assets/images/divisions/infrastructure/camel3.png";
+import camelImage4 from "../../assets/images/divisions/infrastructure/camel4.png";
 
 const Infrastructure = () => {
   const services = [
@@ -53,7 +58,7 @@ const Infrastructure = () => {
           <p className="text-lg text-gray-600">
             Adding Class to sports & leisure
           </p>
-          <p className="text-base text-gray-600 mt-4">
+          <p className="text-base text-gray-600 mt-4 px-4">
             We are renowned for our massive Camel Race Tracks – Al Shahaniya &
             Al Shamaliya on the whole of Qatar. These are the only hubs for
             Camel Races that exist in the entire Qatar, which was exclusively
@@ -62,6 +67,77 @@ const Infrastructure = () => {
             lot more prospects in the future, as this is a legacy that is
             treasured by the Arabs since ages.
           </p>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-8 p-6">
+          {/* Left Section */}
+          <div className="lg:w-1/2 space-y-6">
+            {/* Services Section */}
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Services</h2>
+              <ul className="space-y-2 text-gray-700">
+                {[
+                  "Planning and designing the Camel Race Tracks",
+                  "Planning and designing the allied road along the tracks",
+                  "Implantation of lamp posts along the tracks",
+                  "Construction of the race tracks and roads",
+                  "Maintenance of the tracks, road and entire arena",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center space-x-2">
+                    <FaCircleCheck
+                      
+                      className="text-custom-red"
+                    />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Activities of Maintenance Section */}
+            <div>
+              <h2 className="text-2xl font-bold mb-4">
+                Activities of Maintenance
+              </h2>
+              <ul className="space-y-2 text-gray-700">
+                {[
+                  "Loosening the sand by grader and tractor",
+                  "Cleaning the race tracks",
+                  "Preparation of tracks before race",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center space-x-2">
+                    <FaCircleCheck
+                      className="text-custom-red"
+                    />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Section (Image Grid) */}
+          <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+            <img
+              src={camelImage1}
+              alt="Description 1"
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+            <img
+              src={camelImage2}
+              alt="Description 2"
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+            <img
+              src={camelImage3}
+              alt="Description 3"
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+            <img
+              src={camelImage4}
+              alt="Description 4"
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+          </div>
         </div>
       </div>
     </div>
