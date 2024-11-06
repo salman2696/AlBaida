@@ -2,8 +2,8 @@ import React from "react";
 
 const TitleWithCards = ({ title, cards }) => {
   return (
-    <div className="p-6">
-      <h2 className="text-4xl font-bold mb-6 text-center center-title">{title}</h2>
+    <div className="p-6 max-w-7xl mx-auto">
+      <h2 className="text-2xl md:text-4xl font-bold mb-14 text-center center-title">{title}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {cards.map((card, index) => (
           <div

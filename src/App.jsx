@@ -17,6 +17,7 @@ import BussinesManagement from "./pages/divisions/BussinesManagement";
 import AgencyRepresentation from "./pages/divisions/AgencyRepresentation";
 import Constructon from "./pages/divisions/Constructon";
 import ContactUs from "./pages/ContactUs";
+import QatarUniversity from "./pages/projects/QatarUniversity";
 
 function App() {
   return (
@@ -69,7 +70,8 @@ function App() {
           <Route path="/divisions/construction" element={<Constructon />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs/>} />
-        </Route>
+          <Route path="/projects/qatar-university" element={<QatarUniversity/>} />
+        </Route> 
       </Routes>
     </HashRouter>
   );

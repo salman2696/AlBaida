@@ -162,7 +162,11 @@ const Navbar = () => {
     { id: 1, link: "/projects/project-1", image: "/projects/project1.jpg" },
     { id: 2, link: "/projects/project-2", image: "/projects/project2.jpg" },
     { id: 3, link: "/projects/project-3", image: "/projects/project3.jpg" },
-    { id: 4, link: "/projects/project-4", image: "/projects/project4.jpg" },
+    {
+      id: 4,
+      link: "/projects/qatar-university",
+      image: "/projects/project4.jpg",
+    },
     { id: 5, link: "/projects/project-5", image: "/projects/project5.jpg" },
     { id: 6, link: "/projects/project-6", image: "/projects/project1.jpg" },
   ];

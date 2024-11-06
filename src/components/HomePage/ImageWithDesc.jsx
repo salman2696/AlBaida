@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const AboutUs = ({
+const ImageWithDesc = ({
   title,
   subtitle,
   description,
   buttonText,
   imageSrc,
   reverseLayout = false,
-  
+  showButton = false,
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: false, // Animation will trigger only once when it comes into view
@@ -17,7 +17,10 @@ const AboutUs = ({
   });
 
   return (
-    <section className={`w-full py-12 min-h-[700px] flex items-center`} ref={ref}>
+    <section
+      className={`w-full py-12 min-h-[700px] flex items-center`}
+      ref={ref}
+    >
       <div className="container mx-auto max-w-7xl px-4 ">
         <div
           className={`flex flex-col md:flex-row items-center justify-between gap-8 ${
@@ -25,7 +28,11 @@ const AboutUs = ({
           }`}
         >
           {/* Left Section: Title, Subtitle, Description, Button */}
-          <div className={`relative md:w-1/2 def-title  ${inView ? 'animate-line' : ''}`}>
+          <div
+            className={`relative md:w-1/2 def-title  ${
+              inView ? "animate-line" : ""
+            }`}
+          >
             <motion.h2
               className="text-4xl font-bold mb-2"
               initial={{ opacity: 0, y: -20 }}
@@ -52,15 +59,17 @@ const AboutUs = ({
             >
               {description}
             </motion.p>
-            <motion.button
-              className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300"
-              initial={{ scale: 1 }}
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              animate={{ opacity: inView ? 1 : 0 }} // Fade in the button
-            >
-              {buttonText}
-            </motion.button>
+            {showButton && ( // Conditionally render the button based on showButton prop
+              <motion.button
+                className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300"
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                animate={{ opacity: inView ? 1 : 0 }} // Fade in the button
+              >
+                {buttonText}
+              </motion.button>
+            )}
           </div>
 
           {/* Right Section: Image */}
@@ -80,4 +89,4 @@ const AboutUs = ({
   );
 };
 
-export default AboutUs;
+export default ImageWithDesc;

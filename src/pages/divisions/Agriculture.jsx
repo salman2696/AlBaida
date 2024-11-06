@@ -11,7 +11,7 @@ import {
   FaLeaf,
 } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
-import Services from "../../components/Servces";
+import Services from "../../components/Services";
 import Partner from "../../components/Partner";
 import logo from "../../assets/images/divisions/agriculture/alkhorayef.png";
 import newsImage from "../../assets/images/divisions/agriculture/news.jpg";

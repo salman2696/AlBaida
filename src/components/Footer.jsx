@@ -17,9 +17,9 @@ const Footer = () => {
   
   return (
     <section className="bg-black text-white">
-      <footer className="footer max-w-7xl mx-auto w-full text-base-100 text-sm lg:text-lg py-10 px-4">
+      <footer className="footer max-w-7xl mx-auto w-full 3xl:text-lg 2xl:text-base text-sm transition-all duration-300 py-10 px-4">
         <aside className="md:min-w-[20vw]">
-          <img src={Logo} alt={t('footer.sections.0.logo.alt')} className="lg:w-52 md:w-36 sm:w-32 w-28" />
+          <img src={Logo} alt={t('footer.sections.0.logo.alt')} className="3xl:w-52 2xl:w-44 xl:w-40 w-28 transition-all duration-300" />
           <nav>
             <div className="grid grid-flow-col gap-4 mt-4">
               <a
@@ -106,7 +106,7 @@ const Footer = () => {
         </nav>
       </footer>
 
-      <footer className="footer footer-center max-w-7xl mx-auto w-full text-base-100 lg:text-lg bg-black rounded p-4">
+      <footer className="footer footer-center max-w-7xl mx-auto w-full text-base-100 l3xl:text-lg 2xl:text-base text-sm transition-all duration-300 bg-black rounded p-4">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All rights reserved by Al

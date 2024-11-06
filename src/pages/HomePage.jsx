@@ -9,9 +9,7 @@ import Blogs from "../components/Blogs";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
-
   const { t, i18n } = useTranslation();
-  
 
   return (
     <div>
@@ -24,11 +22,12 @@ const HomePage = () => {
         imageSrc={AboutUsImage}
         reverseLayout={false} // Change to true to reverse the layout
         bgColor="bg-[#e9eae5]" // Optional: Set the background color
+        showButton={true}
       />
       <CompanyNum />
       <OurServices />
       <ContactUs />
-      <Blogs/>
+      <Blogs />
     </div>
   );
 };
