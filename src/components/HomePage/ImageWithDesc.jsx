@@ -12,7 +12,7 @@ const ImageWithDesc = ({
   showButton = false,
 }) => {
   const [ref, inView] = useInView({
-    triggerOnce: false, // Animation will trigger only once when it comes into view
+    triggerOnce: true, // Animation will trigger only once when it comes into view
     threshold: 0.1, // Trigger when 10% of the component is in view
   });
 
