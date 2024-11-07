@@ -30,7 +30,7 @@ const Gallery = ({ images }) => {
             <a
               key={index}
               href={image.fullImage}
-              className="gallery-item block"  // Add the selector class here
+              className="gallery-item block hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out"  // Add the selector class here
             >
               <img
                 alt={image.altText}

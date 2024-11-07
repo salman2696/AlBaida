@@ -153,7 +153,7 @@ const QatarUniversity = () => {
         bgColor="bg-[#e9eae5]"
         showButton={false}
       />
-      <div className="bg-[#f3f4f6] min-h-[600px]">
+      <div className="bg-[#f3f4f6] min-h-[700px] flex flex-col justify-center">
         <TitleWithCards title="Services Offered" cards={cards} />
         <p className="text-lg mb-6 max-w-7xl mx-auto p-4">
           {" "}
@@ -167,8 +167,8 @@ const QatarUniversity = () => {
           exceptional service.
         </p>
       </div>
-      <div className="max-w-7xl mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-10">
+      <div className="max-w-7xl mx-auto p-4 min-h-[700px] flex flex-col justify-center">
+        <h1 className="text-2xl md:text-4xl font-bold mb-10">
           Qatar University Safety Excellence Award Distribution Ceremony
         </h1>
         <Gallery images={galleryImages} />
