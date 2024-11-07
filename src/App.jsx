@@ -18,6 +18,10 @@ import AgencyRepresentation from "./pages/divisions/AgencyRepresentation";
 import Constructon from "./pages/divisions/Constructon";
 import ContactUs from "./pages/ContactUs";
 import QatarUniversity from "./pages/projects/QatarUniversity";
+import Mwani from "./pages/projects/Mwani";
+import CamelRace from "./pages/projects/CamelRace";
+import Agricultureproject from "./pages/projects/Agriculture";
+import MinistryOfDefence from "./pages/projects/MinistryOfDefence";
 
 function App() {
   return (
@@ -69,9 +73,19 @@ function App() {
           />
           <Route path="/divisions/construction" element={<Constructon />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs/>} />
-          <Route path="/projects/qatar-university" element={<QatarUniversity/>} />
-        </Route> 
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route
+            path="/projects/qatar-university"
+            element={<QatarUniversity />}
+          />
+          <Route path="/projects/mwani" element={<Mwani />} />
+          <Route path="/projects/camel-race" element={<CamelRace />} />
+          <Route path="/projects/agriculture" element={<Agricultureproject />} />
+          <Route
+            path="/projects/ministry-of-defence"
+            element={<MinistryOfDefence />}
+          />
+        </Route>
       </Routes>
     </HashRouter>
   );

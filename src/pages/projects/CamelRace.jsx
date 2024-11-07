@@ -1,61 +1,104 @@
 import React from "react";
-import projectHeroImage from "../../assets/images/projects/qatarUniversity/qatar-university.jpg";
-import projectDetailsImage from "../../assets/images/projects/qatarUniversity/projectDetailsImage.jpg";
-import qatarUniversityLogo from "../../assets/images/projects/qatarUniversity/qatar-university-logo.jpg";
-import categoryIcon from "../../assets/images/projects/qatarUniversity/university.png";
-import calendarIcon from "../../assets/images/projects/qatarUniversity/calendar.png";
-import employeeIcon from "../../assets/images/projects/qatarUniversity/employee.png";
+import HeroSection from "../../components/projects/HeroSection";
 import ImageWithDesc from "../../components/HomePage/ImageWithDesc";
-import TitleWithCards from "../../components/TitleWithCards";
 import ServiceCard1 from "../../components/ServiceCard1";
+import Faqs from "../../components/Faqs";
+import projectHeroImage from "../../assets/images/projects/camelRace/heroImage.jpg";
+import projectDetailsImage from "../../assets/images/projects/camelRace/projectDetailsImage.jpg";
+import companyLogo from "../../assets/images/projects/camelRace/companyLogo.png";
+import categoryIcon from "../../assets/images/projects/camelRace/camelRacing.png";
+import calendarIcon from "../../assets/images/projects/camelRace/calendar.png";
+import mapIcon from "../../assets/images/projects/camelRace/map.png";
+import {
+  FaUnlockAlt,
+  FaBoxOpen,
+  FaLock,
+  FaUsers,
+  FaAnchor,
+  FaShip,
+  FaTruckLoading,
+  FaFileAlt,
+} from "react-icons/fa";
 import service1 from "../../assets/images/projects/qatarUniversity/service-1.jpg";
 import service2 from "../../assets/images/projects/qatarUniversity/service-2.jpg";
 import service3 from "../../assets/images/projects/qatarUniversity/service-3.jpg";
-import HeroSection from "../../components/projects/HeroSection";
-import Faqs from "../../components/Faqs";
-import Gallery from "../../components/Gallery";
-import { FaBroom, FaTools, FaSoap } from "react-icons/fa";
 
-const QatarUniversity = () => {
+const CamelRace = () => {
   const herosection = [
     {
       projectHeroImage: projectHeroImage,
-      heroTitle: "Qatar University Project",
+      heroTitle: "Camel Race Project",
       heroDescription:
-        " Al Baida's leading education sector project at Qatar University supports over 530 jobs, providing infrastructure management, housekeeping, and cleaning services.",
-      logo: qatarUniversityLogo,
+        "Camel racing, extravagant leisure of the Arabs is valued more than a sport as a part of their traditions. This sport is continued to date at the small hamlet of Al Shahaniya as a part of their heritage.",
+      logo: companyLogo,
       categoryIcon: categoryIcon,
       calendarIcon: calendarIcon,
-      employeeIcon: employeeIcon,
-      title1: "Qatar University",
-      title2: "Education <br /> Sector",
-      title3: "Year <br /> 2020",
-      title4: "Employment <br /> Opportunity",
-      style: "md:w-24",
+      employeeIcon: mapIcon,
+      title1: "Hejen <br /> Racing Committee",
+      title2: "Traditional <br/> Sport",
+      title3: "Year <br /> 2012",
+      title4: "Project <br/> Area",
+      style: "md:w-16",
     },
   ];
 
   const services = [
     {
-      icon: <FaTools />,
-      title: "Infrastructure Management",
-      description: "Ensuring the efficient and effective operation of buildings, equipment, and systems to support core business functions.",
+      icon: <FaUnlockAlt />,
+      title: "Open Door Seals",
+      description:
+        "Opening and removing the seals on request for secure access to cargo or containers.",
       bgImage: service1,
     },
     {
-      icon: <FaBroom />,
-      title: "House Keeping",
+      icon: <FaBoxOpen />,
+      title: "Cargo Package Handling",
       description:
-        "Maintaining cleanliness, tidiness, and overall upkeep to create a comfortable and safe environment.",
+        "Emptying and refilling cargo packages to ensure proper storage and transportation.",
       bgImage: service2,
     },
     {
-      icon: <FaSoap />,
-      title: "Cleaning Services",
-      description: "Comprehensive cleaning solutions for various environments, ensuring hygiene and sanitation standards.",
+      icon: <FaLock />,
+      title: "Close & Seal Container",
+      description:
+        "Closing and sealing container doors after loading/unloading for security and safe transport.",
       bgImage: service3,
     },
-    // Add more services as needed
+    {
+      icon: <FaUsers />,
+      title: "Supply Labor",
+      description:
+        "Providing human resources including labor, tally clerks, and foreman supervisors for efficient operations.",
+      bgImage: service3,
+    },
+    {
+      icon: <FaAnchor />,
+      title: "Mooring & Unmooring",
+      description:
+        "Managing mooring and unmooring labor activities on authorized request to ensure vessel docking and departure.",
+      bgImage: service3,
+    },
+    {
+      icon: <FaShip />,
+      title: "Port Operations",
+      description:
+        "Handling various port management tasks, including vessel and yard operations, as needed.",
+      bgImage: service3,
+    },
+    {
+      icon: <FaTruckLoading />,
+      title: "Cargo Handling",
+      description:
+        "Overseeing the loading and unloading of cargo at designated areas to ensure efficient logistics.",
+      bgImage: service3,
+    },
+    {
+      icon: <FaFileAlt />,
+      title: "Documentation",
+      description:
+        "Managing paperwork, documentation, recording, and reporting to ensure compliance and accurate records.",
+      bgImage: service3,
+    },
   ];
 
   const faqsData = [
@@ -121,63 +164,24 @@ const QatarUniversity = () => {
     },
   ];
 
-  const galleryImages = [
-    {
-      fullImage: "/photogallery/qu1.jpg",
-      thumbImage: "/photogallery/qu1.jpg",
-      altText: "img1",
-    },
-    {
-      fullImage: "/photogallery/qu2.jpg",
-      thumbImage: "/photogallery/qu2.jpg",
-      altText: "img2",
-    },
-    {
-      fullImage: "/photogallery/qu3.jpg",
-      thumbImage: "/photogallery/qu3.jpg",
-      altText: "img3",
-    },
-    {
-      fullImage: "/photogallery/qu4.jpg",
-      thumbImage: "/photogallery/qu4.jpg",
-      altText: "img4",
-    },
-
-    {
-      fullImage: "/photogallery/qu5.jpg",
-      thumbImage: "/photogallery/qu5.jpg",
-      altText: "img5",
-    },
-    {
-      fullImage: "/photogallery/qu6.jpg",
-      thumbImage: "/photogallery/qu6.jpg",
-      altText: "img6",
-    },
-    {
-      fullImage: "/photogallery/qu7.jpg",
-      thumbImage: "/photogallery/qu7.jpg",
-      altText: "img7",
-    },
-    {
-      fullImage: "/photogallery/qu8.jpg",
-      thumbImage: "/photogallery/qu8.jpg",
-      altText: "img8",
-    },
-  ];
-
   return (
     <div>
       <HeroSection sections={herosection} />
       <ImageWithDesc
         title="Project Details"
-        subtitle="A pristine gesture for an enlightened tomorrow"
-        description="Al Baida's flagship project in Qatar's education sector is a comprehensive support initiative at Qatar University. This prestigious project is notable not only for its scale but also for its impact on local employment, as it provides job opportunities for over 530 individuals. The project encompasses a wide range of essential services, including infrastructure management, housekeeping, and cleaning, all tailored to meet the high standards of the university. Through this endeavor, Al Baida contributes significantly to maintaining a well-managed and clean campus environment, while supporting the university's mission of excellence in education and research."
+        subtitle="A dream work at infinite pace against innumerable hurdles"
+        description="This is one of our magnificent projects with a traditional prospect we have ever accomplished which covers a vast area of around 43 kilometers. The project commenced in the year 2012 and was swiftly completed in a span of just 2 years.
+        The scope of the project involved planning, designing, and constructing the entire racing track, allied roadway, and arena in Shahaniya, West Doha.
+
+        Being a sentimental element of the Arabs, this project required intense planning and precision which was flawlessly delivered by us. Right from understanding the requirement, and throughout the construction we have substantially maintained world-class standards with an ethnic touch.
+
+        Additionally, we take care of the maintenance of the camel race area and preparation of the track lines for racing since 2008."
         imageSrc={projectDetailsImage}
         reverseLayout={false}
         bgColor="bg-[#e9eae5]"
         showButton={false}
       />
-      <div className="bg-[#f3f4f6] min-h-[700px] flex flex-col justify-center py-10">
+      <div className="bg-[#f3f4f6] min-h-[700px] flex flex-col justify-around py-10">
         <ServiceCard1 services={services} MainTitle="Services Offered" />
         <p className="text-lg mb-6 max-w-7xl mx-auto p-4">
           {" "}
@@ -191,15 +195,9 @@ const QatarUniversity = () => {
           exceptional service.
         </p>
       </div>
-      <div className="max-w-7xl mx-auto p-4 min-h-[700px] flex flex-col justify-center">
-        <h1 className="text-2xl md:text-4xl font-bold mb-10">
-          Qatar University Safety Excellence Award Distribution Ceremony
-        </h1>
-        <Gallery images={galleryImages} />
-      </div>
       <Faqs faqs={faqsData} />
     </div>
   );
 };
 
-export default QatarUniversity;
+export default CamelRace;

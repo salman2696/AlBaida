@@ -159,15 +159,15 @@ const Navbar = () => {
 
   // Sample project data
   const projects = [
-    { id: 1, link: "/projects/project-1", image: "/projects/project1.jpg" },
-    { id: 2, link: "/projects/project-2", image: "/projects/project2.jpg" },
-    { id: 3, link: "/projects/project-3", image: "/projects/project3.jpg" },
+    { id: 1, link: "/projects/mwani", image: "/projects/project1.jpg" },
+    { id: 2, link: "/projects/camel-race", image: "/projects/project2.jpg" },
+    { id: 3, link: "/projects/agriculture", image: "/projects/project3.jpg" },
     {
       id: 4,
       link: "/projects/qatar-university",
       image: "/projects/project4.jpg",
     },
-    { id: 5, link: "/projects/project-5", image: "/projects/project5.jpg" },
+    { id: 5, link: "/projects/ministry-of-defence", image: "/projects/project5.jpg" },
     { id: 6, link: "/projects/project-6", image: "/projects/project1.jpg" },
   ];
   const [hoveredProject, setHoveredProject] = useState(projects[0]);
