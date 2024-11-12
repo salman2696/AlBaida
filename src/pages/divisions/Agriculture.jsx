@@ -25,15 +25,45 @@ import plant from "../../assets/images/divisions/agriculture/plant.png";
 import soil from "../../assets/images/divisions/agriculture/soil.png";
 
 const Agriculture = () => {
+  
   const services = [
-    { name: "Production", icon: <FaIndustry /> },
-    { name: "Trading", icon: <FaExchangeAlt /> },
-    { name: "Irrigation System", icon: <FaSeedling /> },
-    { name: "Excavation", icon: <FaTruck /> },
-    { name: "Landscaping", icon: <FaTree /> },
-    { name: "Plantation", icon: <FaLeaf /> },
+    {
+      name: "Production",
+      icon: <FaIndustry />,
+      description:
+        "Specialized in high-quality production processes, ensuring efficiency and sustainability across a wide range of industrial applications.",
+    },
+    {
+      name: "Trading",
+      icon: <FaExchangeAlt />,
+      description:
+        "Providing top-notch trading services, facilitating smooth transactions and connections with reliable partners across various sectors.",
+    },
+    {
+      name: "Irrigation System",
+      icon: <FaSeedling />,
+      description:
+        "Design and installation of advanced irrigation systems, tailored for water conservation and optimal plant growth.",
+    },
+    {
+      name: "Excavation",
+      icon: <FaTruck />,
+      description:
+        "Comprehensive excavation solutions, equipped for large-scale site preparation and earthworks with precision and safety.",
+    },
+    {
+      name: "Landscaping",
+      icon: <FaTree />,
+      description:
+        "Creating aesthetically pleasing landscapes, combining natural beauty with sustainable practices for residential and commercial spaces.",
+    },
+    {
+      name: "Plantation",
+      icon: <FaLeaf />,
+      description:
+        "Professional plantation services that promote green spaces, focusing on plant health, biodiversity, and environmental benefits.",
+    },
   ];
-
   const cards = [
     { image: fertilizer, text: " Solid, Water-Soluble Organic Fertilizers" },
     { image: plant, text: "Plant Growth Regulators" },
@@ -49,7 +79,7 @@ const Agriculture = () => {
       />
       <div className="max-w-7xl mx-auto">
         <Banner title="Agriculture is the sole reason of our very existence." />
-        <Services services={services} />
+        <Services title="SERVICES" services={services} />
         <p className="p-4 text-lg">
           We are immensely proud to be the investor and developer of Um Guilina
           for cultivation of green fodder, which is one of Qatar’s most precious
@@ -66,7 +96,9 @@ const Agriculture = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8 p-6 max-w-7xl mx-auto">
           <div className="lg:w-1/2 space-y-6">
             {/* Services Section */}
-            <h2 className="text-4xl font-bold mb-8 animate-line def-title relative">Our Valuable Partner</h2>
+            <h2 className="text-4xl font-bold mb-8 animate-line def-title relative">
+              Our Valuable Partner
+            </h2>
             <h3 className="text-xl mb-4">
               Al Baida Technical Services is exclusive business partner in
               Qatar. Alkhorayef is leading irrigation company in GCC and
@@ -96,7 +128,9 @@ const Agriculture = () => {
         </div>
       </div>
       <div className="p-4 max-w-7xl mx-auto">
-        <h2 className="text-4xl text-center font-bold mb-4 mt-6 center-title">From the News</h2>
+        <h2 className="text-4xl text-center font-bold mb-4 mt-6 center-title">
+          From the News
+        </h2>
         <p className="text-xl mb-4 text-center">
           Al Baida Group’s Chairman Engineer Ali Abdullatif Almesned,
           accompanying its CEO Eng. Mohamed Elwan signed the agreement with

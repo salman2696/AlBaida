@@ -74,7 +74,7 @@ const AreasOfExpertise = ({ title, description }) => {
 
             {/* Icon and Text */}
             <div className="relative flex flex-col items-center">
-              <div className="text-4xl text-[#ab1218] mb-4">{area.icon}</div>
+              <div className="text-4xl text-white mb-4">{area.icon}</div>
               <h3 className="text-xl font-semibold text-white group-hover:text-white">
                 {area.name}
               </h3>

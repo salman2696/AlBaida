@@ -4,8 +4,32 @@ import heroImage from "../../assets/images/divisions/facilityManagement/heroImag
 import ServicesSection from "../../components/Divisions/ServicesSection";
 import AreasOfExpertise from "../../components/Divisions/AreasOfExpertise";
 import Banner from "../../components/Banner";
+import {
+  FaTools,
+  FaThermometerHalf,
+  FaArtstation,
+  FaBuilding,
+  FaShieldAlt,
+  FaUsers,
+  FaConciergeBell,
+  FaBug,
+} from "react-icons/fa";
+
 
 const FacilityManagement = () => {
+
+  const services = [
+    { name: "Infrastructure Maintenance", icon: <FaTools /> },
+    { name: "AC & Ventilation", icon: <FaThermometerHalf /> },
+    { name: "Aesthetics", icon: <FaArtstation /> },
+    { name: "Elevator", icon: <FaBuilding /> }, // Replaced with FaBuilding
+    { name: "Security", icon: <FaShieldAlt /> },
+    { name: "Human Resources", icon: <FaUsers /> },
+    { name: "Catering", icon: <FaConciergeBell /> },
+    { name: "Pest Control", icon: <FaBug /> },
+    { name: "Fire Alarm", icon: <FaShieldAlt /> },
+  ];
+
   return (
     <div>
       <HeroSection
@@ -17,6 +41,7 @@ const FacilityManagement = () => {
       <ServicesSection
         title="Comprehensive Facility Solutions for Seamless Business Operations"
         description=" We provide a wide range of services to ensure that your facility runs smoothly and efficiently. Explore our offerings tailored to meet your needs."
+        services={services}
       />
       <AreasOfExpertise
         title="Areas of Expertise"

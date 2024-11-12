@@ -207,7 +207,7 @@ const Navbar = () => {
             >
               <li>
                 <Link to="/" className="hover:text-custom-red ml-6">
-                  {t("HOME")}
+                  {t("navBar.HOME")}
                 </Link>
               </li>
               <li className="relative group">
@@ -217,7 +217,7 @@ const Navbar = () => {
                   aria-expanded={isDivisionsOpen}
                   aria-haspopup={true}
                 >
-                  {t("DIVISIONS")}
+                  {t("navBar.DIVISIONS")}
                   <FiChevronDown className="ml-1" />
                 </button>
                 <div className="fixed inset-x-0 mt-4 max-w-5xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
@@ -233,10 +233,10 @@ const Navbar = () => {
                           </div>
                           <div className="2xl:text-sm text-xs transition-all duration-500">
                             <h3 className="font-semibold  text-black">
-                              {t(`divisions.${division.id}.title`)}
+                              {t(`navBar.divisions.${division.id}.title`)}
                             </h3>
                             <p className="t text-gray-500">
-                              {t(`divisions.${division.id}.description`)}
+                              {t(`navBar.divisions.${division.id}.description`)}
                             </p>
                           </div>
                         </div>
@@ -252,7 +252,7 @@ const Navbar = () => {
                   aria-expanded={isDivisionsOpen}
                   aria-haspopup={true}
                 >
-                  {t("PROJECTS")}
+                  {t("navBar.PROJECTS")}
                   <FiChevronDown className="ml-1" />
                 </button>
                 <div className="fixed inset-x-0 mt-4 max-w-4xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
@@ -271,7 +271,7 @@ const Navbar = () => {
                             }`}
                             onMouseEnter={() => setHoveredProject(project)}
                           >
-                            {t(`projects.${project.id}.title`)}
+                            {t(`navBar.projects.${project.id}.title`)}
                           </li>
                         ))}
                       </ul>
@@ -281,14 +281,14 @@ const Navbar = () => {
                     <div className="w-2/3 pl-4">
                       <img
                         src={hoveredProject.image}
-                        alt={t(`projects.${hoveredProject.id}.title`)}
+                        alt={t(`navBar.projects.${hoveredProject.id}.title`)}
                         className="w-full h-48 object-cover rounded-md mb-4"
                       />
                       <h3 className="text-lg text-black font-semibold">
-                        {t(`projects.${hoveredProject.id}.title`)}
+                        {t(`navBar.projects.${hoveredProject.id}.title`)}
                       </h3>
                       <p className="text-sm text-gray-500 mb-4">
-                        {t(`projects.${hoveredProject.id}.description`)}
+                        {t(`navBar.projects.${hoveredProject.id}.description`)}
                       </p>
                       <Link
                         to={hoveredProject.link}
@@ -302,12 +302,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="about-us" className="hover:text-custom-red">
-                  {t("ABOUT US")}
+                  {t("navBar.ABOUT US")}
                 </Link>
               </li>
               <li>
                 <Link to="contact-us" className="hover:text-custom-red">
-                  {t("CONTACT US")}
+                  {t("navBar.CONTACT US")}
                 </Link>
               </li>
               <li className="relative">

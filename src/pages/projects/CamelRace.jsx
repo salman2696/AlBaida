@@ -37,7 +37,7 @@ const CamelRace = () => {
       title1: "Hejen <br /> Racing Committee",
       title2: "Traditional <br/> Sport",
       title3: "Year <br /> 2012",
-      title4: "Project <br/> Area",
+      title4: "43 Sq. KM <br/> Project Area",
       style: "md:w-16",
     },
   ];

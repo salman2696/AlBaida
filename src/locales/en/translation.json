@@ -1,96 +1,98 @@
 {
-  "HOME": "HOME",
-  "DIVISIONS": "DIVISIONS",
-  "PROJECTS": "PROJECTS",
-  "ABOUT US": "ABOUT US",
-  "CONTACT US": "CONTACT US",
-  "divisions": {
-    "1": {
-      "title": "Facility Management",
-      "description": "Managing educational staff and resources",
-      "path": "/divisions/facility-management"
+  "navBar": {
+    "HOME": "HOME",
+    "DIVISIONS": "DIVISIONS",
+    "PROJECTS": "PROJECTS",
+    "ABOUT US": "ABOUT US",
+    "CONTACT US": "CONTACT US",
+    "divisions": {
+      "1": {
+        "title": "Facility Management",
+        "description": "Managing educational staff and resources",
+        "path": "/divisions/facility-management"
+      },
+      "2": {
+        "title": "Contracting & Trading",
+        "description": "Business deals and trade partnerships",
+        "path": "/divisions/contracting"
+      },
+      "3": {
+        "title": "Infrastructure Roads & Project Development",
+        "description": "Building roads and large-scale projects",
+        "path": "/divisions/infrastructure"
+      },
+      "4": {
+        "title": "Cleaning Services",
+        "description": "Professional cleaning and sanitation",
+        "path": "/divisions/cleaning-services"
+      },
+      "5": {
+        "title": "Agriculture Projects & Training",
+        "description": "Farming projects and skill development",
+        "path": "/divisions/agriculture-projects"
+      },
+      "6": {
+        "title": "Heavy Equipment Rental",
+        "description": "Machinery and equipment leasing services",
+        "path": "/divisions/heavy-equipment-rental"
+      },
+      "7": {
+        "title": "Human Resource Management & Outsourcing",
+        "description": "Employee management and staffing solutions",
+        "path": "/divisions/human-resource-management"
+      },
+      "8": {
+        "title": "Cargo Logistics & Custom Clearance",
+        "description": "Transporting goods and handling customs",
+        "path": "/divisions/cargo-logistics"
+      },
+      "9": {
+        "title": "Engineering Consultancy",
+        "description": "Expert guidance on engineering projects",
+        "path": "/divisions/engineering-consultancy"
+      },
+      "10": {
+        "title": "Business Management Consultancy",
+        "description": "Consulting for business growth and efficiency",
+        "path": "/divisions/business-management-consultancy"
+      },
+      "11": {
+        "title": "Agency & Representation",
+        "description": "Acting as agents for various businesses",
+        "path": "/divisions/agency-and-representation"
+      },
+      "12": {
+        "title": "Construction",
+        "description": "Building and construction services",
+        "path": "/divisions/construction"
+      }
     },
-    "2": {
-      "title": "Contracting & Trading",
-      "description": "Business deals and trade partnerships",
-      "path": "/divisions/contracting"
-    },
-    "3": {
-      "title": "Infrastructure Roads & Project Development",
-      "description": "Building roads and large-scale projects",
-      "path": "/divisions/infrastructure"
-    },
-    "4": {
-      "title": "Cleaning Services",
-      "description": "Professional cleaning and sanitation",
-      "path": "/divisions/cleaning-services"
-    },
-    "5": {
-      "title": "Agriculture Projects & Training",
-      "description": "Farming projects and skill development",
-      "path": "/divisions/agriculture-projects"
-    },
-    "6": {
-      "title": "Heavy Equipment Rental",
-      "description": "Machinery and equipment leasing services",
-      "path": "/divisions/heavy-equipment-rental"
-    },
-    "7": {
-      "title": "Human Resource Management & Outsourcing",
-      "description": "Employee management and staffing solutions",
-      "path": "/divisions/human-resource-management"
-    },
-    "8": {
-      "title": "Cargo Logistics & Custom Clearance",
-      "description": "Transporting goods and handling customs",
-      "path": "/divisions/cargo-logistics"
-    },
-    "9": {
-      "title": "Engineering Consultancy",
-      "description": "Expert guidance on engineering projects",
-      "path": "/divisions/engineering-consultancy"
-    },
-    "10": {
-      "title": "Business Management Consultancy",
-      "description": "Consulting for business growth and efficiency",
-      "path": "/divisions/business-management-consultancy"
-    },
-    "11": {
-      "title": "Agency & Representation",
-      "description": "Acting as agents for various businesses",
-      "path": "/divisions/agency-and-representation"
-    },
-    "12": {
-      "title": "Construction",
-      "description": "Building and construction services",
-      "path": "/divisions/construction"
-    }
-  },
 
-  "projects": {
-    "1": {
-      "title": "Mwani Projects",
-      "description": "A massive and astounding project symbolizing our relentless passion and potential."
-    },
-    "2": {
-      "title": "Camel Race Projects",
-      "description": "A dream work at infinite pace against innumerable hurdles."
-    },
-    "3": {
-      "title": "Agriculture Projects for UMM GHUWAILINA",
-      "description": "Unleashing the power to go beyond impossibilities."
-    },
-    "4": {
-      "title": "Qatar University Projects",
-      "description": "A pristine gesture for an enlightened tomorrow."
-    },
-    "5": {
-      "title": "Ministry of Defence",
-      "description": "A pristine gesture for an enlightened tomorrow."
-    },
-    "6": {
-      "title": "Other Prestigious Projects",
-      "description": "Unleashing the power to go beyond impossibilities."
+    "projects": {
+      "1": {
+        "title": "Mwani Projects",
+        "description": "A massive and astounding project symbolizing our relentless passion and potential."
+      },
+      "2": {
+        "title": "Camel Race Projects",
+        "description": "A dream work at infinite pace against innumerable hurdles."
+      },
+      "3": {
+        "title": "Agriculture Projects for UMM GHUWAILINA",
+        "description": "Unleashing the power to go beyond impossibilities."
+      },
+      "4": {
+        "title": "Qatar University Projects",
+        "description": "A pristine gesture for an enlightened tomorrow."
+      },
+      "5": {
+        "title": "Ministry of Defence",
+        "description": "A pristine gesture for an enlightened tomorrow."
+      },
+      "6": {
+        "title": "Other Prestigious Projects",
+        "description": "Unleashing the power to go beyond impossibilities."
+      }
     }
   },
 

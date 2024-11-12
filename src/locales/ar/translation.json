@@ -1,95 +1,97 @@
 {
-  "HOME": "الصفحة الرئيسية",
-  "DIVISIONS": "الأقسام",
-  "PROJECTS": "المشاريع",
-  "ABOUT US": "معلومات عنا",
-  "CONTACT US": "اتصل بنا",
-  "divisions": {
-    "1": {
-      "title": "إدارة المرافق",
-      "description": "إدارة الموظفين التعليميين والموارد",
-      "path": "/divisions/facility-management"
+  "navBar": {
+    "HOME": "الصفحة الرئيسية",
+    "DIVISIONS": "الأقسام",
+    "PROJECTS": "المشاريع",
+    "ABOUT US": "معلومات عنا",
+    "CONTACT US": "اتصل بنا",
+    "divisions": {
+      "1": {
+        "title": "إدارة المرافق",
+        "description": "إدارة الموظفين التعليميين والموارد",
+        "path": "/divisions/facility-management"
+      },
+      "2": {
+        "title": "التعاقد والتجارة",
+        "description": "صفقات الأعمال والشراكات التجارية",
+        "path": "/divisions/contracting"
+      },
+      "3": {
+        "title": "الطرق والبنية التحتية وتطوير المشاريع",
+        "description": "بناء الطرق والمشاريع الكبيرة",
+        "path": "/divisions/infrastructure"
+      },
+      "4": {
+        "title": "خدمات التنظيف",
+        "description": "التنظيف المهني والتعقيم",
+        "path": "/divisions/cleaning-services"
+      },
+      "5": {
+        "title": "مشاريع وتدريب زراعي",
+        "description": "مشاريع الزراعة وتنمية المهارات",
+        "path": "/divisions/agriculture-projects"
+      },
+      "6": {
+        "title": "تأجير المعدات الثقيلة",
+        "description": "خدمات تأجير الآلات والمعدات",
+        "path": "/divisions/heavy-equipment-rental"
+      },
+      "7": {
+        "title": "إدارة الموارد البشرية والتوظيف",
+        "description": "إدارة الموظفين وحلول التوظيف",
+        "path": "/divisions/human-resource-management"
+      },
+      "8": {
+        "title": "الخدمات اللوجستية والشحن",
+        "description": "نقل البضائع ومعالجة الجمارك",
+        "path": "/divisions/cargo-logistics"
+      },
+      "9": {
+        "title": "الاستشارات الهندسية",
+        "description": "إرشادات الخبراء في المشاريع الهندسية",
+        "path": "/divisions/engineering-consultancy"
+      },
+      "10": {
+        "title": "استشارات إدارة الأعمال",
+        "description": "استشارات لنمو وكفاءة الأعمال",
+        "path": "/divisions/business-management-consultancy"
+      },
+      "11": {
+        "title": "الوكالة والتمثيل",
+        "description": "العمل كوكيل للعديد من الأعمال",
+        "path": "/divisions/agency-and-representation"
+      },
+      "12": {
+        "title": "البناء",
+        "description": "خدمات البناء والتشييد",
+        "path": "/divisions/construction"
+      }
     },
-    "2": {
-      "title": "التعاقد والتجارة",
-      "description": "صفقات الأعمال والشراكات التجارية",
-      "path": "/divisions/contracting"
-    },
-    "3": {
-      "title": "الطرق والبنية التحتية وتطوير المشاريع",
-      "description": "بناء الطرق والمشاريع الكبيرة",
-      "path": "/divisions/infrastructure"
-    },
-    "4": {
-      "title": "خدمات التنظيف",
-      "description": "التنظيف المهني والتعقيم",
-      "path": "/divisions/cleaning-services"
-    },
-    "5": {
-      "title": "مشاريع وتدريب زراعي",
-      "description": "مشاريع الزراعة وتنمية المهارات",
-      "path": "/divisions/agriculture-projects"
-    },
-    "6": {
-      "title": "تأجير المعدات الثقيلة",
-      "description": "خدمات تأجير الآلات والمعدات",
-      "path": "/divisions/heavy-equipment-rental"
-    },
-    "7": {
-      "title": "إدارة الموارد البشرية والتوظيف",
-      "description": "إدارة الموظفين وحلول التوظيف",
-      "path": "/divisions/human-resource-management"
-    },
-    "8": {
-      "title": "الخدمات اللوجستية والشحن",
-      "description": "نقل البضائع ومعالجة الجمارك",
-      "path": "/divisions/cargo-logistics"
-    },
-    "9": {
-      "title": "الاستشارات الهندسية",
-      "description": "إرشادات الخبراء في المشاريع الهندسية",
-      "path": "/divisions/engineering-consultancy"
-    },
-    "10": {
-      "title": "استشارات إدارة الأعمال",
-      "description": "استشارات لنمو وكفاءة الأعمال",
-      "path": "/divisions/business-management-consultancy"
-    },
-    "11": {
-      "title": "الوكالة والتمثيل",
-      "description": "العمل كوكيل للعديد من الأعمال",
-      "path": "/divisions/agency-and-representation"
-    },
-    "12": {
-      "title": "البناء",
-      "description": "خدمات البناء والتشييد",
-      "path": "/divisions/construction"
-    }
-  },
-  "projects": {
-    "1": {
-      "title": "مشاريع مواني",
-      "description": "مشروع ضخم ورائع يرمز إلى شغفنا وإمكاناتنا المستمرة."
-    },
-    "2": {
-      "title": "مشاريع سباق الجمال",
-      "description": "عمل أحلام بوتيرة لا نهائية ضد العديد من العقبات."
-    },
-    "3": {
-      "title": "مشاريع الزراعة لأم غويلينة",
-      "description": "إطلاق القوة لتجاوز المستحيلات."
-    },
-    "4": {
-      "title": "مشاريع جامعة قطر",
-      "description": "إيماءة نقية من أجل غدٍ مستنير."
-    },
-    "5": {
-      "title": "وزارة الدفاع",
-      "description": "إيماءة نقية من أجل غدٍ مستنير."
-    },
-    "6": {
-      "title": "مشاريع أخرى مرموقة",
-      "description": "إطلاق القوة لتجاوز المستحيلات."
+    "projects": {
+      "1": {
+        "title": "مشاريع مواني",
+        "description": "مشروع ضخم ورائع يرمز إلى شغفنا وإمكاناتنا المستمرة."
+      },
+      "2": {
+        "title": "مشاريع سباق الجمال",
+        "description": "عمل أحلام بوتيرة لا نهائية ضد العديد من العقبات."
+      },
+      "3": {
+        "title": "مشاريع الزراعة لأم غويلينة",
+        "description": "إطلاق القوة لتجاوز المستحيلات."
+      },
+      "4": {
+        "title": "مشاريع جامعة قطر",
+        "description": "إيماءة نقية من أجل غدٍ مستنير."
+      },
+      "5": {
+        "title": "وزارة الدفاع",
+        "description": "إيماءة نقية من أجل غدٍ مستنير."
+      },
+      "6": {
+        "title": "مشاريع أخرى مرموقة",
+        "description": "إطلاق القوة لتجاوز المستحيلات."
+      }
     }
   },
   "home": {

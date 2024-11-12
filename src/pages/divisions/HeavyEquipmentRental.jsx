@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import HeroSection from "../../components/HeroSection";
 import heroImage from "../../assets/images/divisions/HeavyEquipmentRental/heroImage.jpg";
 
@@ -8,10 +8,10 @@ const HeavyEquipmentRental = () => {
       <HeroSection
         heroImage={heroImage}
         title="Heavy Equipment Rental"
-        descripton="At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+        descripton="Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments."
       />
     </div>
-  )
-}
+  );
+};
 
-export default HeavyEquipmentRental
+export default HeavyEquipmentRental;
