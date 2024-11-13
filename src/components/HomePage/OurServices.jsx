@@ -97,7 +97,8 @@ const OurServices = () => {
   ];
 
   const CustomPrevArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { 
+      className, style, onClick } = props;
     return (
       <div
         className={className}
@@ -148,7 +149,7 @@ const OurServices = () => {
     slidesToScroll: 3,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 3000,
-    arrows: true,
+    arrows: false,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [

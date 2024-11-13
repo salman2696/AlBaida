@@ -2,24 +2,26 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import heroImage from "../assets/images/contactUs/heroImage.jpg";
 import contactUsImage from "../assets/images/contactUs/contactUsImage.png";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
       <HeroSection
         heroImage={heroImage}
-        title="Contact Us"
-        subtitle="Lets Get in Touch"
+        title={t("contactUs.heroSection.title")}
+        subtitle={t("contactUs.heroSection.subTitle")}
       />
       <section className="max-w-7xl mx-auto">
         <div className="container px-6 py-12 mx-auto">
           <div>
             <h1 className="mt-2 text-2xl font-bold text-gray-800 md:text-4xl text-center">
-              Get in touch
+              {t("contactUs.contactSection.title")}
             </h1>
 
             <p className="mt-3 text-gray-500 text-center">
-              Our friendly team would love to hear from you.
+              {t("contactUs.contactSection.subTitle")}
             </p>
           </div>
 
@@ -44,10 +46,10 @@ const ContactUs = () => {
                 </span>
 
                 <h2 className="mt-4 text-lg font-medium text-gray-800 ">
-                  Email
+                  {t("contactUs.contactSection.email.title")}
                 </h2>
                 <p className="mt-2 text-sm text-gray-500 ">
-                  Our friendly team is here to help.
+                  {t("contactUs.contactSection.email.subTitle")}
                 </p>
                 <p className="mt-2 text-sm text-custom-red ">
                   info@albaidagroup.com
@@ -78,13 +80,13 @@ const ContactUs = () => {
                 </span>
 
                 <h2 className="mt-4 text-lg font-medium text-gray-800 ">
-                  Office
+                  {t("contactUs.contactSection.office.title")}
                 </h2>
                 <p className="mt-2 text-sm text-gray-500 ">
-                  Come say hello at our office HQ.
+                  {t("contactUs.contactSection.office.subTitle")}
                 </p>
                 <p className="mt-2 text-sm text-custom-red ">
-                  PO Box #37772, Doha, Qatar
+                  {t("contactUs.contactSection.office.address")}
                 </p>
               </div>
 
@@ -107,10 +109,10 @@ const ContactUs = () => {
                 </span>
 
                 <h2 className="mt-4 text-lg font-medium text-gray-800">
-                  Phone
+                  {t("contactUs.contactSection.phone.title")}
                 </h2>
                 <p className="mt-2 text-sm text-gray-500">
-                  Mon-Fri from 8am to 5pm.
+                  {t("contactUs.contactSection.phone.subTitle")}
                 </p>
                 <p className="mt-2 text-sm text-custom-red">+974 44128899</p>
               </div>
@@ -135,33 +137,37 @@ const ContactUs = () => {
           <div className="lg:flex lg:items-center">
             <div className="lg:w-1/2">
               <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-                Let’s talk
+                {t("contactUs.formSection.title")}
               </h1>
 
               <p className="mt-4 text-gray-500">
-                Ask us everything and we would love to hear from you
+                {t("contactUs.formSection.subTitle")}
               </p>
 
               <form className="mt-12">
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
                     <label className="block mb-2 text-sm text-gray-600">
-                      Full Name
+                      {t("contactUs.formSection.formInput.name.label")}
                     </label>
                     <input
                       type="text"
-                      placeholder="John Doe"
+                      placeholder={t(
+                        "contactUs.formSection.formInput.name.placeholder"
+                      )}
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-custom-red  focus:ring-custom-red focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
                   <div className="flex-1 px-2 mt-4 md:mt-0">
                     <label className="block mb-2 text-sm text-gray-600">
-                      Email address
+                      {t("contactUs.formSection.formInput.email.label")}
                     </label>
                     <input
                       type="email"
-                      placeholder="johndoe@example.com"
+                      placeholder={t(
+                        "contactUs.formSection.formInput.email.placeholder"
+                      )}
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-mdfocus:border-custom-red focus:ring-custom-red focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -169,16 +175,18 @@ const ContactUs = () => {
 
                 <div className="w-full mt-4">
                   <label className="block mb-2 text-sm text-gray-600">
-                    Message
+                    {t("contactUs.formSection.formInput.message.label")}
                   </label>
                   <textarea
                     className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56focus:border-custom-red focus:ring-custom-red focus:outline-none focus:ring focus:ring-opacity-40"
-                    placeholder="Message"
+                    placeholder={t(
+                      "contactUs.formSection.formInput.message.placeholder"
+                    )}
                   ></textarea>
                 </div>
 
                 <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-custom-red rounded-md hover:bg-custom-red focus:outline-none focus:ring focus:ring-custom-red focus:ring-opacity-50">
-                  get in touch
+                  {t("contactUs.formSection.formInput.button")}
                 </button>
               </form>
             </div>
@@ -191,7 +199,9 @@ const ContactUs = () => {
               />
 
               <div className="mt-6 w-80 md:mt-8">
-                <h3 className="text-gray-600">Follow us</h3>
+                <h3 className="text-gray-600">
+                  {t("contactUs.formSection.followUs")}
+                </h3>
 
                 <div className="flex mt-4 -mx-1.5 ">
                   <a

@@ -253,6 +253,107 @@
       ]
     }
   },
+  "aboutUs": {
+    "heroSection": {
+      "title": "Your Trusted Partner in",
+      "subTitle": "Comprehensive Project Solutions",
+      "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+    },
+    "ourHistory": {
+      "heading": "Our History",
+      "subHeading": "Discover the journey that has shaped us into a trusted leader in comprehensive project solutions.",
+      "cardData": [
+        {
+          "title": "The Beginning",
+          "description": "Established in 1990, our company began with a vision to provide unparalleled services across various industries. We laid our foundation on values of integrity, quality, and innovation, quickly gaining the trust of clients and partners alike."
+        },
+        {
+          "title": "Expansion and Growth",
+          "description": "Through the early 2000s, we expanded our capabilities, integrating cutting-edge technology and a commitment to sustainable practices. Our team grew, bringing in expertise and talent that propelled our company forward, allowing us to serve a global client base."
+        },
+        {
+          "title": "A Commitment to Innovation",
+          "description": "In the past decade, we have embraced new technologies and innovative approaches, reinforcing our position as industry leaders. Our projects reflect our dedication to providing forward-thinking solutions that adapt to the ever-evolving landscape of global markets."
+        },
+        {
+          "title": "Today and Beyond",
+          "description": "Today, we stand as a trusted partner in comprehensive project solutions. Looking ahead, our focus remains on delivering value-driven services that not only meet but exceed expectations, ensuring a legacy of excellence for future generations."
+        }
+      ]
+    },
+    "partners": {
+      "title1": "your",
+      "title2": "Trusted Parnter",
+      "subTitle": "Al Baida group has developed partnerships with world-class companies across the globe and place a strong emphasis on strengthening and expanding the relationships. Al Baida is always excited about developing new partnerships and exploring collaborations and opportunities with new and existing partners mutually benefiting both parties. We have more than 100 partners throughout the world."
+    },
+    "missionVisionValues": {
+      "title1": "To transform dreams into a",
+      "title2": "progressive reality",
+      "cardData": [
+        {
+          "title": "Our Mission",
+          "description": "Our mission is to make marvels in the world of business leaving no stone unturned. We aim at setting up the greatest consumer-centric business hub at Qatar to pursue alliances and acquisitions that would build strength of our business groups. To serve as a platform that welcomes innovations and transformations is one of our most desirable idea."
+        },
+        {
+          "title": "Our Vision",
+          "description": "Few years from now, we see ourselves as a firm known for its inspiringly sustainable and environment friendly business practices. Establishing strong values and ethical practices would be our gesture to make a community that would grow and glow together. We wish to accomplish novel ideas with a cultural touch, as we always believe in our values."
+        },
+        {
+          "title": "Our Values",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    },
+    "chairmanMsg": {
+      "title": "Message Form Chairman",
+      "paragraph": "“It has been more than 3 decades, and it amazes me to see Al Baida Group unsettlingly strive to uphold a niche on top of the competitive business market. Having been a market leader covering various sectors in Qatar, we have always perpetuated in class and style. We cover almost all the key business sectors of various genres with top-notch quality services. We intend to expand our operations in various other core sectors as well. As much as we are focused in our vision to become an Intern ational business hub, we have always been fascinated to become your trusted partner. With us, you can taste the savour of an incredible partnership and global perspective. We have envisioned ourselves to be a unique entity with the best metrics as sustainable practices, efficiency and impeccable quality. Also, we never compromise on our social, economic and environmental responsibilities. On the whole, it gives me immense pleasure to be a part of this legacy group of companies that contributes monumental strategies to make Qatar an international hub for business and trade by 2022.”",
+      "name": "Ali Bin Abdullatif Almesned",
+      "position": "Chairman at Al Baida Group"
+    }
+  },
+  "contactUs": {
+    "heroSection": {
+      "title": "Contact Us",
+      "subTitle": "Lets Get in Touch"
+    },
+    "contactSection": {
+      "title": "Get in touch",
+      "subTitle": "Our friendly team would love to hear from you.",
+      "email": {
+        "title": "Email",
+        "subTitle": "Our friendly team is here to help."
+      },
+      "office": {
+        "title": "Office",
+        "subTitle": "Come say hello at our office HQ.",
+        "address": "PO Box #37772, Doha, Qatar"
+      },
+      "phone": {
+        "title": "Phone",
+        "subTitle": "Mon-Fri from 8am to 5pm."
+      }
+    },
+    "formSection": {
+      "title": "Let's talk",
+      "subTitle": "Ask us everything and we would love to hear from you",
+      "formInput":{
+        "name":{
+          "label":"Full Name",
+          "placeholder":"Enter your name"
+        },
+        "email":{
+          "label":"Email address",
+          "placeholder":"Enter your email address"
+        },
+        "message":{
+          "label":"Message",
+          "placeholder":"Enter your message"
+        },
+        "button":"Get In Touch"
+      },
+      "followUs":"Follow Us"
+    }
+  },
   "footer": {
     "sections": [
       {

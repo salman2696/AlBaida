@@ -87,11 +87,13 @@ const Navbar = () => {
   const toggleDivisionsMenu = () => {
     setisDivisionsOpen(!isDivisionsOpen);
     setIsProjectsOpen(false);
+    setIsLanguageDropdownOpen(false);
   };
 
   const toggleProjectsMenu = () => {
     setIsProjectsOpen(!isProjectsOpen);
     setisDivisionsOpen(false);
+    setIsLanguageDropdownOpen(false);
   };
 
   const divisions = [
@@ -167,7 +169,11 @@ const Navbar = () => {
       link: "/projects/qatar-university",
       image: "/projects/project4.jpg",
     },
-    { id: 5, link: "/projects/ministry-of-defence", image: "/projects/project5.jpg" },
+    {
+      id: 5,
+      link: "/projects/ministry-of-defence",
+      image: "/projects/project5.jpg",
+    },
     { id: 6, link: "/projects/project-6", image: "/projects/project1.jpg" },
   ];
   const [hoveredProject, setHoveredProject] = useState(projects[0]);
@@ -183,7 +189,7 @@ const Navbar = () => {
       <div className="container mx-auto max-w-7xl 2xl:px-0 px-4">
         <div className="flex items-center justify-between py-2 3xl:text-lg 2xl:text-base text-sm transition-all duration-300">
           <div className="flex items-center">
-            <Link to="/">
+            <Link to="/" onClick={() => setIsOpen(false)}>
               <img src={Logo} alt="Logo" className="h-14 w-auto" />
             </Link>
           </div>
@@ -223,11 +229,8 @@ const Navbar = () => {
                 <div className="fixed inset-x-0 mt-4 max-w-5xl mx-auto bg-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ease-in-out translate-y-4 group-hover:translate-y-0">
                   <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-6">
                     {divisions.map((division, index) => (
-                      <Link to={division.link}>
-                        <div
-                          key={index}
-                          className="flex items-center p-3 border rounded-md hover:bg-gray-100 2xl:min-h-24"
-                        >
+                      <Link to={division.link} key={index}>
+                        <div className="flex items-center p-3 border rounded-md hover:bg-gray-100 2xl:min-h-24">
                           <div className={isRTL ? "ml-4" : "mr-4"}>
                             {division.icon}
                           </div>
@@ -364,7 +367,7 @@ const Navbar = () => {
                   onClick={toggleMenu}
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                 >
-                  {t("HOME")}
+                  {t("navBar.HOME")}
                 </Link>
               </li>
               <li>
@@ -374,7 +377,7 @@ const Navbar = () => {
                   aria-expanded={isDivisionsOpen}
                   aria-haspopup={true}
                 >
-                  {t("DIVISIONS")}
+                  {t("navBar.DIVISIONS")}
                   <FiChevronDown
                     className={`ml-1 transform ${
                       isDivisionsOpen ? "rotate-180" : ""
@@ -397,7 +400,7 @@ const Navbar = () => {
                             onClick={toggleMenu}
                             className="flex items-center justify-between w-full hover:bg-gray-200 px-2 py-1 rounded focus:outline-none"
                           >
-                            {t(`divisions.${division.id}.title`)}
+                            {t(`navBar.divisions.${division.id}.title`)}
                           </Link>
                         </div>
                       ))}
@@ -412,7 +415,7 @@ const Navbar = () => {
                   aria-expanded={isProjectsOpen}
                   aria-haspopup={true}
                 >
-                  PROJECTS
+                  {t("navBar.PROJECTS")}
                   <FiChevronDown
                     className={`ml-1 transform ${
                       isProjectsOpen ? "rotate-180" : ""
@@ -435,7 +438,7 @@ const Navbar = () => {
                             onClick={toggleMenu}
                             className="flex items-center justify-between w-full hover:bg-gray-200 px-2 py-1 rounded focus:outline-none"
                           >
-                            {t(`projects.${project.id}.title`)}
+                            {t(`navBar.projects.${project.id}.title`)}
                           </Link>
                         </div>
                       ))}
@@ -450,7 +453,7 @@ const Navbar = () => {
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                   onClick={toggleMenu}
                 >
-                  ABOUT US
+                  {t("navBar.ABOUT US")}
                 </Link>
               </li>
               <li>
@@ -459,29 +462,44 @@ const Navbar = () => {
                   onClick={toggleMenu}
                   className="block hover:bg-gray-200 px-2 py-1 rounded"
                 >
-                  CONTACT US
+                  {t("navBar.CONTACT US")}
                 </Link>
               </li>
             </ul>
-            <div className="px-6 pb-4">
+            <div className="px-4 pb-4 ">
               <button
                 onClick={toggleLanguageDropdown}
-                className="flex items-center gap-2 text-black"
+                className="flex items-center justify-between gap-2 text-black w-full px-2"
               >
-                <img
-                  src={selectedLanguage.flag}
-                  alt={selectedLanguage.name}
-                  className="w-6 h-6"
+                <div className="flex gap-2">
+                  <img
+                    src={selectedLanguage.flag}
+                    alt={selectedLanguage.name}
+                    className="w-6 h-6"
+                  />
+                  {selectedLanguage.name}
+                </div>
+                <FiChevronDown
+                  className={`ml-1 transform ${
+                    isLanguageDropdownOpen ? "rotate-180" : ""
+                  } transition-transform duration-200`}
                 />
-                {selectedLanguage.name}
-                <FiChevronDown />
               </button>
               {isLanguageDropdownOpen && (
-                <div className="absolute left-0 mt-2 w-40 bg-white rounded-lg shadow-lg z-50">
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-x-0 mt-2 w-full bg-white shadow-lg z-50 px-4"
+                >
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
-                      onClick={() => selectLanguage(lang)}
+                      onClick={() => {
+                        selectLanguage(lang);
+                        toggleMenu();
+                      }}
                       className="flex items-center w-full px-4 py-2 text-black hover:bg-gray-100"
                     >
                       <img
@@ -492,13 +510,13 @@ const Navbar = () => {
                       {lang.name}
                     </button>
                   ))}
-                </div>
+                </motion.div>
               )}
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-      <style jsx>{`
+      <style jsx="true">{`
         .hamburger {
           width: 30px;
           height: 20px;
