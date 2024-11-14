@@ -3,49 +3,68 @@ import HeroSection from "../../components/HeroSection";
 import heroImage from "../../assets/images/divisions/cleaningServices/heroImage.jpg";
 import Banner from "../../components/Banner";
 import ServicesSection from "../../components/Divisions/ServicesSection";
+import { useTranslation } from "react-i18next";
 import {
   MdCleaningServices,
   MdRestaurant,
   MdMeetingRoom,
   MdBuild,
 } from "react-icons/md";
-import {
-  FaWindowMaximize,
-  FaCouch,
-  FaBroom,
-  FaWarehouse,
-  FaLightbulb,
-} from "react-icons/fa";
+import { FaWindowMaximize, FaCouch, FaBroom } from "react-icons/fa";
 import { GiVacuumCleaner, GiChemicalDrop } from "react-icons/gi";
-import { FiGrid } from "react-icons/fi";
 
 const CleaningServices = () => {
+  const { t, i18n } = useTranslation();
   const services = [
-    { name: "General Cleaning Services", icon: <MdCleaningServices /> },
-    { name: "Dining and Cafeteria Cleaning", icon: <MdRestaurant /> },
-    { name: "Facade and Window Cleaning", icon: <FaWindowMaximize /> },
-    { name: "Floor and Carpet Care", icon: <GiVacuumCleaner /> },
-    { name: "Furniture and Accessories Cleaning", icon: <FaCouch /> },
-    { name: "Office and Workspace Cleaning", icon: <MdMeetingRoom /> },
     {
-      name: "Laboratory and Specialized Area Cleaning",
+      name: t("division.cleaningServices.servicesSection.services.0.name"),
+      icon: <MdCleaningServices />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.1.name"),
+      icon: <MdRestaurant />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.2.name"),
+      icon: <FaWindowMaximize />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.3.name"),
+      icon: <GiVacuumCleaner />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.4.name"),
+      icon: <FaCouch />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.5.name"),
+      icon: <MdMeetingRoom />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.6.name"),
       icon: <GiChemicalDrop />,
     },
-    { name: "Industrial and Equipment Cleaning", icon: <MdBuild /> },
-    { name: "Janitorial and Housekeeping Services", icon: <FaBroom /> },
+    {
+      name: t("division.cleaningServices.servicesSection.services.7.name"),
+      icon: <MdBuild />,
+    },
+    {
+      name: t("division.cleaningServices.servicesSection.services.8.name"),
+      icon: <FaBroom />,
+    },
   ];
 
   return (
     <div>
       <HeroSection
         heroImage={heroImage}
-        title="Cleaning Services"
-        descripton="At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+        title={t("division.cleaningServices.heroSection.title")}
+        descripton={t("division.cleaningServices.heroSection.description")}
       />
-      <Banner title="We deliver reliable solutions across Facility Management" />
+      <Banner title={t("division.cleaningServices.banner.title")} />
       <ServicesSection
-        title="20 Years of Excellence in Comprehensive Cleaning Solutions"
-        description="Al Baida is a team of professionals and experts committed to providing supreme cleaning services. We offer complete cleaning solutions and always strive to achieve the best in class customer service to our clients using the latest technologies. Our excellence in the field of cleaning services in Qatar is unparalleled. Our passion and attention to details differentiate us from other cleaning service providers."
+        title={t("division.cleaningServices.servicesSection.title")}
+        description={t("division.cleaningServices.servicesSection.description")}
         services={services}
       />
     </div>
