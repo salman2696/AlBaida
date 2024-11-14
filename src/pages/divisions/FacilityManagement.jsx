@@ -14,38 +14,75 @@ import {
   FaConciergeBell,
   FaBug,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 
 const FacilityManagement = () => {
+  const { t, i18n } = useTranslation();
 
   const services = [
-    { name: "Infrastructure Maintenance", icon: <FaTools /> },
-    { name: "AC & Ventilation", icon: <FaThermometerHalf /> },
-    { name: "Aesthetics", icon: <FaArtstation /> },
-    { name: "Elevator", icon: <FaBuilding /> }, // Replaced with FaBuilding
-    { name: "Security", icon: <FaShieldAlt /> },
-    { name: "Human Resources", icon: <FaUsers /> },
-    { name: "Catering", icon: <FaConciergeBell /> },
-    { name: "Pest Control", icon: <FaBug /> },
-    { name: "Fire Alarm", icon: <FaShieldAlt /> },
+    {
+      name: t("division.facilityManagement.servicesSection.services.0.name"),
+      icon: <FaTools />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.1.name"),
+      icon: <FaThermometerHalf />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.2.name"),
+      icon: <FaArtstation />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.3.name"),
+      icon: <FaBuilding />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.4.name"),
+      icon: <FaShieldAlt />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.5.name"),
+      icon: <FaUsers />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.6.name"),
+      icon: <FaConciergeBell />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.7.name"),
+      icon: <FaBug />,
+    },
+    {
+      name: t("division.facilityManagement.servicesSection.services.8.name"),
+      icon: <FaShieldAlt />,
+    },
   ];
 
   return (
     <div>
       <HeroSection
         heroImage={heroImage}
-        title="Facility Management"
-        descripton="At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+        title={t("division.facilityManagement.heroSection.title")}
+        descripton={t("division.facilityManagement.heroSection.description")}
       />
-      <Banner title="We deliver reliable solutions across Facility Management" />
+      <Banner
+        title={t("division.facilityManagement.banner.title")}
+      />
       <ServicesSection
-        title="Comprehensive Facility Solutions for Seamless Business Operations"
-        description=" We provide a wide range of services to ensure that your facility runs smoothly and efficiently. Explore our offerings tailored to meet your needs."
+        title={t("division.facilityManagement.servicesSection.title")}
+        description={t(
+          "division.facilityManagement.servicesSection.description"
+        )}
         services={services}
       />
       <AreasOfExpertise
-        title="Areas of Expertise"
-        description="Every business need is handled with utmost care and precision. Through the coordination of multiple work streams, people management processes and integrated delivery systems, Al Baida adds value to the customer organization, allowing increased focus on core competences by unleashing the potential of outsourcing."
+        title={t(
+          "division.facilityManagement.expertise.title"
+        )}
+        description={t(
+          "division.facilityManagement.expertise.description"
+        )}
       />
     </div>
   );

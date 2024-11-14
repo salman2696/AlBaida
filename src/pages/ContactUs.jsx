@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
   const { t, i18n } = useTranslation();
+  const isRtl = i18n.dir() === "rtl";
   return (
     <div>
       <HeroSection
@@ -114,7 +115,7 @@ const ContactUs = () => {
                 <p className="mt-2 text-sm text-gray-500">
                   {t("contactUs.contactSection.phone.subTitle")}
                 </p>
-                <p className="mt-2 text-sm text-custom-red">+974 44128899</p>
+                <p className="mt-2 text-sm text-custom-red" dir={isRtl ? "ltr" : "auto"}>+974 44128899</p>
               </div>
             </div>
 

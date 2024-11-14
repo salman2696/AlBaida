@@ -12,13 +12,13 @@ const ServicesSection = ({ title, description, services }) => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-1/2 md:ml-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="md:w-1/2 md:ml-4 grid grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={index}
               className="flex flex-col items-center justify-between p-4 border rounded-lg shadow-md text-center"
             >
-              <div className="text-[#ab1218] text-3xl mr-4">{service.icon}</div>
+              <div className="text-[#ab1218] text-3xl">{service.icon}</div>
               <span className="text-gray-800">{service.name}</span>
             </div>
           ))}

@@ -15,54 +15,59 @@ import {
   FaLightbulb,
   FaRedo,
 } from "react-icons/fa";
-
-const expertiseAreas = [
-  {
-    name: "Interior Designing & Decoration",
-    icon: <FaCouch />,
-    image: expertiseImage1,
-  },
-  {
-    name: "Glass Works & Water Proofing",
-    icon: <FaWater />,
-    image: expertiseImage1,
-  },
-  {
-    name: "Fabrication of Steel & Aluminium",
-    icon: <FaTools />,
-    image: expertiseImage2,
-  },
-  {
-    name: "Carpentry & Gypsum Works",
-    icon: <FaHammer />,
-    image: expertiseImage3,
-  },
-  {
-    name: "Electrical & Plumbing Works",
-    icon: <FaLightbulb />,
-    image: expertiseImage4,
-  },
-  {
-    name: "Painting & Tile Fixing",
-    icon: <FaPaintRoller />,
-    image: expertiseImage5,
-  },
-  {
-    name: "Renovation & Remodeling",
-    icon: <FaRedo />,
-    image: expertiseImage6,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const AreasOfExpertise = ({ title, description }) => {
+  const { t, i18n } = useTranslation();
+
+  const expertiseAreas = [
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.0.name"),
+      icon: <FaCouch />,
+      image: expertiseImage1,
+    },
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.1.name"),
+      icon: <FaWater />,
+      image: expertiseImage1,
+    },
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.2.name"),
+      icon: <FaTools />,
+      image: expertiseImage2,
+    },
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.3.name"),
+      icon: <FaHammer />,
+      image: expertiseImage3,
+    },
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.4.name"),
+      icon: <FaLightbulb />,
+      image: expertiseImage4,
+    },
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.5.name"),
+      icon: <FaPaintRoller />,
+      image: expertiseImage5,
+    },
+    {
+      name: t("division.facilityManagement.expertise.expertiseAreas.6.name"),
+      icon: <FaRedo />,
+      image: expertiseImage6,
+    },
+  ];
+
   return (
     <div className="container mx-auto px-4 py-10 text-center max-w-7xl">
       {/* Title and Description */}
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">{title}</h2>
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 center-title">
+        {title}
+      </h2>
       <p className="text-gray-700 mb-8 text-lg">{description}</p>
 
       {/* Expertise Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {expertiseAreas.map((area, index) => (
           <div
             key={index}
