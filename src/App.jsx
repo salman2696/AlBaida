@@ -26,7 +26,7 @@ import MinistryOfDefence from "./pages/projects/MinistryOfDefence";
 function App() {
   return (
     <HashRouter>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

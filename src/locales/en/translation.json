@@ -534,6 +534,98 @@
           }
         ]
       }
+    },
+    "agriculture": {
+      "heroSection": {
+        "title": "Agriculture Projects & Training",
+        "description": "The world is nothing with no pastures and peasants. Agriculture is the sole reason of our very existence."
+      },
+      "banner": {
+        "title": "Agriculture is the sole reason of our very existence.",
+        "button": "Get a Quote"
+      },
+      "servicesSection": {
+        "title": "SERVICES",
+        "services": [
+          {
+            "name": "Production",
+            "description": "Specialized in high-quality production processes, ensuring efficiency and sustainability across a wide range of industrial applications."
+          },
+          {
+            "name": "Trading",
+            "description": "Providing top-notch trading services, facilitating smooth transactions and connections with reliable partners across various sectors."
+          },
+          {
+            "name": "Excavation",
+            "description": "Comprehensive excavation solutions, equipped for large-scale site preparation and earthworks with precision and safety."
+          },
+          {
+            "name": "Landscaping",
+            "description": "Creating aesthetically pleasing landscapes, combining natural beauty with sustainable practices for residential and commercial spaces."
+          },
+          {
+            "name": " Landscaping",
+            "description": "Maintenance of outdoor spaces with an emphasis on enhancing both beauty and sustainability"
+          },
+          {
+            "name": "Plantation",
+            "description": "Professional plantation services that promote green spaces, focusing on plant health, biodiversity, and environmental benefits."
+          }
+        ]
+      },
+      "paragraph": "We are immensely proud to be the investor and developer of Um Guilina for cultivation of green fodder, which is one of Qatar’s most precious project owned by the Ministry of Municipality & Environment. Having accomplished this project makes us feel that we could break any barriers that would restrain us from our dreams. We are the sole distributer of every kind of agricultural products for more than 5 international companies. We have attained greater reputation for accomplishing the government’s vision through our adept skill and strategies.",
+      "partner": {
+        "title": "Our Valuable Partner",
+        "description": "Al Baida Technical Services is exclusive business partner in Qatar. Alkhorayef is leading irrigation company in GCC and provides wide range of agriculture services",
+        "list": [
+          {
+            "name": "Planning and designing the Camel Race Tracks"
+          },
+          {
+            "name": "Planning and designing the allied road along the tracks"
+          },
+          {
+            "name": "Implantation of lamp posts along the tracks"
+          },
+          {
+            "name": "Construction of the race tracks and roads"
+          },
+          {
+            "name": "Maintenance of the tracks, road and entire arena"
+          }
+        ],
+        "brandCard": {
+          "title": "Alkhorayef Group",
+          "description": "Alkhorayef Group was founded in 1957, Alkhorayef Group has achieved excellence on agricultural market by representing and marketing the top of the line brands, combined with a variety of excellent services to its customers."
+        }
+      },
+      "news": {
+        "title": "From the News",
+        "description": "Al Baida Group’s Chairman Engineer Ali Abdullatif Almesned, accompanying its CEO Eng. Mohamed Elwan signed the agreement with Sheikh Mohamed Abdulla Alkhorayef, chairman of Alkhorayef Group."
+      },
+      "companiesInfo": [
+        {
+          "title": "Gubretas",
+          "description1": "Al Baida Technical Services is a cardinal distributor for one of the largest Fertilizer Company ‘Gubretas’ at Turkey.",
+          "description2": "Gubretas was founded in 1952 catering the fertilizer needs of Turkish agricultural industry. Having been a predominant organization in Turkey’s top 50 largest industries, it owns a rich product portfolio in meeting the nutritional requirement of crops.",
+          "topSellingProducts": {
+            "title":"Top Selling Products",
+            "product1": "Solid, Water-Soluble Organic Fertilizers",
+            "product2": "Plant Growth Regulators",
+            "product3": "Soil Conditioners"
+          }
+        },
+        {
+          "title": "Daymsa",
+          "description1": "Established in 1970 Daymsa is present in more than 40 countries This structure is highly effective in transferring new techniques, developed by the Spanish central office, to the market as well as in the control and monitoring of its implementation and development throughout the world.",
+          "description2": "Daymsa has met with a warm welcome in the more developed countries where they are sensitive to this new concept that has gradually become more widespread around the world: Agriculture, like all other means of production, must be environmentally friendly and sustainable in the long term. Al Baida Technical Services is an exclusive business partner and distributor for Qatar"
+        },
+        {
+          "title": "S&W Seed Company",
+          "description1": "We are an accredited dealer for one of the leading agricultural organization, ‘S&W’ in Qatar.",
+          "description2": "S&W is one its kind in the agricultural market, in practicing the most nourishing techniques for a greater production. Their expertise in this field makes them an exceptional firm for maximum yield with superior traits."
+        }
+      ]
     }
   },
   "footer": {

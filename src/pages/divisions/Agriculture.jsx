@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../../components/HeroSection";
 import heroImage from "../../assets/images/divisions/agriculture/heroImage.jpg";
 import Banner from "../../components/Banner";
+import { useTranslation } from "react-i18next";
 import {
   FaIndustry,
   FaExchangeAlt,
@@ -25,92 +26,105 @@ import plant from "../../assets/images/divisions/agriculture/plant.png";
 import soil from "../../assets/images/divisions/agriculture/soil.png";
 
 const Agriculture = () => {
-  
+  const { t, i18n } = useTranslation();
+
   const services = [
     {
-      name: "Production",
+      name: t("division.agriculture.servicesSection.services.0.name"),
       icon: <FaIndustry />,
-      description:
-        "Specialized in high-quality production processes, ensuring efficiency and sustainability across a wide range of industrial applications.",
+      description: t(
+        "division.agriculture.servicesSection.services.0.description"
+      ),
     },
     {
-      name: "Trading",
+      name: t("division.agriculture.servicesSection.services.1.name"),
       icon: <FaExchangeAlt />,
-      description:
-        "Providing top-notch trading services, facilitating smooth transactions and connections with reliable partners across various sectors.",
+      description: t(
+        "division.agriculture.servicesSection.services.1.description"
+      ),
     },
     {
-      name: "Irrigation System",
+      name: t("division.agriculture.servicesSection.services.2.name"),
       icon: <FaSeedling />,
-      description:
-        "Design and installation of advanced irrigation systems, tailored for water conservation and optimal plant growth.",
+      description: t(
+        "division.agriculture.servicesSection.services.2.description"
+      ),
     },
     {
-      name: "Excavation",
+      name: t("division.agriculture.servicesSection.services.3.name"),
       icon: <FaTruck />,
-      description:
-        "Comprehensive excavation solutions, equipped for large-scale site preparation and earthworks with precision and safety.",
+      description: t(
+        "division.agriculture.servicesSection.services.3.description"
+      ),
     },
     {
-      name: "Landscaping",
+      name: t("division.agriculture.servicesSection.services.4.name"),
       icon: <FaTree />,
-      description:
-        "Creating aesthetically pleasing landscapes, combining natural beauty with sustainable practices for residential and commercial spaces.",
+      description: t(
+        "division.agriculture.servicesSection.services.4.description"
+      ),
     },
     {
-      name: "Plantation",
+      name: t("division.agriculture.servicesSection.services.5.name"),
       icon: <FaLeaf />,
-      description:
-        "Professional plantation services that promote green spaces, focusing on plant health, biodiversity, and environmental benefits.",
+      description: t(
+        "division.agriculture.servicesSection.services.5.description"
+      ),
     },
   ];
   const cards = [
-    { image: fertilizer, text: " Solid, Water-Soluble Organic Fertilizers" },
-    { image: plant, text: "Plant Growth Regulators" },
-    { image: soil, text: "Soil Conditioners" },
+    {
+      image: fertilizer,
+      text: t(
+        "division.agriculture.companiesInfo.0.topSellingProducts.product1"
+      ),
+    },
+    {
+      image: plant,
+      text: t(
+        "division.agriculture.companiesInfo.0.topSellingProducts.product2"
+      ),
+    },
+    {
+      image: soil,
+      text: t(
+        "division.agriculture.companiesInfo.0.topSellingProducts.product3"
+      ),
+    },
   ];
 
   return (
     <div>
       <HeroSection
         heroImage={heroImage}
-        title="Agriculture Projects & Training"
-        descripton="The world is nothing with no pastures and peasants. Agriculture is the sole reason of our very existence."
+        title={t("division.agriculture.heroSection.title")}
+        descripton={t("division.agriculture.heroSection.description")}
       />
       <div className="max-w-7xl mx-auto">
-        <Banner title="Agriculture is the sole reason of our very existence." />
-        <Services title="SERVICES" services={services} />
-        <p className="p-4 text-lg">
-          We are immensely proud to be the investor and developer of Um Guilina
-          for cultivation of green fodder, which is one of Qatar’s most precious
-          project owned by the Ministry of Municipality & Environment. Having
-          accomplished this project makes us feel that we could break any
-          barriers that would restrain us from our dreams. We are the sole
-          distributer of every kind of agricultural products for more than 5
-          international companies. We have attained greater reputation for
-          accomplishing the government’s vision through our adept skill and
-          strategies.
-        </p>
+        <Banner title={t("division.agriculture.banner.title")} />
+        <Services
+          title={t("division.agriculture.servicesSection.title")}
+          services={services}
+        />
+        <p className="p-4 text-lg">{t("division.agriculture.paragraph")}</p>
       </div>
       <div className="bg-[#e9eae5]">
         <div className="flex flex-col lg:flex-row items-center gap-8 p-6 max-w-7xl mx-auto">
           <div className="lg:w-1/2 space-y-6">
             {/* Services Section */}
             <h2 className="text-4xl font-bold mb-8 animate-line def-title relative">
-              Our Valuable Partner
+              {t("division.agriculture.partner.title")}
             </h2>
             <h3 className="text-xl mb-4">
-              Al Baida Technical Services is exclusive business partner in
-              Qatar. Alkhorayef is leading irrigation company in GCC and
-              provides wide range of agriculture services
+              {t("division.agriculture.partner.description")}
             </h3>
             <ul className="space-y-2 text-gray-700">
               {[
-                "Planning and designing the Camel Race Tracks",
-                "Planning and designing the allied road along the tracks",
-                "Implantation of lamp posts along the tracks",
-                "Construction of the race tracks and roads",
-                "Maintenance of the tracks, road and entire arena",
+                t("division.agriculture.partner.list.0.name"),
+                t("division.agriculture.partner.list.1.name"),
+                t("division.agriculture.partner.list.2.name"),
+                t("division.agriculture.partner.list.3.name"),
+                t("division.agriculture.partner.list.4.name"),
               ].map((item, index) => (
                 <li key={index} className="flex items-center space-x-2">
                   <FaCircleCheck className="text-custom-red" />
@@ -120,8 +134,10 @@ const Agriculture = () => {
             </ul>
           </div>
           <Partner
-            name="Alkhorayef Group"
-            description="Alkhorayef Group was founded in 1957, Alkhorayef Group has achieved excellence on agricultural market by representing and marketing the top of the line brands, combined with a variety of excellent services to its customers."
+            name={t("division.agriculture.partner.brandCard.title")}
+            description={t(
+              "division.agriculture.partner.brandCard.description"
+            )}
             logo={logo}
             customClass="lg:w-1/2"
           />
@@ -129,12 +145,10 @@ const Agriculture = () => {
       </div>
       <div className="p-4 max-w-7xl mx-auto">
         <h2 className="text-4xl text-center font-bold mb-4 mt-6 center-title">
-          From the News
+          {t("division.agriculture.news.title")}
         </h2>
         <p className="text-xl mb-4 text-center">
-          Al Baida Group’s Chairman Engineer Ali Abdullatif Almesned,
-          accompanying its CEO Eng. Mohamed Elwan signed the agreement with
-          Sheikh Mohamed Abdulla Alkhorayef, chairman of Alkhorayef Group.
+          {t("division.agriculture.news.description")}
         </p>
         <img
           src={newsImage}
@@ -144,23 +158,28 @@ const Agriculture = () => {
       </div>
       <div className="space-y-8 max-w-7xl mx-auto">
         <ContentWithImage
-          title="Gubretas"
-          description1="Al Baida Technical Services is a cardinal distributor for one of the largest Fertilizer Company ‘Gubretas’ at Turkey."
-          description2="Gubretas was founded in 1952 catering the fertilizer needs of Turkish agricultural industry. Having been a predominant organization in Turkey’s top 50 largest industries, it owns a rich product portfolio in meeting the nutritional requirement of crops."
+          title={t("division.agriculture.companiesInfo.0.title")}
+          description1={t("division.agriculture.companiesInfo.0.description1")}
+          description2={t("division.agriculture.companiesInfo.0.description2")}
           image={gubretasImage}
         />
-        <TitleWithCards title="Top Selling Products" cards={cards} />
+        <TitleWithCards
+          title={t(
+            "division.agriculture.companiesInfo.0.topSellingProducts.title"
+          )}
+          cards={cards}
+        />
         <ContentWithImage
-          title="Daymsa"
-          description1="Established in 1970 Daymsa is present in more than 40 countries This structure is highly effective in transferring new techniques, developed by the Spanish central office, to the market as well as in the control and monitoring of its implementation and development throughout the world."
-          description2="Daymsa has met with a warm welcome in the more developed countries where they are sensitive to this new concept that has gradually become more widespread around the world: Agriculture, like all other means of production, must be environmentally friendly and sustainable in the long term. Al Baida Technical Services is an exclusive business partner and distributor for Qatar"
+          title={t("division.agriculture.companiesInfo.1.title")}
+          description1={t("division.agriculture.companiesInfo.1.description1")}
+          description2={t("division.agriculture.companiesInfo.1.description2")}
           image={daymsa}
           reverse={true}
         />
         <ContentWithImage
-          title="S&W Seed Company"
-          description1="We are an accredited dealer for one of the leading agricultural organization, ‘S&W’ in Qatar."
-          description2="S&W is one its kind in the agricultural market, in practicing the most nourishing techniques for a greater production. Their expertise in this field makes them an exceptional firm for maximum yield with superior traits."
+          title={t("division.agriculture.companiesInfo.2.title")}
+          description1={t("division.agriculture.companiesInfo.2.description1")}
+          description2={t("division.agriculture.companiesInfo.2.description2")}
           image={sAndw}
         />
       </div>
