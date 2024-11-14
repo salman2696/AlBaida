@@ -424,6 +424,73 @@
           }
         ]
       }
+    },
+    "infrastructure": {
+      "heroSection": {
+        "title": "Infrastructure, Roads & Project Development",
+        "description": "Infrastructure is truly the backbone of growth and prosperity of a nation."
+      },
+      "banner": {
+        "title": "Infrastructure is truly the backbone of growth and prosperity of a nation.",
+        "button": "Get a Quote"
+      },
+      "servicesSection": {
+        "title": "Our Services",
+        "description": "Right throughout planning the project, construction and even after completion, our services remain inevitable to our clients. This makes us a reliable solution for our clients with even the most challenging projects.",
+        "services": [
+          {
+            "name": "Planning & Designing The Layout"
+          },
+          {
+            "name": "Construction Of Roads"
+          },
+          {
+            "name": "Maintenance"
+          },
+          {
+            "name": "Electrical Services – Implementation Of Street Light Poles"
+          }
+        ]
+      },
+      "camelrace": {
+        "title": "Camel Race Trucks",
+        "description1": "Adding Class to sports & leisure",
+        "description2": "We are renowned for our massive Camel Race Tracks – Al Shahaniya & Al Shamaliya on the whole of Qatar. These are the only hubs for Camel Races that exist in the entire Qatar, which was exclusively planned, designed, constructed and even maintained by Al Baida. Our expertise in Camel Race Tracks since 2011 is a great gravity for a lot more prospects in the future, as this is a legacy that is treasured by the Arabs since ages.",
+        "services": {
+          "title": "Services",
+          "list": [
+            {
+              "name": "Planning and designing the Camel Race Tracks"
+            },
+            {
+              "name": "Planning and designing the allied road along the tracks"
+            },
+            {
+              "name": "Implantation of lamp posts along the tracks"
+            },
+            {
+              "name": "Construction of the race tracks and roads"
+            },
+            {
+              "name": "Maintenance of the tracks, road and entire arena"
+            }
+          ]
+        },
+        "activities": {
+          "title": "Activities of Maintenance",
+          "list": [
+            {
+              "name": "Loosening the sand by grader and tractor"
+            },
+            {
+              "name": "Cleaning the race tracks"
+            },
+            {
+              "name": "Preparation of tracks before race"
+            }
+          ]
+        }
+      }
     }
   },
   "footer": {

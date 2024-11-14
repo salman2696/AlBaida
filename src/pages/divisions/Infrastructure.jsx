@@ -3,6 +3,7 @@ import HeroSection from "../../components/HeroSection";
 import heroImage from "../../assets/images/divisions/infrastructure/heroImage.jpg";
 import Banner from "../../components/Banner";
 import Services1 from "../../components/Services1";
+import { useTranslation } from "react-i18next";
 import { FaDraftingCompass } from "react-icons/fa";
 import { FaRoad } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
@@ -18,13 +19,24 @@ import camelImage3 from "../../assets/images/divisions/infrastructure/camel3.png
 import camelImage4 from "../../assets/images/divisions/infrastructure/camel4.png";
 
 const Infrastructure = () => {
+  const { t, i18n } = useTranslation();
+
   const services = [
-    { icon: <FaDraftingCompass />, text: "Planning & Designing The Layout" },
-    { icon: <FaRoad />, text: "Construction Of Roads" },
-    { icon: <FaTools />, text: "Maintenance" },
+    {
+      icon: <FaDraftingCompass />,
+      text: t("division.infrastructure.servicesSection.services.0.name"),
+    },
+    {
+      icon: <FaRoad />,
+      text: t("division.infrastructure.servicesSection.services.1.name"),
+    },
+    {
+      icon: <FaTools />,
+      text: t("division.infrastructure.servicesSection.services.2.name"),
+    },
     {
       icon: <GiElectricalResistance />,
-      text: "Electrical Services – Implementation Of Street Light Poles",
+      text: t("division.infrastructure.servicesSection.services.3.name"),
     },
   ];
 
@@ -40,32 +52,26 @@ const Infrastructure = () => {
     <div>
       <HeroSection
         heroImage={heroImage}
-        title="Infrastructure, Roads & Project Development"
-        descripton="Infrastructure is truly the backbone of growth and prosperity of a nation."
+        title={t("division.infrastructure.heroSection.title")}
+        descripton={t("division.infrastructure.heroSection.description")}
       />
       <div className="max-w-7xl mx-auto">
-        <Banner title="Infrastructure is truly the backbone of growth and prosperity of a nation." />
+        <Banner title={t("division.infrastructure.banner.title")} />
         <Services1
-          title="Our Services"
-          description="Right throughout planning the project, construction and even after completion, our services remain inevitable to our clients. This makes us a reliable solution for our clients with even the most challenging projects."
+          title={t("division.infrastructure.servicesSection.title")}
+          description={t("division.infrastructure.servicesSection.description")}
           services={services}
           images={images}
         />
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold text-gray-800 mb-4 center-title">
-            Camel Race Trucks
+            {t("division.infrastructure.camelrace.title")}
           </h2>
           <p className="text-lg text-gray-600">
-            Adding Class to sports & leisure
+            {t("division.infrastructure.camelrace.description1")}
           </p>
           <p className="text-base text-gray-600 mt-4 px-4">
-            We are renowned for our massive Camel Race Tracks – Al Shahaniya &
-            Al Shamaliya on the whole of Qatar. These are the only hubs for
-            Camel Races that exist in the entire Qatar, which was exclusively
-            planned, designed, constructed and even maintained by Al Baida. Our
-            expertise in Camel Race Tracks since 2011 is a great gravity for a
-            lot more prospects in the future, as this is a legacy that is
-            treasured by the Arabs since ages.
+            {t("division.infrastructure.camelrace.description2")}
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-8 p-6">
@@ -73,20 +79,19 @@ const Infrastructure = () => {
           <div className="lg:w-1/2 space-y-6">
             {/* Services Section */}
             <div>
-              <h2 className="text-2xl font-bold mb-4">Services</h2>
+              <h2 className="text-2xl font-bold mb-4">
+                {t("division.infrastructure.camelrace.services.title")}
+              </h2>
               <ul className="space-y-2 text-gray-700">
                 {[
-                  "Planning and designing the Camel Race Tracks",
-                  "Planning and designing the allied road along the tracks",
-                  "Implantation of lamp posts along the tracks",
-                  "Construction of the race tracks and roads",
-                  "Maintenance of the tracks, road and entire arena",
+                  t("division.infrastructure.camelrace.services.list.0.name"),
+                  t("division.infrastructure.camelrace.services.list.1.name"),
+                  t("division.infrastructure.camelrace.services.list.2.name"),
+                  t("division.infrastructure.camelrace.services.list.3.name"),
+                  t("division.infrastructure.camelrace.services.list.4.name"),
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-2">
-                    <FaCircleCheck
-                      
-                      className="text-custom-red"
-                    />
+                    <FaCircleCheck className="text-custom-red" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -96,18 +101,16 @@ const Infrastructure = () => {
             {/* Activities of Maintenance Section */}
             <div>
               <h2 className="text-2xl font-bold mb-4">
-                Activities of Maintenance
+                {t("division.infrastructure.camelrace.activities.title")}
               </h2>
               <ul className="space-y-2 text-gray-700">
                 {[
-                  "Loosening the sand by grader and tractor",
-                  "Cleaning the race tracks",
-                  "Preparation of tracks before race",
+                  t("division.infrastructure.camelrace.activities.list.0.name"),
+                  t("division.infrastructure.camelrace.activities.list.1.name"),
+                  t("division.infrastructure.camelrace.activities.list.2.name"),
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-2">
-                    <FaCircleCheck
-                      className="text-custom-red"
-                    />
+                    <FaCircleCheck className="text-custom-red" />
                     <span>{item}</span>
                   </li>
                 ))}
