@@ -1,17 +1,22 @@
-import React from 'react'
+import React from "react";
 import HeroSection from "../../components/HeroSection";
 import heroImage from "../../assets/images/divisions/cargoLogistics/heroImage.jpg";
+import { useTranslation } from "react-i18next";
 
 const CargoLogistics = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
       <HeroSection
         heroImage={heroImage}
-        title="Cargo Logistics"
-        descripton="At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+        title={t("division.cargoLogistics.heroSection.title")}
+        descripton={t("division.cargoLogistics.heroSection.description")}
       />
+      <p className="p-4 md:p-6 max-w-7xl mx-auto text-lg">
+        {t("division.cargoLogistics.paragraph")}
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default CargoLogistics
+export default CargoLogistics;
