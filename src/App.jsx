@@ -22,11 +22,12 @@ import Mwani from "./pages/projects/Mwani";
 import CamelRace from "./pages/projects/CamelRace";
 import Agricultureproject from "./pages/projects/Agriculture";
 import MinistryOfDefence from "./pages/projects/MinistryOfDefence";
+import OtherProjects from "./pages/projects/OtherProjects";
 
 function App() {
   return (
     <HashRouter>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -80,11 +81,15 @@ function App() {
           />
           <Route path="/projects/mwani" element={<Mwani />} />
           <Route path="/projects/camel-race" element={<CamelRace />} />
-          <Route path="/projects/agriculture" element={<Agricultureproject />} />
+          <Route
+            path="/projects/agriculture"
+            element={<Agricultureproject />}
+          />
           <Route
             path="/projects/ministry-of-defence"
             element={<MinistryOfDefence />}
           />
+          <Route path="/projects/other-projects" element={<OtherProjects />} />
         </Route>
       </Routes>
     </HashRouter>

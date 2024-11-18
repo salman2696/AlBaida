@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../assets/images/logo.png";
@@ -174,9 +175,14 @@ const Navbar = () => {
       link: "/projects/ministry-of-defence",
       image: "/projects/project5.jpg",
     },
-    { id: 6, link: "/projects/project-6", image: "/projects/project1.jpg" },
+    {
+      id: 6,
+      link: "/projects/other-projects",
+      image: "/projects/project1.jpg",
+    },
   ];
   const [hoveredProject, setHoveredProject] = useState(projects[0]);
+  const navigate = useNavigate();
 
   return (
     <nav
@@ -273,6 +279,7 @@ const Navbar = () => {
                                 : ""
                             }`}
                             onMouseEnter={() => setHoveredProject(project)}
+                            onClick={() => navigate(project.link)}
                           >
                             {t(`navBar.projects.${project.id}.title`)}
                           </li>

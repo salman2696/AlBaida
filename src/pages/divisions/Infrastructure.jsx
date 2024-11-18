@@ -119,7 +119,7 @@ const Infrastructure = () => {
           </div>
 
           {/* Right Section (Image Grid) */}
-          <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+          <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <img
               src={camelImage1}
               alt="Description 1"

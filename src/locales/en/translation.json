@@ -609,7 +609,7 @@
           "description1": "Al Baida Technical Services is a cardinal distributor for one of the largest Fertilizer Company ‘Gubretas’ at Turkey.",
           "description2": "Gubretas was founded in 1952 catering the fertilizer needs of Turkish agricultural industry. Having been a predominant organization in Turkey’s top 50 largest industries, it owns a rich product portfolio in meeting the nutritional requirement of crops.",
           "topSellingProducts": {
-            "title":"Top Selling Products",
+            "title": "Top Selling Products",
             "product1": "Solid, Water-Soluble Organic Fertilizers",
             "product2": "Plant Growth Regulators",
             "product3": "Soil Conditioners"
@@ -624,6 +624,663 @@
           "title": "S&W Seed Company",
           "description1": "We are an accredited dealer for one of the leading agricultural organization, ‘S&W’ in Qatar.",
           "description2": "S&W is one its kind in the agricultural market, in practicing the most nourishing techniques for a greater production. Their expertise in this field makes them an exceptional firm for maximum yield with superior traits."
+        }
+      ]
+    },
+    "heavyEquipmentRental": {
+      "heroSection": {
+        "title": "Heavy Equipment Rental",
+        "description": "Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments"
+      },
+      "paragraph": {
+        "p1": "Heavy equipment is an indispensable section for a flourishing industry. The equipment requirement varies based on market segments.",
+        "p2": "Our heavy equipment services are substantial to serve the greater business requirements of the clients in terms of both quality & quantity. Our expertise in the field of heavy projects and machinery makes us more reliable.",
+        "p3": "We rent heavy equipment that would help you transport the goods in the safest and efficient way. We own more than 400 heavy equipment of multiple functionality and high precision. Every equipment is maintained and quality checked before being delivered for rent. Our optimal planning and procedures let's our client experience an unblemished business with us."
+      }
+    },
+    "hrManagement": {
+      "heroSection": {
+        "title": "HR Management & Outsourcing",
+        "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+      },
+      "banner": {
+        "title": "Agriculture is the sole reason of our very existence.",
+        "button": "Get a Quote"
+      },
+      "servicesSection": {
+        "title": "Comprehensive Workforce Solutions for Project-Based and Strategic Staffing Needs",
+        "decription": "Offering a skilled workforce ranging from clerks to Project Managers, Al Baida manages hiring, logistics, and placement, providing flexible staffing solutions to meet clients' dynamic project needs without long-term commitments.",
+        "services": [
+          {
+            "name": "Functional Outsourcing",
+            "description": "Comprehensive outsourcing of specific business functions, covering back-office tasks like HR and payroll, as well as front-office services such as staffing for drivers, office support, and reception."
+          },
+          {
+            "name": "Logistics Outsourcing",
+            "description": "Solutions for logistical needs, including visa processing, mobilization, employee services, insurance, and travel arrangements, allowing clients to concentrate on their core business."
+          },
+          {
+            "name": "HR Outsourcing",
+            "description": "Tailored HR services for companies looking to efficiently manage HR functions without the need for an in-house team, from specific HR tasks to entire HR operations."
+          }
+        ]
+      },
+      "paragraph": "With a stringent selection procedure, we can provide a range of workforce to meet our clients’ needs, ranging from clerks and extending to IT professionals and Project Managers. This is especially useful to clients who are in need of additional resources for specific projects of limited duration or clients who prefer not to hire certain functions or positions within their organizations for their own business strategy. Al Baida hires the resources, handles all logistics and outsources them to the client for whatever duration required, allowing for the flexibility to mobilize and demobilize according to the client’s current needs."
+    },
+    "cargoLogistics": {
+      "heroSection": {
+        "title": "Cargo Logistics",
+        "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+      },
+      "paragraph": "Al Baida Cargo & Customs Clearance is considered as a unique company in the field of Cargo & Customs Clearance. We provide timely service to our customers in the state of Qatar since 1999 with a capable staff located in our offices all over the borders (land, sea and air). We offer our services in the field of cargo & customs clearance inside and outside the state of Qatar through our offices based in Doha City, Industrial area, Doha Port, Abu Samra border etc. With over 22 years of experience in the hauling and transport industry, Al Baida Transportation can serve you and deliver your products all over the world through our direct branches or our agents. Our company is recognized as an unmatched leader in all cargo solutions sectors. We established our reputation as a top-notch provider of services for cargo & customs clearance, freight forwarding & logistics and the transportation industries, this allowed us to build up the customer loyalty and maintain all the companies we have worked with over the years across GCC countries and all the Asian and European countries."
+    },
+    "engineeringConsultancy": {
+      "heroSection": {
+        "title": "Engineering Consultancy",
+        "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+      },
+      "paragraph1": "Al Baida Group Engineering Consultancy team is made up of well experienced, qualified and dedicated team of Architects and Engineers and familiarized in obtaining approvals from concerned Government Authorities. Al Baida Group provides quality graded engineering services in the areas of Architectural, Structural Services, Landscape, Drafting Services, Electro-mechanical services.",
+      "paragraph2": "AL Baida Group has developed expertise in analyzing, designing, providing and implementing innovative solutions. To increase the profile of our services to construction industry, we intend to cater to the needs of key contributors such as companies We are a unique organization capable of taking on prime engineering consultancy work. This includes conceptual design, management and completion."
+    },
+    "businessManagement": {
+      "heroSection": {
+        "title": "Business Management",
+        "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+      },
+      "paragraph1": "We offer a variety of business and management consulting services that support your business needs. We offer a variety of solutions to support your growth plan and the optimization of your organization.",
+      "paragraph2": "Our management consultants take the time to understand your current position and future goals, allowing us to help you bridge that gap, create roadmaps, and put your organization in a position of industry leadership and scalable growth. Our strategists have decades of experience spanning across wide range of industries — from nonprofits and educational institutions to government systems, healthcare systems, technology companies, and professional services firms. Through our business and management consulting services, will help you to manage and improve your business operations cost-effectively, so you can focus on providing the highest quality services for your clients."
+    },
+    "agencyRepresentation": {
+      "heroSection": {
+        "title": "Agency Representation",
+        "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+      },
+      "paragraph1": "Al Baida has been a Business conglomerate since 1970. So, has a good hold over businesses in Qatar. AL Baida has been assisting agencies to represent in Qatar. Al Baida is competent to represent agencies and help them in any type of complexities, challenges, and open a great opportunity for them. Such a dynamic, productive, and performative character of representation. potentialities build huge profits for agencies across the world.",
+      "paragraph2": "Al Baida also forms Joint Venture with the agencies to help them, support them in all possible ways to bag bigger contracts and projects. Such a Joint Venture with a company like Al Baida proves to be too profitable and earns a brand name for the agency. Al Baida also has the capacity to enter into Joint Venture on multiple projects with various agencies at a given point in time."
+    },
+    "construction": {
+      "heroSection": {
+        "title": "Construction",
+        "description": "At Al Baida, we deliver reliable solutions across Facility Management, Agriculture, Contracting, Infrastructure, and more. From HR Outsourcing to Engineering Consultancy, our expertise drives impactful, high-quality results for every project."
+      },
+      "paragraph1": "Al Baida has been more striving for more than 15 years in offering the highest quality standards and customer satisfaction.",
+      "paragraph2": "We expertise in building construction, ground plus two stored, warehouse, mosque, Villa complex fencing, and other construction projects.",
+      "paragraph3": "We have done more than 10 projects with a team of architects, project engineers, and skilled engineers. We also use only branded material for our projects. Our tech technologies perform an extremely good job and every step from planning to handover is done with due consideration and on-time completion. Weekly planners and schedules are in place for stress-free project management.",
+      "paragraph4": "Al baida group was established in 1970 and is a general contractor offering construction services in terms of Site Analysis, Feasibility Studies, Preliminary Design Studies, Permit/Zoning Applications, etc. We handle various industrial, distribution, manufacturing, office, retail, recreational, healthcare and commercial projects in Doha.We are leaders in providing value-added construction services to our customers by creating a successful partnership with them throughout the construction process. Our pledge is to establish lasting relationships with our customers by exceeding their expectations and gaining their trust through exceptional performance by every member of the construction team"
+    }
+  },
+  "projects": {
+    "mwaniProject": {
+      "heroSection": {
+        "title": "Mwani Project",
+        "description": "Since 2016, we've partnered with MWANI to drive their growth through precise, zero-defect logistics and freight forwarding services, ensuring seamless and efficient operations."
+      },
+      "cardSection": {
+        "title1": "Mwani",
+        "title2": "Supply Chain <br /> Industry",
+        "title3": "Year <br /> 2016",
+        "title4": "Employment <br /> Opportunity"
+      },
+      "projectdetails": {
+        "title": "Project Details",
+        "subTitle": "A massive and astounding project symbolizing our relentless passion and potential.",
+        "description": "The project with MWANI began in 2016. Ever since we have extensively developed and expanded our client’s business prosperously. Our business model and experience have ensured our clients to carry out their operations effectively with zero defects. We provide streamlined logistic services and freight forwarding services with our wide expertise and high precision tools that enable the smooth functioning of the business"
+      },
+      "services": {
+        "title": "Services Offered",
+        "serviceCard": [
+          {
+            "title": "Open Door Seals",
+            "description": "Opening and removing the seals on request for secure access to cargo or containers."
+          },
+          {
+            "title": "Cargo Package Handling",
+            "description": "Emptying and refilling cargo packages to ensure proper storage and transportation."
+          },
+          {
+            "title": "Close & Seal Container",
+            "description": "Closing and sealing container doors after loading/unloading for security and safe transport."
+          },
+          {
+            "title": "Supply Labor",
+            "description": "Providing human resources including labor, tally clerks, and foreman supervisors for efficient operations."
+          },
+          {
+            "title": "Mooring & Unmooring",
+            "description": "Managing mooring and unmooring labor activities on authorized request to ensure vessel docking and departure."
+          },
+          {
+            "title": "Mooring & Unmooring",
+            "description": "Opening and removing the seals on request for secure access to cargo or containers."
+          },
+          {
+            "title": "Port Operations",
+            "description": "Handling various port management tasks, including vessel and yard operations, as needed."
+          },
+          {
+            "title": "Cargo Handling",
+            "description": "Overseeing the loading and unloading of cargo at designated areas to ensure efficient logistics."
+          },
+          {
+            "title": "Documentation",
+            "description": "Managing paperwork, documentation, recording, and reporting to ensure compliance and accurate records."
+          }
+        ],
+        "paragraph": "We offer a comprehensive range of services, designed to enhance the university experience with a sophisticated and well-maintained environment. Our services are of the highest quality, tailored to meet the needs of both students and staff. Every employee we provide is carefully trained and skilled, ensuring they deliver top-notch service with professionalism and attention to detail. Our commitment is to support the university community with reliable, efficient, and exceptional service."
+      },
+      "FAQS": {
+        "title": "Have any Questions?",
+        "tableOfContent": {
+          "title": "Table of Content",
+          "contents": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "Trust & Safety"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "Billing"
+            },
+            {
+              "title": "Office Cleaning"
+            }
+          ]
+        },
+        "QnA": [
+          {
+            "category": "General",
+            "question": "What is your refund policy?",
+            "answer": "We offer a 30-day refund policy. If you are not satisfied with our service, you can request a full refund within 30 days of purchase."
+          },
+          {
+            "category": "General",
+            "question": "How do I contact customer support?",
+            "answer": " You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "How do you ensure privacy",
+            "answer": "We use encryption technology to protect your data. We also follow strict privacy policies and GDPR regulations to ensure your information is safe."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "Are my payment details secure?",
+            "answer": "Yes, we use SSL encryption to securely process all transactions. Your payment information is never stored on our servers."
+          },
+          {
+            "category": "Services",
+            "question": "What services do you offer?",
+            "answer": "We offer a range of services including home cleaning, office cleaning, and specialized deep cleaning services."
+          },
+          {
+            "category": "Services",
+            "question": "Can I customize my cleaning plan?",
+            "answer": "Yes, you can customize your cleaning plan according to your needs. We offer flexible scheduling and various cleaning packages."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I pay for services?",
+            "answer": "We accept payments through credit cards, PayPal, and bank transfers. Payments are processed securely through our payment gateway."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I contact customer support?",
+            "answer": "Yes, if you are not satisfied with a service, please reach out to our support team within 7 days to request a refund."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "How do I contact customer support?",
+            "answer": "Our office cleaning service includes dusting, vacuuming, trash removal, and cleaning of common areas, restrooms, and kitchenettes."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "Do you offer eco-friendly cleaning products?",
+            "answer": "You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          }
+        ]
+      }
+    },
+    "camelRaceProject": {
+      "heroSection": {
+        "title": "Camel Race Project",
+        "description": "Camel racing, extravagant leisure of the Arabs is valued more than a sport as a part of their traditions. This sport is continued to date at the small hamlet of Al Shahaniya as a part of their heritage."
+      },
+      "cardSection": {
+        "title1": "Hejen <br/> Racing Committee",
+        "title2": "Traditional <br /> Sport",
+        "title3": "Year <br /> 2012",
+        "title4": "43 Sq. KM <br /> Project Area"
+      },
+      "projectdetails": {
+        "title": "Project Details",
+        "subTitle": "A dream work at infinite pace against innumerable hurdles",
+        "description": "This is one of our magnificent projects with a traditional prospect we have ever accomplished which covers a vast area of around 43 kilometers. The project commenced in the year 2012 and was swiftly completed in a span of just 2 years. The scope of the project involved planning, designing, and constructing the entire racing track, allied roadway, and arena in Shahaniya, West Doha. Being a sentimental element of the Arabs, this project required intense planning and precision which was flawlessly delivered by us. Right from understanding the requirement, and throughout the construction we have substantially maintained world-class standards with an ethnic touch. Additionally, we take care of the maintenance of the camel race area and preparation of the track lines for racing since 2008."
+      },
+      "services": {
+        "title": "Services Offered",
+        "serviceCard": [
+          {
+            "title": "Loosening The Sand",
+            "description": "Breaking and leveling sand to ensure an even and smooth track surface."
+          },
+          {
+            "title": "Cleaning The Track",
+            "description": "Removing debris and unwanted particles to prepare the track for use."
+          },
+          {
+            "title": "Spraying Water On Race Track",
+            "description": "Applying water to reduce dust and improve track conditions for racing."
+          },
+          {
+            "title": "Preparing Track For Race",
+            "description": "Finalizing the track setup to ensure it meets racing standards."
+          }
+        ],
+        "paragraph": "Camel racing, extravagant leisure of the Arabs is valued more than a sport as a part of their traditions. This sport is continued to date at the small hamlet of Al Shahaniya as a part of their heritage."
+      },
+      "FAQS": {
+        "title": "Have any Questions?",
+        "tableOfContent": {
+          "title": "Table of Content",
+          "contents": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "Trust & Safety"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "Billing"
+            },
+            {
+              "title": "Office Cleaning"
+            }
+          ]
+        },
+        "QnA": [
+          {
+            "category": "General",
+            "question": "What is your refund policy?",
+            "answer": "We offer a 30-day refund policy. If you are not satisfied with our service, you can request a full refund within 30 days of purchase."
+          },
+          {
+            "category": "General",
+            "question": "How do I contact customer support?",
+            "answer": " You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "How do you ensure privacy",
+            "answer": "We use encryption technology to protect your data. We also follow strict privacy policies and GDPR regulations to ensure your information is safe."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "Are my payment details secure?",
+            "answer": "Yes, we use SSL encryption to securely process all transactions. Your payment information is never stored on our servers."
+          },
+          {
+            "category": "Services",
+            "question": "What services do you offer?",
+            "answer": "We offer a range of services including home cleaning, office cleaning, and specialized deep cleaning services."
+          },
+          {
+            "category": "Services",
+            "question": "Can I customize my cleaning plan?",
+            "answer": "Yes, you can customize your cleaning plan according to your needs. We offer flexible scheduling and various cleaning packages."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I pay for services?",
+            "answer": "We accept payments through credit cards, PayPal, and bank transfers. Payments are processed securely through our payment gateway."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I contact customer support?",
+            "answer": "Yes, if you are not satisfied with a service, please reach out to our support team within 7 days to request a refund."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "How do I contact customer support?",
+            "answer": "Our office cleaning service includes dusting, vacuuming, trash removal, and cleaning of common areas, restrooms, and kitchenettes."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "Do you offer eco-friendly cleaning products?",
+            "answer": "You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          }
+        ]
+      }
+    },
+    "agriculture": {
+      "heroSection": {
+        "title": "Agriculture Project",
+        "description": "A groundbreaking project by Al Baida for Qatar's Ministry of Municipality & Environment, focused on green fodder cultivation, showcasing a unique business model, innovative solutions, and sustainable infrastructure."
+      },
+      "cardSection": {
+        "title1": "Agricultural <br/> Projects",
+        "title2": "Agriculture <br /> Sector",
+        "title3": "Year <br /> 2012",
+        "title4": "Employment <br /> Opportunity"
+      },
+      "projectdetails": {
+        "title": "Project Details",
+        "subTitle": "A sustainable green fodder project for Qatar, driven by innovation and unique solutions.",
+        "description": "Agriculture is the most inevitable element of the very future. Growing pastures in the land of desert and rocks require phenomenal efforts and explicit timing. With our endless hopes and untiring work, we made this challenge a reality that exists. The scope of the project requires agricultural & landscaping services and management. The biggest challenge was tackling the food saturation that occurred in the market for the entire State and Government of Qatar. Thereby, we along with our diligent expertise in the production process and the government's support made it possible to achieve our vision in agriculture."
+      },
+      "FAQS": {
+        "title": "Have any Questions?",
+        "tableOfContent": {
+          "title": "Table of Content",
+          "contents": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "Trust & Safety"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "Billing"
+            },
+            {
+              "title": "Office Cleaning"
+            }
+          ]
+        },
+        "QnA": [
+          {
+            "category": "General",
+            "question": "What is your refund policy?",
+            "answer": "We offer a 30-day refund policy. If you are not satisfied with our service, you can request a full refund within 30 days of purchase."
+          },
+          {
+            "category": "General",
+            "question": "How do I contact customer support?",
+            "answer": " You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "How do you ensure privacy",
+            "answer": "We use encryption technology to protect your data. We also follow strict privacy policies and GDPR regulations to ensure your information is safe."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "Are my payment details secure?",
+            "answer": "Yes, we use SSL encryption to securely process all transactions. Your payment information is never stored on our servers."
+          },
+          {
+            "category": "Services",
+            "question": "What services do you offer?",
+            "answer": "We offer a range of services including home cleaning, office cleaning, and specialized deep cleaning services."
+          },
+          {
+            "category": "Services",
+            "question": "Can I customize my cleaning plan?",
+            "answer": "Yes, you can customize your cleaning plan according to your needs. We offer flexible scheduling and various cleaning packages."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I pay for services?",
+            "answer": "We accept payments through credit cards, PayPal, and bank transfers. Payments are processed securely through our payment gateway."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I contact customer support?",
+            "answer": "Yes, if you are not satisfied with a service, please reach out to our support team within 7 days to request a refund."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "How do I contact customer support?",
+            "answer": "Our office cleaning service includes dusting, vacuuming, trash removal, and cleaning of common areas, restrooms, and kitchenettes."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "Do you offer eco-friendly cleaning products?",
+            "answer": "You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          }
+        ]
+      }
+    },
+    "qatarUniversity": {
+      "heroSection": {
+        "title": "Qatar University Project",
+        "description": "Al Baida's leading education sector project at Qatar University supports over 530 jobs, providing infrastructure management, housekeeping, and cleaning services."
+      },
+      "cardSection": {
+        "title1": "Hejen <br/> Racing Committee",
+        "title2": "Traditional <br /> Sport",
+        "title3": "Year <br /> 2012",
+        "title4": "43 Sq. KM <br /> Project Area"
+      },
+      "projectdetails": {
+        "title": "Project Details",
+        "subTitle": "A pristine gesture for an enlightened tomorrow",
+        "description": "Al Baida's flagship project in Qatar's education sector is a comprehensive support initiative at Qatar University. This prestigious project is notable not only for its scale but also for its impact on local employment, as it provides job opportunities for over 530 individuals. The project encompasses a wide range of essential services, including infrastructure management, housekeeping, and cleaning, all tailored to meet the high standards of the university. Through this endeavor, Al Baida contributes significantly to maintaining a well-managed and clean campus environment, while supporting the university's mission of excellence in education and research."
+      },
+      "services": {
+        "title": "Services Offered",
+        "serviceCard": [
+          {
+            "title": "Infrastructure Management",
+            "description": "Ensuring the efficient and effective operation of buildings, equipment, and systems to support core business functions."
+          },
+          {
+            "title": "House Keeping",
+            "description": "Maintaining cleanliness, tidiness, and overall upkeep to create a comfortable and safe environment."
+          },
+          {
+            "title": "Cleaning Services",
+            "description": "Comprehensive cleaning solutions for various environments, ensuring hygiene and sanitation standards."
+          }
+        ],
+        "paragraph": "We offer a comprehensive range of services, designed to enhance the university experience with a sophisticated and well-maintained environment. Our services are of the highest quality, tailored to meet the needs of both students and staff. Every employee we provide is carefully trained and skilled, ensuring they deliver top-notch service with professionalism and attention to detail. Our commitment is to support the university community with reliable, efficient, and exceptional service.",
+        "galleryTitle": "Qatar University Safety Excellence Award Distribution Ceremony"
+      },
+      "FAQS": {
+        "title": "Have any Questions?",
+        "tableOfContent": {
+          "title": "Table of Content",
+          "contents": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "Trust & Safety"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "Billing"
+            },
+            {
+              "title": "Office Cleaning"
+            }
+          ]
+        },
+        "QnA": [
+          {
+            "category": "General",
+            "question": "What is your refund policy?",
+            "answer": "We offer a 30-day refund policy. If you are not satisfied with our service, you can request a full refund within 30 days of purchase."
+          },
+          {
+            "category": "General",
+            "question": "How do I contact customer support?",
+            "answer": " You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "How do you ensure privacy",
+            "answer": "We use encryption technology to protect your data. We also follow strict privacy policies and GDPR regulations to ensure your information is safe."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "Are my payment details secure?",
+            "answer": "Yes, we use SSL encryption to securely process all transactions. Your payment information is never stored on our servers."
+          },
+          {
+            "category": "Services",
+            "question": "What services do you offer?",
+            "answer": "We offer a range of services including home cleaning, office cleaning, and specialized deep cleaning services."
+          },
+          {
+            "category": "Services",
+            "question": "Can I customize my cleaning plan?",
+            "answer": "Yes, you can customize your cleaning plan according to your needs. We offer flexible scheduling and various cleaning packages."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I pay for services?",
+            "answer": "We accept payments through credit cards, PayPal, and bank transfers. Payments are processed securely through our payment gateway."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I contact customer support?",
+            "answer": "Yes, if you are not satisfied with a service, please reach out to our support team within 7 days to request a refund."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "How do I contact customer support?",
+            "answer": "Our office cleaning service includes dusting, vacuuming, trash removal, and cleaning of common areas, restrooms, and kitchenettes."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "Do you offer eco-friendly cleaning products?",
+            "answer": "You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          }
+        ]
+      }
+    },
+    "ministryOfDefence": {
+      "heroSection": {
+        "title": "Ministry of Defence",
+        "description": "Al Baida's most profound project, where more than 550 human resources are deployed to provide the best services. The project requirement involves Cleaning services, Facilities management."
+      },
+      "cardSection": {
+        "title1": "Ministry <br/> of Defence",
+        "title2": "Government <br /> Organisation",
+        "title3": "Year <br /> 2012",
+        "title4": "Employment <br /> Opportunity"
+      },
+      "projectdetails": {
+        "title": "Project Details",
+        "subTitle": "Al Baida’s key project with 550+ personnel delivering top-tier cleaning and facilities management services.",
+        "description": "Al Baida’s flagship project involves the deployment of over 550 skilled personnel dedicated to delivering exceptional cleaning and facilities management services. This initiative highlights the company’s commitment to excellence and efficiency, ensuring high-quality standards in maintaining and managing facilities effectively."
+      },
+      "FAQS": {
+        "title": "Have any Questions?",
+        "tableOfContent": {
+          "title": "Table of Content",
+          "contents": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "Trust & Safety"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "Billing"
+            },
+            {
+              "title": "Office Cleaning"
+            }
+          ]
+        },
+        "QnA": [
+          {
+            "category": "General",
+            "question": "What is your refund policy?",
+            "answer": "We offer a 30-day refund policy. If you are not satisfied with our service, you can request a full refund within 30 days of purchase."
+          },
+          {
+            "category": "General",
+            "question": "How do I contact customer support?",
+            "answer": " You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "How do you ensure privacy",
+            "answer": "We use encryption technology to protect your data. We also follow strict privacy policies and GDPR regulations to ensure your information is safe."
+          },
+          {
+            "category": "Trust & Safety",
+            "question": "Are my payment details secure?",
+            "answer": "Yes, we use SSL encryption to securely process all transactions. Your payment information is never stored on our servers."
+          },
+          {
+            "category": "Services",
+            "question": "What services do you offer?",
+            "answer": "We offer a range of services including home cleaning, office cleaning, and specialized deep cleaning services."
+          },
+          {
+            "category": "Services",
+            "question": "Can I customize my cleaning plan?",
+            "answer": "Yes, you can customize your cleaning plan according to your needs. We offer flexible scheduling and various cleaning packages."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I pay for services?",
+            "answer": "We accept payments through credit cards, PayPal, and bank transfers. Payments are processed securely through our payment gateway."
+          },
+          {
+            "category": "Billing",
+            "question": "How do I contact customer support?",
+            "answer": "Yes, if you are not satisfied with a service, please reach out to our support team within 7 days to request a refund."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "How do I contact customer support?",
+            "answer": "Our office cleaning service includes dusting, vacuuming, trash removal, and cleaning of common areas, restrooms, and kitchenettes."
+          },
+          {
+            "category": "Office Cleaning",
+            "question": "Do you offer eco-friendly cleaning products?",
+            "answer": "You can contact our customer support team through email at info@albaidagroup.com or by calling +974 44128899."
+          }
+        ]
+      }
+    },
+    "otherProjects": {
+      "heroSection": {
+        "title": "Ministry of Defence"
+      },
+      "projectdetails": [
+        {
+          "title": "GENERAL AUTHORITY OF CUSTOMS",
+          "description": "We prestigiously provide. cleaning services, maintenance services, carpentry, and air-conditioning for the General Authority of Customs. Apart from the above-mentioned services, we also provide Manpower for loading and unloading of goods/containers, which makes it easy for the Customs Authority to manage the clearance services."
+        },
+        {
+          "title": "GENERAL DIRECTORATE OF CUSTOMS",
+          "description": "We efficiently manage manpower, cleaning services, maintenance services like carpentry, and AC technical work for the General Directorate of Customs."
+        },
+        {
+          "title": "GENERAL HEADQUARTERS LOGISTICS BRANCH – ARMY",
+          "description": "This is one of Al Baida’s privileged projects as we provide housekeeping services, maintenance services, and handle the manpower requirements for the General Headquarters Logistic branch of Army."
+        },
+        {
+          "title": "QATAR NATIONAL CEMENT COMPANY",
+          "description": "We provide manpower, catering services, housekeeping services, and maintenance services for Qatar National Cement Company. Our company holds a record of supplying the best of the services & up to customer satisfaction."
+        },
+        {
+          "title": "QATAR TOURISM AUTHORITY",
+          "description": "We provide cleaning services including materials and equipment to Qatar Tourism authority, Every employee we supply is trained and skilled to provide the best service."
+        },
+        {
+          "title": "ARAMEX",
+          "description": "We efficiently inspect and handle the operations of the Gulf Warehousing Company. Our skilled teams are distributed in various services like cleaning services, packaging, loading, and unloading of materials and goods."
         }
       ]
     }

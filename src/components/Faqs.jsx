@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Faqs = ({ faqs }) => {
+  const { t, i18n } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("General"); // Track the selected category
+  const [selectedCategory, setSelectedCategory] = useState(
+    t("projects.mwaniProject.FAQS.QnA.0.category")
+  ); // Track the selected category
+
 
   // Filter FAQs based on the selected category
   const filteredFaqs = faqs.filter((faq) => faq.category === selectedCategory);
@@ -16,65 +21,100 @@ const Faqs = ({ faqs }) => {
       <section className="max-w-7xl mx-auto">
         <div className="container px-6 py-12 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-gray-800 lg:text-3xl">
-            Have any Questions?
+            {t("projects.mwaniProject.FAQS.title")}
           </h1>
 
           <div className="mt-8 xl:mt-16 lg:flex lg:-mx-12">
             <div className="lg:mx-12">
               <h1 className="text-xl font-semibold text-gray-800">
-                Table of Content
+                {t("projects.mwaniProject.FAQS.tableOfContent.title")}
               </h1>
 
               <div className="mt-4 space-y-4 lg:mt-8">
                 <button
-                  onClick={() => setSelectedCategory("General")}
+                  onClick={() =>
+                    setSelectedCategory(
+                      t("projects.mwaniProject.FAQS.QnA.0.category")
+                    )
+                  }
                   className={`block ${
-                    selectedCategory === "General"
+                    selectedCategory ===
+                    t("projects.mwaniProject.FAQS.QnA.0.category")
                       ? "text-custom-red"
                       : "text-gray-500"
                   } hover:underline focus:outline-none`}
                 >
-                  General
+                  {t(
+                    "projects.mwaniProject.FAQS.tableOfContent.contents.0.title"
+                  )}
                 </button>
                 <button
-                  onClick={() => setSelectedCategory("Trust & Safety")}
+                  onClick={() =>
+                    setSelectedCategory(
+                      t("projects.mwaniProject.FAQS.QnA.2.category")
+                    )
+                  }
                   className={`block ${
-                    selectedCategory === "Trust & Safety"
+                    selectedCategory ===
+                    t("projects.mwaniProject.FAQS.QnA.2.category")
                       ? "text-custom-red"
                       : "text-gray-500"
                   } hover:underline focus:outline-none`}
                 >
-                  Trust & Safety
+                  {t(
+                    "projects.mwaniProject.FAQS.tableOfContent.contents.1.title"
+                  )}
                 </button>
                 <button
-                  onClick={() => setSelectedCategory("Services")}
+                  onClick={() =>
+                    setSelectedCategory(
+                      t("projects.mwaniProject.FAQS.QnA.4.category")
+                    )
+                  }
                   className={`block ${
-                    selectedCategory === "Services"
+                    selectedCategory ===
+                    t("projects.mwaniProject.FAQS.QnA.4.category")
                       ? "text-custom-red"
                       : "text-gray-500"
                   } hover:underline focus:outline-none`}
                 >
-                  Services
+                  {t(
+                    "projects.mwaniProject.FAQS.tableOfContent.contents.2.title"
+                  )}
                 </button>
                 <button
-                  onClick={() => setSelectedCategory("Billing")}
+                  onClick={() =>
+                    setSelectedCategory(
+                      t("projects.mwaniProject.FAQS.QnA.6.category")
+                    )
+                  }
                   className={`block ${
-                    selectedCategory === "Billing"
+                    selectedCategory ===
+                    t("projects.mwaniProject.FAQS.QnA.6.category")
                       ? "text-custom-red"
                       : "text-gray-500"
                   } hover:underline focus:outline-none`}
                 >
-                  Billing
+                  {t(
+                    "projects.mwaniProject.FAQS.tableOfContent.contents.3.title"
+                  )}
                 </button>
                 <button
-                  onClick={() => setSelectedCategory("Office Cleaning")}
+                  onClick={() =>
+                    setSelectedCategory(
+                      t("projects.mwaniProject.FAQS.QnA.8.category")
+                    )
+                  }
                   className={`block ${
-                    selectedCategory === "Office Cleaning"
+                    selectedCategory ===
+                    t("projects.mwaniProject.FAQS.QnA.8.category")
                       ? "text-custom-red"
                       : "text-gray-500"
                   } hover:underline focus:outline-none`}
                 >
-                  Office Cleaning
+                  {t(
+                    "projects.mwaniProject.FAQS.tableOfContent.contents.4.title"
+                  )}
                 </button>
               </div>
             </div>

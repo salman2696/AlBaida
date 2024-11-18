@@ -15,22 +15,23 @@ import HeroSection from "../../components/projects/HeroSection";
 import Faqs from "../../components/Faqs";
 import Gallery from "../../components/Gallery";
 import { FaBroom, FaTools, FaSoap } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const QatarUniversity = () => {
+  const { t, i18n } = useTranslation();
   const herosection = [
     {
       projectHeroImage: projectHeroImage,
-      heroTitle: "Qatar University Project",
-      heroDescription:
-        " Al Baida's leading education sector project at Qatar University supports over 530 jobs, providing infrastructure management, housekeeping, and cleaning services.",
+      heroTitle: t("projects.qatarUniversity.heroSection.title"),
+      heroDescription: t("projects.qatarUniversity.heroSection.description"),
       logo: qatarUniversityLogo,
       categoryIcon: categoryIcon,
       calendarIcon: calendarIcon,
       employeeIcon: employeeIcon,
-      title1: "Qatar University",
-      title2: "Education <br /> Sector",
-      title3: "Year <br /> 2020",
-      title4: "Employment <br /> Opportunity",
+      title1: t("projects.qatarUniversity.cardSection.title1"),
+      title2: t("projects.qatarUniversity.cardSection.title2"),
+      title3: t("projects.qatarUniversity.cardSection.title3"),
+      title4: t("projects.qatarUniversity.cardSection.title4"),
       style: "md:w-24",
     },
   ];
@@ -38,21 +39,26 @@ const QatarUniversity = () => {
   const services = [
     {
       icon: <FaTools />,
-      title: "Infrastructure Management",
-      description: "Ensuring the efficient and effective operation of buildings, equipment, and systems to support core business functions.",
+      title: t("projects.qatarUniversity.services.serviceCard.0.title"),
+      description: t(
+        "projects.qatarUniversity.services.serviceCard.0.description"
+      ),
       bgImage: service1,
     },
     {
       icon: <FaBroom />,
-      title: "House Keeping",
-      description:
-        "Maintaining cleanliness, tidiness, and overall upkeep to create a comfortable and safe environment.",
+      title: t("projects.qatarUniversity.services.serviceCard.1.title"),
+      description: t(
+        "projects.qatarUniversity.services.serviceCard.1.description"
+      ),
       bgImage: service2,
     },
     {
       icon: <FaSoap />,
-      title: "Cleaning Services",
-      description: "Comprehensive cleaning solutions for various environments, ensuring hygiene and sanitation standards.",
+      title: t("projects.qatarUniversity.services.serviceCard.2.title"),
+      description: t(
+        "projects.qatarUniversity.services.serviceCard.2.description"
+      ),
       bgImage: service3,
     },
     // Add more services as needed
@@ -60,64 +66,54 @@ const QatarUniversity = () => {
 
   const faqsData = [
     {
-      category: "General",
-      question: "What is your refund policy?",
-      answer:
-        "We offer a 30-day refund policy. If you are not satisfied with our service, you can request a full refund within 30 days of purchase.",
+      category: t("projects.qatarUniversity.FAQS.QnA.0.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.0.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.0.answer"),
     },
     {
-      category: "General",
-      question: "How do I contact customer support?",
-      answer:
-        "You can contact our customer support team through email at support@company.com or by calling 1-800-123-4567.",
+      category: t("projects.qatarUniversity.FAQS.QnA.1.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.1.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.1.answer"),
     },
     {
-      category: "Trust & Safety",
-      question: "How do you ensure privacy?",
-      answer:
-        "We use encryption technology to protect your data. We also follow strict privacy policies and GDPR regulations to ensure your information is safe.",
+      category: t("projects.qatarUniversity.FAQS.QnA.2.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.2.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.2.answer"),
     },
     {
-      category: "Trust & Safety",
-      question: "Are my payment details secure?",
-      answer:
-        "Yes, we use SSL encryption to securely process all transactions. Your payment information is never stored on our servers.",
+      category: t("projects.qatarUniversity.FAQS.QnA.3.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.3.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.3.answer"),
     },
     {
-      category: "Services",
-      question: "What services do you offer?",
-      answer:
-        "We offer a range of services including home cleaning, office cleaning, and specialized deep cleaning services.",
+      category: t("projects.qatarUniversity.FAQS.QnA.4.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.4.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.4.answer"),
     },
     {
-      category: "Services",
-      question: "Can I customize my cleaning plan?",
-      answer:
-        "Yes, you can customize your cleaning plan according to your needs. We offer flexible scheduling and various cleaning packages.",
+      category: t("projects.qatarUniversity.FAQS.QnA.5.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.5.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.5.answer"),
     },
     {
-      category: "Billing",
-      question: "How do I pay for services?",
-      answer:
-        "We accept payments through credit cards, PayPal, and bank transfers. Payments are processed securely through our payment gateway.",
+      category: t("projects.qatarUniversity.FAQS.QnA.6.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.6.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.6.answer"),
     },
     {
-      category: "Billing",
-      question: "Can I get a refund for a service I didn’t like?",
-      answer:
-        "Yes, if you are not satisfied with a service, please reach out to our support team within 7 days to request a refund.",
+      category: t("projects.qatarUniversity.FAQS.QnA.7.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.7.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.7.answer"),
     },
     {
-      category: "Office Cleaning",
-      question: "What does your office cleaning service include?",
-      answer:
-        "Our office cleaning service includes dusting, vacuuming, trash removal, and cleaning of common areas, restrooms, and kitchenettes.",
+      category: t("projects.qatarUniversity.FAQS.QnA.8.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.8.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.8.answer"),
     },
     {
-      category: "Office Cleaning",
-      question: "Do you offer eco-friendly cleaning products?",
-      answer:
-        "Yes, we use eco-friendly and non-toxic cleaning products upon request. We aim to provide a safe and sustainable cleaning experience.",
+      category: t("projects.qatarUniversity.FAQS.QnA.9.category"),
+      question: t("projects.qatarUniversity.FAQS.QnA.9.question"),
+      answer: t("projects.qatarUniversity.FAQS.QnA.9.answer"),
     },
   ];
 
@@ -169,31 +165,27 @@ const QatarUniversity = () => {
     <div>
       <HeroSection sections={herosection} />
       <ImageWithDesc
-        title="Project Details"
-        subtitle="A pristine gesture for an enlightened tomorrow"
-        description="Al Baida's flagship project in Qatar's education sector is a comprehensive support initiative at Qatar University. This prestigious project is notable not only for its scale but also for its impact on local employment, as it provides job opportunities for over 530 individuals. The project encompasses a wide range of essential services, including infrastructure management, housekeeping, and cleaning, all tailored to meet the high standards of the university. Through this endeavor, Al Baida contributes significantly to maintaining a well-managed and clean campus environment, while supporting the university's mission of excellence in education and research."
+        title={t("projects.qatarUniversity.projectdetails.title")}
+        subtitle={t("projects.qatarUniversity.projectdetails.subTitle")}
+        description={t("projects.qatarUniversity.projectdetails.description")}
         imageSrc={projectDetailsImage}
         reverseLayout={false}
         bgColor="bg-[#e9eae5]"
         showButton={false}
       />
       <div className="bg-[#f3f4f6] min-h-[700px] flex flex-col justify-center py-10">
-        <ServiceCard1 services={services} MainTitle="Services Offered" />
+        <ServiceCard1
+          services={services}
+          MainTitle={t("projects.qatarUniversity.services.title")}
+        />
         <p className="text-lg mb-6 max-w-7xl mx-auto p-4">
           {" "}
-          We offer a comprehensive range of services, designed to enhance the
-          university experience with a sophisticated and well-maintained
-          environment. Our services are of the highest quality, tailored to meet
-          the needs of both students and staff. Every employee we provide is
-          carefully trained and skilled, ensuring they deliver top-notch service
-          with professionalism and attention to detail. Our commitment is to
-          support the university community with reliable, efficient, and
-          exceptional service.
+          {t("projects.qatarUniversity.services.paragraph")}
         </p>
       </div>
       <div className="max-w-7xl mx-auto p-4 min-h-[700px] flex flex-col justify-center">
         <h1 className="text-2xl md:text-4xl font-bold mb-10">
-          Qatar University Safety Excellence Award Distribution Ceremony
+          {t("projects.qatarUniversity.services.galleryTitle")}
         </h1>
         <Gallery images={galleryImages} />
       </div>
